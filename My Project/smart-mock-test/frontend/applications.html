@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Tracking | Smart Mock Test & Career Gateway</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/career.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="applicationsTrackerView">
+
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <div class="brand-logo"><i class="bi bi-mortarboard-fill"></i></div>
+        <div class="brand-text">SMART MOCK TEST<span>CAREER GATEWAY</span></div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">Main Navigation</div>
+        <a href="student-dashboard.html" class="nav-link-custom"><i class="bi bi-grid-1x2-fill"></i> Dashboard</a>
+        <a href="mock-test.html" class="nav-link-custom"><i class="bi bi-patch-question-fill"></i> Mock Tests</a>
+        <a href="result.html" class="nav-link-custom"><i class="bi bi-bar-chart-line-fill"></i> Results & Analytics</a>
+        <a href="resume.html" class="nav-link-custom"><i class="bi bi-file-earmark-person-fill"></i> Resume Analysis</a>
+        
+        <div class="nav-label">Career Hub</div>
+        <a href="career.html" class="nav-link-custom"><i class="bi bi-briefcase-fill"></i> Career Gateway</a>
+        <a href="applications.html" class="nav-link-custom active"><i class="bi bi-send-check-fill"></i> Applications</a>
+        
+        <div class="nav-label">Account</div>
+        <a href="profile.html" class="nav-link-custom"><i class="bi bi-person-bounding-box"></i> Profile</a>
+        <a href="settings.html" class="nav-link-custom"><i class="bi bi-gear-fill"></i> Settings</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="#" class="nav-link-custom text-danger action-logout"><i class="bi bi-box-arrow-right"></i> Logout</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="app-main">
+      
+      <!-- Top Header Navbar -->
+      <header class="app-header">
+        <div class="header-left">
+          <button class="mobile-nav-toggle" type="button"><i class="bi bi-list"></i></button>
+          <h1 class="page-title">Application Tracker</h1>
+        </div>
+
+        <div class="header-right">
+          <button type="button" class="theme-toggle-btn" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <div class="user-avatar" id="headerUserAvatar">RS</div>
+        </div>
+      </header>
+
+      <!-- Page Body -->
+      <div class="page-body">
+        <div class="content-max-width">
+
+          <div class="mb-4">
+            <h4 class="fw-extrabold text-dark mb-1">Your Job Applications</h4>
+            <p class="text-muted small">Track real-time candidate status updates submitted through the Career Gateway.</p>
+          </div>
+
+          <!-- Applications Table / Mobile Cards View -->
+          <div class="card-custom">
+            <div class="card-header-custom">
+              <h5 class="card-title-custom"><i class="bi bi-send-check me-2 text-primary"></i>Submitted Applications</h5>
+              <a href="career.html" class="btn btn-sm btn-primary-custom">Apply for More Jobs</a>
+            </div>
+
+            <div class="table-responsive d-none d-md-block">
+              <table class="table table-custom mb-0">
+                <thead>
+                  <tr>
+                    <th>Job Position</th>
+                    <th>Company</th>
+                    <th>Applied Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="applicationsTableTbody">
+                  <!-- Injected via JavaScript -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Mobile View Cards -->
+            <div class="p-3 d-md-none" id="applicationsListContainer">
+              <!-- Injected via JavaScript -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Application Tracker Timeline Modal -->
+  <div class="modal fade" id="applicationTrackerModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Application Status</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body py-4">
+          <h6 class="fw-bold text-dark mb-0" id="trackerModalTitle">Job Title</h6>
+          <div class="text-muted small mb-3" id="trackerModalCompany">Company Name</div>
+
+          <div class="status-timeline" id="modalStatusTimeline">
+            <!-- Timeline steps injected via JS -->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/mock-data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/applications.js"></script>
+</body>
+</html>

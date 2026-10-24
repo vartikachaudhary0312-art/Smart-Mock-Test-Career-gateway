@@ -1,0 +1,8 @@
+[
+  { "id": 1, "code": "Java", "name": "Java Programming", "description": "Java programming and OOP concepts", "icon": "bi-cup-hot", "category": "Programming", "question_count": 45 },
+  { "id": 2, "code": "Python", "name": "Python Core", "description": "Python fundamentals, data structures and modules", "icon": "bi-filetype-py", "category": "Programming", "question_count": 40 },
+  { "id": 3, "code": "DSA", "name": "Data Structures & Algorithms", "description": "Trees, Graphs, Sorting, Searching and Complexity Analysis", "icon": "bi-diagram-3", "category": "Computer Science", "question_count": 50 },
+  { "id": 4, "code": "DBMS", "name": "DBMS & SQL", "description": "Relational databases, Normalization, SQL queries and Indexing", "icon": "bi-database", "category": "Database", "question_count": 35 },
+  { "id": 5, "code": "OS", "name": "Operating Systems", "description": "Process scheduling, Memory management, Deadlocks and Virtualization", "icon": "bi-cpu", "category": "Core CS", "question_count": 30 },
+  { "id": 6, "code": "Web", "name": "Web Development", "description": "HTML5, CSS3, Vanilla JavaScript and Web Standards", "icon": "bi-code-slash", "category": "Web Tech", "question_count": 40 }
+]

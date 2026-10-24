@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Module | Smart Mock Test & Career Gateway</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/career.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="resumeUploadView">
+
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <div class="brand-logo"><i class="bi bi-mortarboard-fill"></i></div>
+        <div class="brand-text">SMART MOCK TEST<span>CAREER GATEWAY</span></div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">Main Navigation</div>
+        <a href="student-dashboard.html" class="nav-link-custom"><i class="bi bi-grid-1x2-fill"></i> Dashboard</a>
+        <a href="mock-test.html" class="nav-link-custom"><i class="bi bi-patch-question-fill"></i> Mock Tests</a>
+        <a href="result.html" class="nav-link-custom"><i class="bi bi-bar-chart-line-fill"></i> Results & Analytics</a>
+        <a href="resume.html" class="nav-link-custom active"><i class="bi bi-file-earmark-person-fill"></i> Resume Analysis</a>
+        
+        <div class="nav-label">Career Hub</div>
+        <a href="career.html" class="nav-link-custom"><i class="bi bi-briefcase-fill"></i> Career Gateway</a>
+        <a href="applications.html" class="nav-link-custom"><i class="bi bi-send-check-fill"></i> Applications</a>
+        
+        <div class="nav-label">Account</div>
+        <a href="profile.html" class="nav-link-custom"><i class="bi bi-person-bounding-box"></i> Profile</a>
+        <a href="settings.html" class="nav-link-custom"><i class="bi bi-gear-fill"></i> Settings</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="#" class="nav-link-custom text-danger action-logout"><i class="bi bi-box-arrow-right"></i> Logout</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="app-main">
+      
+      <!-- Top Header Navbar -->
+      <header class="app-header">
+        <div class="header-left">
+          <button class="mobile-nav-toggle" type="button"><i class="bi bi-list"></i></button>
+          <h1 class="page-title">Resume Analysis Engine</h1>
+        </div>
+
+        <div class="header-right">
+          <button type="button" class="theme-toggle-btn" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <div class="user-avatar" id="headerUserAvatar">RS</div>
+        </div>
+      </header>
+
+      <!-- Page Body -->
+      <div class="page-body">
+        <div class="content-max-width">
+
+          <div class="mb-4">
+            <h4 class="fw-extrabold text-dark mb-1">Upload & Analyze Resume</h4>
+            <p class="text-muted small">Simulated ATS resume parser extracts technical skills, education details, and match rating for jobs.</p>
+          </div>
+
+          <!-- Drag and Drop Box -->
+          <div class="dropzone-container mb-4" id="resumeDropzone">
+            <i class="bi bi-cloud-arrow-up-fill dropzone-icon"></i>
+            <h5 class="fw-bold text-dark mb-1">Drag and Drop Your Resume Here</h5>
+            <p class="text-muted small mb-3">Supports PDF or DOCX format (Max 5MB)</p>
+            <button class="btn btn-primary-custom btn-sm px-4">Browse File</button>
+            <input type="file" id="resumeFileInput" accept=".pdf,.docx,.doc" class="d-none">
+          </div>
+
+          <!-- Upload Progress Loader -->
+          <div class="card-custom p-4 mb-4" id="resumeProgressBox" style="display: none;">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="fw-bold text-dark" id="resumeFileNameText">Rahul_Sharma_MCA_Resume.pdf</div>
+              <span class="badge badge-purple">Simulating ATS Parsing...</span>
+            </div>
+            <div class="progress" style="height: 8px;">
+              <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" id="resumeProgressBar" style="width: 0%;"></div>
+            </div>
+          </div>
+
+          <!-- Parsed ATS Results Output -->
+          <div id="resumeAnalysisResultBox" style="display: none;">
+            
+            <div class="card-custom p-4 mb-4 border-start border-primary border-4">
+              <div class="row align-items-center gy-3">
+                <div class="col-md-3 text-center border-end-md">
+                  <div class="fs-1 fw-extrabold text-primary mb-0" id="atsMatchScore">84%</div>
+                  <div class="small text-muted fw-semibold">ATS Skill Compatibility</div>
+                </div>
+                <div class="col-md-9">
+                  <h5 class="fw-bold text-dark mb-2">Resume Overview Summary</h5>
+                  <div class="row g-2 text-muted small">
+                    <div class="col-sm-6"><strong>Highest Qualification:</strong> <span id="atsParsedEducation">MCA (Master of Computer Applications)</span></div>
+                    <div class="col-sm-6"><strong>Experience Tier:</strong> <span id="atsParsedExperience">Fresher / Entry Level</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4 mb-4">
+              <div class="col-md-6">
+                <div class="card-custom p-4 h-100">
+                  <h6 class="fw-bold text-dark mb-3"><i class="bi bi-tags-fill me-2 text-primary"></i>Extracted Technical Skills</h6>
+                  <div id="atsParsedSkillsContainer" class="mb-3">
+                    <!-- Injected via JS -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card-custom p-4 h-100">
+                  <h6 class="fw-bold text-dark mb-3"><i class="bi bi-lightbulb-fill me-2 text-warning"></i>Improvement Recommendations</h6>
+                  <ul class="list-unstyled small mb-0" id="atsRecommendationsList">
+                    <!-- Injected via JS -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-custom p-4">
+              <h6 class="fw-bold text-dark mb-3"><i class="bi bi-briefcase-fill me-2 text-primary"></i>Suggested Matching Roles</h6>
+              <ul class="list-unstyled small mb-3" id="atsSuggestedRolesList">
+                <!-- Injected via JS -->
+              </ul>
+              <a href="career.html" class="btn btn-primary-custom btn-sm">Explore Matching Jobs in Gateway <i class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/mock-data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/resume.js"></script>
+</body>
+</html>

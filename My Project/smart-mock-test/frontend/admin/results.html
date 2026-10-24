@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results Audit Log | Admin Portal</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/admin.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body id="adminPortalView">
+
+  <div class="app-container">
+    
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <div class="brand-logo bg-danger text-white"><i class="bi bi-shield-lock-fill"></i></div>
+        <div class="brand-text">ADMIN PORTAL<span class="text-danger">SYSTEM CONTROL</span></div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">Management Hub</div>
+        <a href="dashboard.html" class="nav-link-custom"><i class="bi bi-speedometer2"></i> Dashboard Overview</a>
+        <a href="students.html" class="nav-link-custom"><i class="bi bi-people-fill"></i> Students Directory</a>
+        <a href="subjects.html" class="nav-link-custom"><i class="bi bi-journal-bookmark-fill"></i> Subjects & Modules</a>
+        <a href="questions.html" class="nav-link-custom"><i class="bi bi-question-square-fill"></i> Question Bank</a>
+        <a href="tests.html" class="nav-link-custom"><i class="bi bi-sliders"></i> Test Settings</a>
+        
+        <div class="nav-label">Reports & Gateway</div>
+        <a href="results.html" class="nav-link-custom active"><i class="bi bi-clipboard-data-fill"></i> Test Audit Log</a>
+        <a href="jobs.html" class="nav-link-custom"><i class="bi bi-briefcase-fill"></i> Job Postings</a>
+        <a href="applications.html" class="nav-link-custom"><i class="bi bi-inboxes-fill"></i> Candidate Applications</a>
+        <a href="reports.html" class="nav-link-custom"><i class="bi bi-file-earmark-bar-graph-fill"></i> System Reports</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="#" class="nav-link-custom text-danger action-logout"><i class="bi bi-box-arrow-right"></i> Admin Logout</a>
+      </div>
+    </aside>
+
+    <main class="app-main">
+      <header class="app-header">
+        <div class="header-left">
+          <button class="mobile-nav-toggle" type="button"><i class="bi bi-list"></i></button>
+          <h1 class="page-title">Master Test Audit Log</h1>
+        </div>
+        <div class="header-right">
+          <button type="button" class="theme-toggle-btn" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <div class="user-avatar bg-danger text-white border-danger">AD</div>
+        </div>
+      </header>
+
+      <div class="page-body" id="adminResultsView">
+        <div class="content-max-width">
+
+          <div class="card-custom">
+            <div class="card-header-custom">
+              <h5 class="card-title-custom"><i class="bi bi-clipboard-check me-2 text-primary"></i>Student Test Attempt Log</h5>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table table-custom mb-0">
+                <thead>
+                  <tr>
+                    <th>Student ID</th>
+                    <th>Subject Name</th>
+                    <th>Difficulty</th>
+                    <th>Score %</th>
+                    <th>Date & Time</th>
+                  </tr>
+                </thead>
+                <tbody id="adminResultsTableTbody">
+                  <!-- Injected via JavaScript -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/mock-data.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

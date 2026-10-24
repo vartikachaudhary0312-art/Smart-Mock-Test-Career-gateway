@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Java Assessment Test",
+    "subject_id": 1,
+    "subject": "Java",
+    "difficulty": "medium",
+    "duration_minutes": 60,
+    "question_count": 10,
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "title": "Python Core Test",
+    "subject_id": 2,
+    "subject": "Python",
+    "difficulty": "medium",
+    "duration_minutes": 45,
+    "question_count": 10,
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "title": "Data Structures Advanced Test",
+    "subject_id": 3,
+    "subject": "DSA",
+    "difficulty": "hard",
+    "duration_minutes": 60,
+    "question_count": 10,
+    "status": "Active"
+  }
+]

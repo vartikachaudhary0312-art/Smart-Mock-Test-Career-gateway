@@ -1,0 +1,22 @@
+[
+  {
+    "student_id": 1,
+    "job_id": 2,
+    "company": "CloudScale Systems",
+    "job_title": "Associate Python Developer",
+    "location": "Pune",
+    "status": "Applied",
+    "applied_at": "2026-10-06 01:24:53",
+    "id": 2
+  },
+  {
+    "id": 1,
+    "student_id": 1,
+    "job_id": 1,
+    "company": "TechCorp Solutions",
+    "job_title": "Graduate Software Engineer Trainee",
+    "location": "Bangalore",
+    "status": "Under Review",
+    "applied_at": "2026-02-24 16:20:00"
+  }
+]

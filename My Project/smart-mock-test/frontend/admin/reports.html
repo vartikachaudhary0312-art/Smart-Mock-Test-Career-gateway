@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Reports | Admin Portal</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/admin.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body id="adminPortalView">
+
+  <div class="app-container">
+    
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <div class="brand-logo bg-danger text-white"><i class="bi bi-shield-lock-fill"></i></div>
+        <div class="brand-text">ADMIN PORTAL<span class="text-danger">SYSTEM CONTROL</span></div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">Management Hub</div>
+        <a href="dashboard.html" class="nav-link-custom"><i class="bi bi-speedometer2"></i> Dashboard Overview</a>
+        <a href="students.html" class="nav-link-custom"><i class="bi bi-people-fill"></i> Students Directory</a>
+        <a href="subjects.html" class="nav-link-custom"><i class="bi bi-journal-bookmark-fill"></i> Subjects & Modules</a>
+        <a href="questions.html" class="nav-link-custom"><i class="bi bi-question-square-fill"></i> Question Bank</a>
+        <a href="tests.html" class="nav-link-custom"><i class="bi bi-sliders"></i> Test Settings</a>
+        
+        <div class="nav-label">Reports & Gateway</div>
+        <a href="results.html" class="nav-link-custom"><i class="bi bi-clipboard-data-fill"></i> Test Audit Log</a>
+        <a href="jobs.html" class="nav-link-custom"><i class="bi bi-briefcase-fill"></i> Job Postings</a>
+        <a href="applications.html" class="nav-link-custom"><i class="bi bi-inboxes-fill"></i> Candidate Applications</a>
+        <a href="reports.html" class="nav-link-custom active"><i class="bi bi-file-earmark-bar-graph-fill"></i> System Reports</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="#" class="nav-link-custom text-danger action-logout"><i class="bi bi-box-arrow-right"></i> Admin Logout</a>
+      </div>
+    </aside>
+
+    <main class="app-main">
+      <header class="app-header">
+        <div class="header-left">
+          <button class="mobile-nav-toggle" type="button"><i class="bi bi-list"></i></button>
+          <h1 class="page-title">System Reports & Export Analytics</h1>
+        </div>
+        <div class="header-right">
+          <button type="button" class="theme-toggle-btn" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <div class="user-avatar bg-danger text-white border-danger">AD</div>
+        </div>
+      </header>
+
+      <div class="page-body">
+        <div class="content-max-width">
+
+          <div class="row g-4 mb-4">
+            <div class="col-md-6">
+              <div class="card-custom p-4">
+                <h5 class="fw-bold text-dark mb-2"><i class="bi bi-file-earmark-spreadsheet me-2 text-success"></i>Export Test Performance Report</h5>
+                <p class="text-muted small">Download CSV report containing student test scores, subject metrics, and accuracy percentages.</p>
+                <button class="btn btn-outline-custom btn-sm" onclick="App.showToast('Student Performance Report CSV generated & downloaded.', 'success')">
+                  <i class="bi bi-download me-1"></i> Download CSV
+                </button>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card-custom p-4">
+                <h5 class="fw-bold text-dark mb-2"><i class="bi bi-file-earmark-pdf me-2 text-danger"></i>Export Placement Activity Report</h5>
+                <p class="text-muted small">Download summary of applications submitted, candidate shortlists, and placement conversions.</p>
+                <button class="btn btn-outline-custom btn-sm" onclick="App.showToast('Placement Activity Summary generated.', 'success')">
+                  <i class="bi bi-download me-1"></i> Download Summary
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-custom p-4">
+            <h5 class="fw-bold text-dark mb-3"><i class="bi bi-shield-check me-2 text-primary"></i>College Project Viva Verification Summary</h5>
+            <div class="table-responsive">
+              <table class="table table-bordered mb-0 small">
+                <thead class="table-light">
+                  <tr>
+                    <th>Module / Component</th>
+                    <th>Implementation Method</th>
+                    <th>Future Backend Hook</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Frontend UI Shell</strong></td>
+                    <td>HTML5, CSS3, Vanilla JS, Bootstrap 5</td>
+                    <td>Static HTTP Service</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Proctored Test Engine</strong></td>
+                    <td>Webcam Media API & 6-Digit OTP UI</td>
+                    <td>Flask SocketIO / REST API</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Data Storage</strong></td>
+                    <td>LocalStorage Mock Provider (`mock-data.js`)</td>
+                    <td>MySQL Database Tables</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Service Layer (`api.js`)</strong></td>
+                    <td>Async Promises</td>
+                    <td>`fetch()` calls to Flask Endpoints</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/mock-data.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/navigation.js"></script>
+</body>
+</html>

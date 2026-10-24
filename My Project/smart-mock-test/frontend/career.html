@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Gateway | Smart Mock Test & Career Gateway</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/career.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="careerGatewayView">
+
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <div class="brand-logo"><i class="bi bi-mortarboard-fill"></i></div>
+        <div class="brand-text">SMART MOCK TEST<span>CAREER GATEWAY</span></div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">Main Navigation</div>
+        <a href="student-dashboard.html" class="nav-link-custom"><i class="bi bi-grid-1x2-fill"></i> Dashboard</a>
+        <a href="mock-test.html" class="nav-link-custom"><i class="bi bi-patch-question-fill"></i> Mock Tests</a>
+        <a href="result.html" class="nav-link-custom"><i class="bi bi-bar-chart-line-fill"></i> Results & Analytics</a>
+        <a href="resume.html" class="nav-link-custom"><i class="bi bi-file-earmark-person-fill"></i> Resume Analysis</a>
+        
+        <div class="nav-label">Career Hub</div>
+        <a href="career.html" class="nav-link-custom active"><i class="bi bi-briefcase-fill"></i> Career Gateway</a>
+        <a href="applications.html" class="nav-link-custom"><i class="bi bi-send-check-fill"></i> Applications</a>
+        
+        <div class="nav-label">Account</div>
+        <a href="profile.html" class="nav-link-custom"><i class="bi bi-person-bounding-box"></i> Profile</a>
+        <a href="settings.html" class="nav-link-custom"><i class="bi bi-gear-fill"></i> Settings</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="#" class="nav-link-custom text-danger action-logout"><i class="bi bi-box-arrow-right"></i> Logout</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="app-main">
+      
+      <!-- Top Header Navbar -->
+      <header class="app-header">
+        <div class="header-left">
+          <button class="mobile-nav-toggle" type="button"><i class="bi bi-list"></i></button>
+          <h1 class="page-title">Career Gateway Job Board</h1>
+        </div>
+
+        <div class="header-right">
+          <button type="button" class="theme-toggle-btn" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <div class="user-avatar" id="headerUserAvatar">RS</div>
+        </div>
+      </header>
+
+      <!-- Page Body -->
+      <div class="page-body">
+        <div class="content-max-width">
+
+          <!-- Search and Filter Bar -->
+          <div class="card-custom p-3 mb-4">
+            <div class="row g-2 align-items-center">
+              <div class="col-md-5">
+                <div class="input-group">
+                  <span class="input-group-text bg-surface border-end-0 text-muted"><i class="bi bi-search"></i></span>
+                  <input type="text" class="form-control form-control-custom border-start-0" id="jobSearchInput" placeholder="Search by job title, company or skill (e.g. Java, Python)...">
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <input type="text" class="form-control form-control-custom" id="jobLocationFilter" placeholder="Location (e.g. Bangalore, Remote)">
+              </div>
+
+              <div class="col-md-3">
+                <select class="form-select form-control-custom" id="jobTypeFilter">
+                  <option value="">All Job Types</option>
+                  <option value="Full-Time">Full-Time</option>
+                  <option value="Internship">Internship</option>
+                  <option value="Contract">Contract</option>
+                </select>
+              </div>
+
+              <div class="col-md-1">
+                <button type="button" class="btn btn-outline-custom w-100" onclick="CareerPage.resetFilters()" title="Reset Filters"><i class="bi bi-arrow-counterclockwise"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="fw-bold text-dark mb-0" id="jobCountText">3 Jobs Found</h5>
+            <span class="small text-muted">Showing active verified MCA placement opportunities</span>
+          </div>
+
+          <!-- Job Cards Grid -->
+          <div class="row" id="jobsContainer">
+            <!-- Injected via JavaScript -->
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Job Details Modal -->
+  <div class="modal fade" id="jobDetailsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="modalJobTitle">Graduate Software Engineer Trainee</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body py-4">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div>
+              <h6 class="fw-bold text-primary mb-1" id="modalJobCompany">TechCorp Solutions</h6>
+              <div class="text-muted small"><i class="bi bi-geo-alt me-1"></i><span id="modalJobLocation">Bangalore</span> • <span id="modalJobType">Full-Time</span></div>
+            </div>
+            <div class="fw-extrabold text-success fs-5" id="modalJobSalary">₹6.5 LPA - ₹8.0 LPA</div>
+          </div>
+
+          <hr>
+
+          <div class="mb-3">
+            <h6 class="fw-bold text-dark">Job Overview & Requirements</h6>
+            <p class="text-muted small" id="modalJobDescription">Detailed job description...</p>
+          </div>
+
+          <div class="mb-3">
+            <h6 class="fw-bold text-dark">Required Experience</h6>
+            <span class="badge badge-secondary" id="modalJobExperience">0 - 1 Years</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary-custom" onclick="CareerPage.openApplyModal(CareerPage.selectedJob.id)">Apply Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply Modal -->
+  <div class="modal fade" id="jobApplyModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Confirm Application</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center py-4">
+          <i class="bi bi-send-check-fill text-primary display-4 mb-3"></i>
+          <h5>Submit application for <span class="text-primary" id="applyModalJobTitle">Position</span>?</h5>
+          <p class="text-muted small mb-0">At <strong id="applyModalCompany">Company</strong></p>
+          <div class="p-3 bg-surface-subtle border rounded small text-muted my-3 text-start">
+            <i class="bi bi-check-circle-fill text-success me-1"></i> Your current profile details, MCA test scores, and uploaded resume analysis will be submitted.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary-custom" onclick="CareerPage.submitApplication()">Confirm & Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/mock-data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/career.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Smart Mock Test & Career Gateway</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <main class="auth-wrapper login-experience">
+    <header class="login-project-heading">
+      <div class="login-project-mark" aria-hidden="true"><i class="bi bi-mortarboard-fill"></i></div>
+      <div>
+        <p class="login-project-kicker">Learning · Assessment · Career</p>
+        <h1 class="login-project-name">Smart Mock Test Platform and Career Gateway</h1>
+      </div>
+    </header>
+
+    <div class="auth-card-container">
+      
+      <!-- Left Branding Sidebar -->
+      <div class="auth-brand-side">
+        <div>
+          <div class="d-flex align-items-center gap-2 mb-4">
+            <div class="brand-logo bg-white text-primary fs-4"><i class="bi bi-mortarboard-fill"></i></div>
+            <h5 class="fw-bold mb-0 text-white">LEARN · PRACTICE · PROGRESS</h5>
+          </div>
+          <h3 class="fw-extrabold mb-2">Assess • Analyze • Match</h3>
+          <p class="small opacity-90 mb-4">Empowering students with smart proctored mock assessments, ATS resume insights, and real-time career matching.</p>
+          
+          <ul class="auth-feature-list">
+            <li><i class="bi bi-camera-video"></i> Camera Proctored Testing</li>
+            <li><i class="bi bi-shield-check"></i> 6-Digit OTP Verification</li>
+            <li><i class="bi bi-graph-up"></i> Chart.js Analytics & Score Trends</li>
+            <li><i class="bi bi-briefcase"></i> Direct Job Application Tracker</li>
+          </ul>
+        </div>
+
+        <div class="pt-3 border-top border-white-50 small opacity-75">
+          MCA College Project Demonstration Platform
+        </div>
+      </div>
+
+      <!-- Right Form Area -->
+      <div class="auth-form-side">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h4 class="fw-extrabold text-dark mb-0">Account Login</h4>
+          <button type="button" class="theme-toggle-btn" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+        </div>
+
+        <!-- Role Selector Tabs -->
+        <div class="auth-role-tabs">
+          <div class="auth-role-tab active" data-role="student">
+            <i class="bi bi-person me-1"></i> Student Portal
+          </div>
+          <div class="auth-role-tab" data-role="admin">
+            <i class="bi bi-shield-lock me-1"></i> Admin Portal
+          </div>
+        </div>
+
+        <form id="loginForm" novalidate>
+          <div class="mb-3">
+            <label class="form-label-custom" for="loginEmail">Email Address</label>
+            <div class="input-group">
+              <span class="input-group-text bg-surface border-end-0 text-muted"><i class="bi bi-envelope"></i></span>
+              <input type="email" class="form-control form-control-custom border-start-0" id="loginEmail" data-validate="required|email" placeholder="student@example.com">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <label class="form-label-custom mb-0" for="loginPassword">Password</label>
+              <a href="#" class="small text-muted" onclick="App.showToast('Demo Password Reset link sent to email.', 'info'); return false;">Forgot?</a>
+            </div>
+            <div class="input-group">
+              <span class="input-group-text bg-surface border-end-0 text-muted"><i class="bi bi-lock"></i></span>
+              <input type="password" class="form-control form-control-custom border-start-0 border-end-0" id="loginPassword" data-validate="required|min:6" placeholder="••••••••">
+              <button class="btn btn-outline-secondary toggle-password-btn" type="button"><i class="bi bi-eye"></i></button>
+            </div>
+          </div>
+
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" id="rememberMeCheck" checked>
+            <label class="form-check-label small text-muted" for="rememberMeCheck">Remember login details</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary-custom w-100 py-2.5 mb-3">
+            Login to Account <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </form>
+
+        <!-- Demo Shortcuts -->
+        <div class="p-3 bg-surface-subtle border rounded mb-3">
+          <div class="fw-bold small text-muted mb-2">QUICK DEMO CREDENTIALS:</div>
+          <div class="d-flex gap-2">
+            <button type="button" class="btn btn-sm btn-outline-custom flex-grow-1" id="btnFillStudentDemo">
+              <i class="bi bi-person-circle me-1"></i> Student Demo
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-custom flex-grow-1" id="btnFillAdminDemo">
+              <i class="bi bi-shield-lock me-1"></i> Admin Demo
+            </button>
+          </div>
+        </div>
+
+        <div class="text-center small text-muted">
+          Don't have an account? <a href="register.html" class="fw-semibold text-primary">Register Here</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/mock-data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

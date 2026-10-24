@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Test Experience | Smart Mock Test & Career Gateway</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/test.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="mockTestAppView">
+
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <div class="brand-logo"><i class="bi bi-mortarboard-fill"></i></div>
+        <div class="brand-text">SMART MOCK TEST<span>CAREER GATEWAY</span></div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">Main Navigation</div>
+        <a href="student-dashboard.html" class="nav-link-custom"><i class="bi bi-grid-1x2-fill"></i> Dashboard</a>
+        <a href="mock-test.html" class="nav-link-custom active"><i class="bi bi-patch-question-fill"></i> Mock Tests</a>
+        <a href="result.html" class="nav-link-custom"><i class="bi bi-bar-chart-line-fill"></i> Results & Analytics</a>
+        <a href="resume.html" class="nav-link-custom"><i class="bi bi-file-earmark-person-fill"></i> Resume Analysis</a>
+        
+        <div class="nav-label">Career Hub</div>
+        <a href="career.html" class="nav-link-custom"><i class="bi bi-briefcase-fill"></i> Career Gateway</a>
+        <a href="applications.html" class="nav-link-custom"><i class="bi bi-send-check-fill"></i> Applications</a>
+        
+        <div class="nav-label">Account</div>
+        <a href="profile.html" class="nav-link-custom"><i class="bi bi-person-bounding-box"></i> Profile</a>
+        <a href="settings.html" class="nav-link-custom"><i class="bi bi-gear-fill"></i> Settings</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="#" class="nav-link-custom text-danger action-logout"><i class="bi bi-box-arrow-right"></i> Logout</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="app-main">
+      
+      <!-- Top Header Navbar -->
+      <header class="app-header">
+        <div class="header-left">
+          <button class="mobile-nav-toggle" type="button"><i class="bi bi-list"></i></button>
+          <h1 class="page-title">Mock Test Module</h1>
+        </div>
+
+        <div class="header-right">
+          <button type="button" class="theme-toggle-btn" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
+          
+          <div class="dropdown">
+            <div class="user-avatar" id="headerUserAvatar">RS</div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Flow Progress Bar -->
+      <div class="progress rounded-0" style="height: 4px;">
+        <div class="progress-bar bg-primary" id="testFlowProgressBar" style="width: 25%;"></div>
+      </div>
+
+      <!-- Page Content -->
+      <div class="page-body">
+        <div class="content-max-width">
+
+          <!-- STEP 1: SUBJECT SELECTION -->
+          <div class="test-step-view" id="testStep1">
+            <div class="mb-4">
+              <h4 class="fw-extrabold text-dark mb-1">Step 1: Select Subject Module</h4>
+              <p class="text-muted small">Choose the technical subject you wish to attempt for your mock test assessment.</p>
+            </div>
+
+            <div class="subject-grid mb-4" id="subjectGridContainer">
+              <!-- Injected via JavaScript -->
+            </div>
+
+            <div class="d-flex justify-content-end border-top pt-3">
+              <button class="btn btn-primary-custom px-4" id="btnStep1Next" disabled>
+                Continue to Difficulty <i class="bi bi-arrow-right ms-2"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2: DIFFICULTY SELECTION -->
+          <div class="test-step-view" id="testStep2" style="display: none;">
+            <div class="mb-4">
+              <h4 class="fw-extrabold text-dark mb-1">Step 2: Select Difficulty Level</h4>
+              <p class="text-muted small">Tailor the assessment complexity to match your current skill level.</p>
+            </div>
+
+            <div class="difficulty-options mb-4">
+              <div class="difficulty-card" data-diff="Easy">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h6 class="fw-bold mb-0 text-success"><i class="bi bi-reception-1 me-2"></i>Easy</h6>
+                  <span class="badge badge-green">Basic</span>
+                </div>
+                <p class="text-muted small mb-0">Fundamental concepts, terminology definitions, and syntax MCQs.</p>
+              </div>
+
+              <div class="difficulty-card selected" data-diff="Medium">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h6 class="fw-bold mb-0 text-primary"><i class="bi bi-reception-3 me-2"></i>Medium</h6>
+                  <span class="badge badge-purple">Recommended</span>
+                </div>
+                <p class="text-muted small mb-0">Application-based problem solving, code snippet tracing, and logic checks.</p>
+              </div>
+
+              <div class="difficulty-card" data-diff="Hard">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h6 class="fw-bold mb-0 text-danger"><i class="bi bi-reception-4 me-2"></i>Hard</h6>
+                  <span class="badge badge-danger">Advanced</span>
+                </div>
+                <p class="text-muted small mb-0">Advanced algorithms, complex scenarios, edge cases, and optimization queries.</p>
+              </div>
+            </div>
+
+            <!-- Test Instructions Box -->
+            <div class="card-custom p-4 mb-4">
+              <h6 class="fw-bold mb-3"><i class="bi bi-info-circle me-2 text-primary"></i>Test Rules & Guidelines</h6>
+              <ul class="text-muted small mb-0 pe-2">
+                <li class="mb-2">Total duration is 60 minutes; each test contains 50 questions.</li>
+                <li class="mb-2">Keep your camera active throughout the test; disconnecting it pauses the test.</li>
+                <li class="mb-2">Do not switch browser tabs or refresh the page during the live test.</li>
+                <li class="mb-0">You can mark questions for review and return to them anytime before submission.</li>
+              </ul>
+            </div>
+
+            <div class="d-flex justify-content-between border-top pt-3">
+              <button class="btn btn-outline-custom" id="btnStep2Back"><i class="bi bi-arrow-left me-2"></i>Back</button>
+              <button class="btn btn-primary-custom px-4" id="btnStep2Next">Proceed to Camera Check <i class="bi bi-arrow-right ms-2"></i></button>
+            </div>
+          </div>
+
+          <!-- STEP 3: CAMERA PROCTORING PERMISSION CHECK -->
+          <div class="test-step-view" id="testStep3" style="display: none;">
+            <div class="text-center max-w-600 mx-auto py-3">
+              <h4 class="fw-extrabold text-dark mb-2">Step 3: Camera Proctoring Check</h4>
+              <p class="text-muted small mb-4">Enable your camera to start the test. Keep it active until you submit.</p>
+
+              <div class="camera-preview-box" id="cameraPreviewBox">
+                <video id="cameraVideoFeed" autoplay playsinline muted style="display: none;"></video>
+                <div id="cameraFallbackPlaceholder">
+                  <i class="bi bi-camera-video fs-1 text-muted mb-2"></i>
+                  <div class="text-muted small">Camera Offline</div>
+                </div>
+                <div class="camera-status-overlay bg-dark" id="cameraStatusText" role="status" aria-live="polite">
+                  <i class="bi bi-circle-fill text-warning me-1"></i> Awaiting Permission
+                </div>
+              </div>
+
+              <button class="btn btn-outline-custom mb-3" id="btnEnableCamera">
+                <i class="bi bi-camera-video-fill me-2"></i> Grant / Enable Camera Access
+              </button>
+
+              <p class="text-muted x-small">Camera permission is mandatory. Testing remains locked if camera access is denied or disconnected.</p>
+            </div>
+
+            <div class="d-flex justify-content-between border-top pt-3">
+              <button class="btn btn-outline-custom" id="btnStep3Back"><i class="bi bi-arrow-left me-2"></i>Back</button>
+              <button class="btn btn-primary-custom px-4" id="btnStep3Next" disabled>Start Test <i class="bi bi-arrow-right ms-2"></i></button>
+            </div>
+          </div>
+
+          <!-- STEP 4: LIVE TEST SCREEN -->
+          <div class="test-step-view" id="testStep4" style="display: none;">
+            
+            <!-- Sticky Test Control Header -->
+            <div class="test-header-bar rounded-top mb-4">
+              <div>
+                <span class="fw-bold text-dark fs-5" id="testCurrentSubjectLabel">Java Programming</span>
+                <span class="badge badge-purple ms-2" id="testCurrentDifficultyLabel">Medium</span>
+              </div>
+              
+              <div class="d-flex align-items-center gap-3">
+                <span class="small text-muted d-none d-md-inline" id="testQuestionCounterText">Question 1 of 50</span>
+                <div class="timer-badge">
+                  <i class="bi bi-clock-history text-primary"></i>
+                  <span id="testLiveTimer">60:00</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <!-- Left Question Area -->
+              <div class="col-lg-8">
+                <div class="card-custom p-4">
+                  <h5 class="fw-bold text-dark mb-3" id="testQuestionText">
+                    Which feature of Object Oriented Programming allows creating a new class from an existing class?
+                  </h5>
+
+                  <div id="testOptionsContainer" class="mb-4">
+                    <!-- Injected via JavaScript -->
+                  </div>
+
+                  <div class="d-flex flex-wrap gap-2 justify-content-between border-top pt-3">
+                    <div>
+                      <button class="btn btn-outline-custom me-2" id="btnPrevQuestion"><i class="bi bi-arrow-left me-1"></i>Previous</button>
+                      <button class="btn btn-outline-custom text-warning me-2" id="btnMarkReview"><i class="bi bi-bookmark me-1"></i>Mark for Review</button>
+                      <button class="btn btn-outline-custom text-danger" id="btnClearAnswer"><i class="bi bi-x-circle me-1"></i>Clear Choice</button>
+                    </div>
+                    <button class="btn btn-primary-custom px-4" id="btnNextQuestion">Next Question <i class="bi bi-arrow-right ms-1"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Question Palette Navigator -->
+              <div class="col-lg-4">
+                <div class="card-custom p-4">
+                  <h6 class="fw-bold mb-3"><i class="bi bi-grid-3x3-gap-fill me-2 text-primary"></i>Question Navigator</h6>
+                  
+                  <div class="question-palette-grid mb-4" id="questionPaletteGrid">
+                    <!-- Injected via JavaScript -->
+                  </div>
+
+                  <div class="p-3 bg-surface-subtle border rounded small">
+                    <div class="d-flex justify-content-between mb-1"><span class="badge bg-success">Green</span> <span>Answered</span></div>
+                    <div class="d-flex justify-content-between mb-1"><span class="badge bg-warning">Yellow</span> <span>Marked for Review</span></div>
+                    <div class="d-flex justify-content-between"><span class="badge bg-secondary">Gray</span> <span>Unanswered</span></div>
+                  </div>
+
+                  <button class="btn btn-outline-danger w-100 mt-3" onclick="MockTestEngine.showSubmitConfirmationModal()">
+                    <i class="bi bi-check2-circle me-1"></i> Submit Test
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Submit Confirmation Modal -->
+  <div class="modal fade" id="submitConfirmationModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-header-title fw-bold"><i class="bi bi-question-circle me-2 text-primary"></i>Submit Test Confirmation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center py-4">
+          <i class="bi bi-exclamation-circle-fill text-warning display-4 mb-3"></i>
+          <h5>Are you sure you want to submit your test?</h5>
+          <p class="text-muted small">You will not be able to modify your answers after submission.</p>
+
+          <div class="row g-2 justify-content-center text-center my-3">
+            <div class="col-4">
+              <div class="p-2 border rounded bg-success-subtle text-success">
+                <div class="fw-bold fs-5" id="modalSubmitAnsweredCount">0</div>
+                <div class="x-small">Answered</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-2 border rounded bg-danger-subtle text-danger">
+                <div class="fw-bold fs-5" id="modalSubmitUnansweredCount">0</div>
+                <div class="x-small">Unanswered</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-2 border rounded bg-warning-subtle text-warning">
+                <div class="fw-bold fs-5" id="modalSubmitMarkedCount">0</div>
+                <div class="x-small">Marked</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Continue Test</button>
+          <button type="button" class="btn btn-primary-custom" id="btnConfirmSubmitTest">Yes, Submit Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/mock-data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/mock-test.js"></script>
+</body>
+</html>

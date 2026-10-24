@@ -1,0 +1,45 @@
+/* Admin Portal Specific CSS */
+.admin-badge {
+  background-color: var(--danger-bg);
+  color: var(--danger);
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+}
+
+.table-custom {
+  color: var(--text);
+  vertical-align: middle;
+}
+
+.table-custom th {
+  background-color: var(--surface-subtle);
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border);
+  padding: 0.9rem 1rem;
+}
+
+.table-custom td {
+  border-bottom: 1px solid var(--border);
+  padding: 0.9rem 1rem;
+  font-size: 0.9rem;
+  background-color: var(--surface);
+}
+
+.table-custom tbody tr:hover td {
+  background-color: var(--surface-subtle);
+}
+
+/* Quick Action Pill Buttons */
+.admin-action-btn {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
+  border-radius: var(--radius-sm);
+}

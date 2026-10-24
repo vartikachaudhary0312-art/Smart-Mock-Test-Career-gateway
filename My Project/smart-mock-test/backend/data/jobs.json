@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "company": "TechCorp Solutions",
+    "title": "Graduate Software Engineer Trainee",
+    "location": "Bangalore",
+    "job_type": "Full-Time",
+    "experience": "0 - 1 Years",
+    "salary": "₹6.5 LPA - ₹8.0 LPA",
+    "skills": ["Java", "SQL", "OOP", "Data Structures"],
+    "description": "We are seeking proactive MCA freshers with strong Java fundamentals to join our core backend development team.",
+    "status": "Active",
+    "created_at": "2026-02-20"
+  },
+  {
+    "id": 2,
+    "company": "CloudScale Systems",
+    "title": "Associate Python Developer",
+    "location": "Pune",
+    "job_type": "Full-Time",
+    "experience": "0 - 2 Years",
+    "salary": "₹7.0 LPA - ₹9.5 LPA",
+    "skills": ["Python", "Flask", "REST API", "PostgreSQL"],
+    "description": "Build robust REST APIs and scalable backend microservices using Python and Flask.",
+    "status": "Active",
+    "created_at": "2026-02-22"
+  },
+  {
+    "id": 3,
+    "company": "NexGen Innovations",
+    "title": "Frontend Web Engineer (Junior)",
+    "location": "Hyderabad",
+    "job_type": "Full-Time",
+    "experience": "0 - 1 Years",
+    "salary": "₹5.5 LPA - ₹7.2 LPA",
+    "skills": ["JavaScript", "HTML5", "CSS3", "Bootstrap"],
+    "description": "Develop responsive and performant enterprise web applications with modern UX/UI standards.",
+    "status": "Active",
+    "created_at": "2026-02-25"
+  }
+]
