@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const ApplicationsPage = {
   async init() {
-    const user = API.getCurrentUser() || { id: "usr_student_01" };
+    const user = API.getCurrentUser();
+    if (!user) { window.location.replace(API.getLoginUrl()); return; }
     await this.loadApplications(user.id);
   },
 

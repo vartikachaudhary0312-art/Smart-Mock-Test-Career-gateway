@@ -56,6 +56,29 @@
   padding: 1.25rem;
   margin-bottom: 1rem;
   background-color: var(--surface);
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.question-review-item p {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.question-review-item .small {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.recommendation-box {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 .question-review-item.is-correct { border-left: 4px solid var(--success); }

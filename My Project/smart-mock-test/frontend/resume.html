@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume Module | Smart Mock Test & Career Gateway</title>
-  
+  <title>Resume Analysis Engine | Smart Mock Test & Career Gateway</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/career.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body id="resumeUploadView">
 
   <div class="app-container">
-    
+
     <!-- Sidebar -->
     <aside class="app-sidebar">
       <div class="sidebar-header">
-        <div class="brand-logo"><i class="bi bi-mortarboard-fill"></i></div>
-        <div class="brand-text">SMART MOCK TEST<span>CAREER GATEWAY</span></div>
+        <div class="d-flex align-items-center gap-2">
+          <div class="brand-logo"><i class="bi bi-mortarboard-fill"></i></div>
+          <div class="brand-text">SMART MOCK TEST<span>CAREER GATEWAY</span></div>
+        </div>
+        <button class="sidebar-close-btn" type="button" aria-label="Close Navigation Menu"><i class="bi bi-x-lg"></i></button>
       </div>
 
       <nav class="sidebar-nav">
@@ -31,11 +36,11 @@
         <a href="mock-test.html" class="nav-link-custom"><i class="bi bi-patch-question-fill"></i> Mock Tests</a>
         <a href="result.html" class="nav-link-custom"><i class="bi bi-bar-chart-line-fill"></i> Results & Analytics</a>
         <a href="resume.html" class="nav-link-custom active"><i class="bi bi-file-earmark-person-fill"></i> Resume Analysis</a>
-        
+
         <div class="nav-label">Career Hub</div>
         <a href="career.html" class="nav-link-custom"><i class="bi bi-briefcase-fill"></i> Career Gateway</a>
         <a href="applications.html" class="nav-link-custom"><i class="bi bi-send-check-fill"></i> Applications</a>
-        
+
         <div class="nav-label">Account</div>
         <a href="profile.html" class="nav-link-custom"><i class="bi bi-person-bounding-box"></i> Profile</a>
         <a href="settings.html" class="nav-link-custom"><i class="bi bi-gear-fill"></i> Settings</a>
@@ -48,17 +53,17 @@
 
     <!-- Main Content -->
     <main class="app-main">
-      
+
       <!-- Top Header Navbar -->
       <header class="app-header">
         <div class="header-left">
-          <button class="mobile-nav-toggle" type="button"><i class="bi bi-list"></i></button>
+          <button class="mobile-nav-toggle" id="btnSidebarToggle" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false" title="Menu"><i class="bi bi-list"></i></button>
           <h1 class="page-title">Resume Analysis Engine</h1>
         </div>
 
         <div class="header-right">
           <button type="button" class="theme-toggle-btn" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
-          <div class="user-avatar" id="headerUserAvatar">RS</div>
+          <div class="user-avatar" id="headerUserAvatar">ST</div>
         </div>
       </header>
 
@@ -67,54 +72,81 @@
         <div class="content-max-width">
 
           <div class="mb-4">
-            <h4 class="fw-extrabold text-dark mb-1">Upload & Analyze Resume</h4>
-            <p class="text-muted small">Simulated ATS resume parser extracts technical skills, education details, and match rating for jobs.</p>
+            <h4 class="fw-extrabold text-dark mb-1">AI-Powered Resume & ATS Analysis</h4>
+            <p class="text-muted small">Upload your resume to extract key technical skills, calculate ATS job compatibility, and discover recommended placement opportunities.</p>
           </div>
 
           <!-- Drag and Drop Box -->
           <div class="dropzone-container mb-4" id="resumeDropzone">
             <i class="bi bi-cloud-arrow-up-fill dropzone-icon"></i>
-            <h5 class="fw-bold text-dark mb-1">Drag and Drop Your Resume Here</h5>
-            <p class="text-muted small mb-3">Supports PDF or DOCX format (Max 5MB)</p>
-            <button class="btn btn-primary-custom btn-sm px-4">Browse File</button>
+            <h5 class="fw-bold text-dark mb-1">Drag & Drop Your Resume Here</h5>
+            <p class="text-muted small mb-3">Supports PDF (.pdf) or Word (.docx) formats up to 5MB</p>
+            <button class="btn btn-primary-custom btn-sm px-4" type="button" id="btnBrowseResume">
+              <i class="bi bi-folder2-open me-1"></i> Browse File
+            </button>
             <input type="file" id="resumeFileInput" accept=".pdf,.docx,.doc" class="d-none">
           </div>
 
           <!-- Upload Progress Loader -->
           <div class="card-custom p-4 mb-4" id="resumeProgressBox" style="display: none;">
             <div class="d-flex align-items-center justify-content-between mb-2">
-              <div class="fw-bold text-dark" id="resumeFileNameText">Rahul_Sharma_MCA_Resume.pdf</div>
-              <span class="badge badge-purple">Simulating ATS Parsing...</span>
+              <div class="fw-bold text-dark" id="resumeFileNameText">Resume.pdf</div>
+              <span class="badge badge-purple" id="resumeStatusBadge">Processing...</span>
             </div>
-            <div class="progress" style="height: 8px;">
+            <div class="progress mb-2" style="height: 10px; border-radius: 6px;">
               <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" id="resumeProgressBar" style="width: 0%;"></div>
             </div>
+            <div class="small text-muted" id="resumeStepHint">Uploading resume to ATS engine...</div>
           </div>
 
           <!-- Parsed ATS Results Output -->
           <div id="resumeAnalysisResultBox" style="display: none;">
-            
+
+            <!-- Active File Info Banner -->
+            <div class="card-custom p-3 mb-4 bg-light border d-flex flex-row justify-content-between align-items-center flex-wrap gap-3">
+              <div class="d-flex align-items-center gap-3">
+                <div class="stat-icon-wrapper stat-icon-green flex-shrink-0">
+                  <i class="bi bi-file-earmark-check-fill"></i>
+                </div>
+                <div>
+                  <div class="fw-bold text-dark mb-0" id="activeResumeFileName">Uploaded_Resume.pdf</div>
+                  <div class="small text-muted" id="activeResumeMeta">Verified ATS Parsed Profile</div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-sm btn-outline-custom" id="btnReuploadResume">
+                <i class="bi bi-arrow-repeat me-1"></i> Upload Different Resume
+              </button>
+            </div>
+
+            <!-- Overview Card -->
             <div class="card-custom p-4 mb-4 border-start border-primary border-4">
               <div class="row align-items-center gy-3">
                 <div class="col-md-3 text-center border-end-md">
-                  <div class="fs-1 fw-extrabold text-primary mb-0" id="atsMatchScore">84%</div>
-                  <div class="small text-muted fw-semibold">ATS Skill Compatibility</div>
+                  <div class="fs-1 fw-extrabold text-primary mb-0" id="atsMatchScore">88%</div>
+                  <div class="small text-muted fw-semibold">ATS Compatibility Score</div>
                 </div>
-                <div class="col-md-9">
-                  <h5 class="fw-bold text-dark mb-2">Resume Overview Summary</h5>
+                <div class="col-md-9 ps-md-4">
+                  <h5 class="fw-bold text-dark mb-2">Candidate Profile Summary</h5>
                   <div class="row g-2 text-muted small">
-                    <div class="col-sm-6"><strong>Highest Qualification:</strong> <span id="atsParsedEducation">MCA (Master of Computer Applications)</span></div>
-                    <div class="col-sm-6"><strong>Experience Tier:</strong> <span id="atsParsedExperience">Fresher / Entry Level</span></div>
+                    <div class="col-sm-6">
+                      <strong>Highest Qualification:</strong><br>
+                      <span id="atsParsedEducation" class="text-dark">MCA (Master of Computer Applications) - 8.4 CGPA</span>
+                    </div>
+                    <div class="col-sm-6">
+                      <strong>Experience Tier:</strong><br>
+                      <span id="atsParsedExperience" class="text-dark">Fresher / Entry-Level Software Engineer</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
+            <!-- Skills & Recommendations Row -->
             <div class="row g-4 mb-4">
               <div class="col-md-6">
                 <div class="card-custom p-4 h-100">
                   <h6 class="fw-bold text-dark mb-3"><i class="bi bi-tags-fill me-2 text-primary"></i>Extracted Technical Skills</h6>
-                  <div id="atsParsedSkillsContainer" class="mb-3">
+                  <div id="atsParsedSkillsContainer" class="d-flex flex-wrap gap-1 mb-2">
                     <!-- Injected via JS -->
                   </div>
                 </div>
@@ -122,7 +154,7 @@
 
               <div class="col-md-6">
                 <div class="card-custom p-4 h-100">
-                  <h6 class="fw-bold text-dark mb-3"><i class="bi bi-lightbulb-fill me-2 text-warning"></i>Improvement Recommendations</h6>
+                  <h6 class="fw-bold text-dark mb-3"><i class="bi bi-lightbulb-fill me-2 text-warning"></i>ATS Recommendations & Gaps</h6>
                   <ul class="list-unstyled small mb-0" id="atsRecommendationsList">
                     <!-- Injected via JS -->
                   </ul>
@@ -130,12 +162,15 @@
               </div>
             </div>
 
+            <!-- Suggested Roles Card -->
             <div class="card-custom p-4">
-              <h6 class="fw-bold text-dark mb-3"><i class="bi bi-briefcase-fill me-2 text-primary"></i>Suggested Matching Roles</h6>
+              <h6 class="fw-bold text-dark mb-3"><i class="bi bi-briefcase-fill me-2 text-primary"></i>Suggested Placement Profiles</h6>
               <ul class="list-unstyled small mb-3" id="atsSuggestedRolesList">
                 <!-- Injected via JS -->
               </ul>
-              <a href="career.html" class="btn btn-primary-custom btn-sm">Explore Matching Jobs in Gateway <i class="bi bi-arrow-right ms-1"></i></a>
+              <a href="career.html" class="btn btn-primary-custom btn-sm">
+                Explore Matching Jobs in Gateway <i class="bi bi-arrow-right ms-1"></i>
+              </a>
             </div>
 
           </div>
@@ -152,4 +187,5 @@
   <script src="js/navigation.js"></script>
   <script src="js/resume.js"></script>
 </body>
+
 </html>

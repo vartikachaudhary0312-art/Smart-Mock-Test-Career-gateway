@@ -1,17 +1,14 @@
-/**
- * SMART MOCK TEST & CAREER GATEWAY
- * Form Validation Utility Engine
- */
-
 const Validation = {
   isValidEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase());
+    return re.test(String(email).trim().toLowerCase());
   },
 
   isValidPhone(phone) {
-    const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
-    return re.test(String(phone).trim());
+    if (!phone) return false;
+    const clean = String(phone).trim().replace(/[\s\-\(\)\.]/g, "");
+    const re = /^\+?[0-9]{10,15}$/;
+    return re.test(clean);
   },
 
   validateForm(formElement) {
@@ -35,7 +32,7 @@ const Validation = {
           break;
         }
         if (rule === "phone" && val && !this.isValidPhone(val)) {
-          this.showFieldError(input, "Please enter a valid phone number.");
+          this.showFieldError(input, "Please enter a valid phone number (e.g. +91 9876543210).");
           isValid = false;
           break;
         }

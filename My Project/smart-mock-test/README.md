@@ -20,18 +20,24 @@
 
 ---
 
-## 🔑 Demo Login Credentials
+## 🔑 Authentication & Admin Portal Configuration
 
-### 👨‍🎓 Student Portal:
-- **Email:** `student@example.com`
-- **Password:** `Student@123`
-- **Role:** `student`
+### 👨‍🎓 Student Portal (Self-Service Registration):
+- Students can register with their own credentials via `register.html` or log in via `login.html`.
+- Standard student account for testing:
+  - **Email:** `student@example.com`
+  - **Password:** `Student@123`
+  - **Role:** `student`
 
-### 🛡️ Admin Portal:
-- **Email:** `admin@example.com`
-- **Password:** `Admin@123`
+### 🛡️ Authorized Admin Account (Single Fixed Administrator):
+- **Email:** `vartikachaudhary0312@gmail.com`
 - **Role:** `admin`
-- **Admin Security Key:** `ADMIN2026`
+- **Password:** Configured via `ADMIN_PASSWORD` environment variable in `backend/.env`.
+- **Security:**
+  - Only `vartikachaudhary0312@gmail.com` can authenticate as the Administrator.
+  - Public Admin registration is completely disabled; all public registrations are assigned the `student` role.
+  - Passwords are encrypted using Werkzeug PBKDF2/scrypt hashing and never stored in plaintext.
+  - If `ADMIN_PASSWORD` is missing in the environment, Admin login is refused with a 503 error.
 
 ---
 

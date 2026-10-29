@@ -9,9 +9,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const App = {
   init() {
+    if (!this.checkAuth()) return;
     this.initTheme();
     this.initHeaderUser();
     this.initGlobalEventListeners();
+    this.initBFCacheGuard();
+  },
+
+  isPublicPage() {
+    const path = window.location.pathname.replace(/\\/g, "/").toLowerCase();
+    const filename = path.split("/").pop().split("?")[0] || "index.html";
+    const publicPages = ["login.html", "register.html", "index.html", ""];
+    return publicPages.includes(filename);
+  },
+
+  checkAuth() {
+    if (this.isPublicPage()) return true;
+    const user = API.getCurrentUser();
+    if (!user) {
+      window.location.replace(API.getLoginUrl());
+      return false;
+    }
+    const path = window.location.pathname.replace(/\\/g, "/").toLowerCase();
+    if (path.includes("/admin/")) {
+      const token = localStorage.getItem("smt_auth_token");
+      const adminEmail = "vartikachaudhary0312@gmail.com";
+      if (!token || user.role !== "admin" || (user.email || "").toLowerCase() !== adminEmail) {
+        window.location.replace(API.getLoginUrl());
+        return false;
+      }
+    }
+    return true;
+  },
+
+  initBFCacheGuard() {
+    window.addEventListener("pageshow", (event) => {
+      if (event.persisted || (window.performance && window.performance.navigation && window.performance.navigation.type === 2)) {
+        if (!App.isPublicPage() && !API.getCurrentUser()) {
+          window.location.replace(API.getLoginUrl());
+        }
+      }
+    });
   },
 
   initTheme() {
@@ -51,19 +89,35 @@ const App = {
 
   initHeaderUser() {
     const user = API.getCurrentUser();
+    if (!user) return;
+
     const userElem = document.getElementById("headerUserName");
     const avatarElem = document.getElementById("headerUserAvatar");
     const roleElem = document.getElementById("headerUserRole");
+    const emailElem = document.getElementById("headerUserEmail");
 
-    if (userElem && user) {
-      userElem.textContent = user.name;
-    }
-    if (avatarElem && user) {
-      const initials = user.name.split(" ").map(n => n[0]).join("").substring(0, 2).toUpperCase();
-      avatarElem.textContent = initials;
-    }
-    if (roleElem && user) {
-      roleElem.textContent = user.role.toUpperCase();
+    const initials = (user.name || "Student").split(" ").map(n => n[0]).filter(Boolean).join("").substring(0, 2).toUpperCase() || "ST";
+
+    if (userElem) userElem.textContent = user.name;
+    if (avatarElem) avatarElem.textContent = initials;
+    if (roleElem) roleElem.textContent = (user.role || "student").toUpperCase();
+    if (emailElem) emailElem.textContent = user.email || "";
+
+    // Sidebar elements
+    const sidebarName = document.getElementById("sidebarUserName");
+    const sidebarEmail = document.getElementById("sidebarUserEmail");
+    const sidebarAvatar = document.getElementById("sidebarUserAvatar");
+    const sidebarRole = document.getElementById("sidebarUserRole");
+
+    if (sidebarName) sidebarName.textContent = user.name;
+    if (sidebarEmail) sidebarEmail.textContent = user.email || "";
+    if (sidebarAvatar) sidebarAvatar.textContent = initials;
+    if (sidebarRole) sidebarRole.textContent = (user.role || "student").toUpperCase();
+
+    // Welcome banner text
+    const welcomeElem = document.getElementById("dashboardWelcomeText");
+    if (welcomeElem) {
+      welcomeElem.textContent = `Welcome back, ${user.name} 👋`;
     }
   },
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Career Gateway | Smart Mock Test & Career Gateway</title>
+  <title>Career Gateway – Practice & Mock Tests | Smart Mock Test Platform</title>
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
@@ -21,8 +21,11 @@
     <!-- Sidebar -->
     <aside class="app-sidebar">
       <div class="sidebar-header">
-        <div class="brand-logo"><i class="bi bi-mortarboard-fill"></i></div>
-        <div class="brand-text">SMART MOCK TEST<span>CAREER GATEWAY</span></div>
+        <div class="d-flex align-items-center gap-2">
+          <div class="brand-logo"><i class="bi bi-mortarboard-fill"></i></div>
+          <div class="brand-text">SMART MOCK TEST<span>CAREER GATEWAY</span></div>
+        </div>
+        <button class="sidebar-close-btn" type="button" aria-label="Close Navigation Menu"><i class="bi bi-x-lg"></i></button>
       </div>
 
       <nav class="sidebar-nav">
@@ -52,8 +55,11 @@
       <!-- Top Header Navbar -->
       <header class="app-header">
         <div class="header-left">
-          <button class="mobile-nav-toggle" type="button"><i class="bi bi-list"></i></button>
-          <h1 class="page-title">Career Gateway Job Board</h1>
+          <button class="mobile-nav-toggle" id="btnSidebarToggle" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false" title="Menu"><i class="bi bi-list"></i></button>
+          <div>
+            <h1 class="page-title mb-0">Career Gateway – Practice & Mock Tests</h1>
+            <p class="text-muted small mb-0 d-none d-md-block">IndiaBIX-inspired categorized portal for aptitude, engineering concepts, programming, and placement preparation</p>
+          </div>
         </div>
 
         <div class="header-right">
@@ -66,43 +72,326 @@
       <div class="page-body">
         <div class="content-max-width">
 
-          <!-- Search and Filter Bar -->
-          <div class="card-custom p-3 mb-4">
-            <div class="row g-2 align-items-center">
-              <div class="col-md-5">
-                <div class="input-group">
-                  <span class="input-group-text bg-surface border-end-0 text-muted"><i class="bi bi-search"></i></span>
-                  <input type="text" class="form-control form-control-custom border-start-0" id="jobSearchInput" placeholder="Search by job title, company or skill (e.g. Java, Python)...">
+          <!-- View Switcher Tabs -->
+          <div class="career-tabs-nav">
+            <button type="button" class="career-tab-btn active" id="tabBtnMockTests" onclick="CareerPage.switchView('tests')">
+              <i class="bi bi-mortarboard-fill"></i> Practice & Mock Tests Portal 
+              <span class="badge bg-primary text-white ms-1" id="badgeTotalCategories">14</span>
+            </button>
+            <button type="button" class="career-tab-btn" id="tabBtnJobBoard" onclick="CareerPage.switchView('jobs')">
+              <i class="bi bi-briefcase-fill"></i> Verified Placement Opportunities 
+              <span class="badge bg-secondary ms-1" id="badgeTotalJobs">3</span>
+            </button>
+          </div>
+
+          <!-- ========================================== -->
+          <!-- PORTAL SECTION: PRACTICE & MOCK TESTS -->
+          <!-- ========================================== -->
+          <div id="viewMockTestsSection">
+
+            <!-- ========================================== -->
+            <!-- SUB-VIEW 1: MAIN 14 CATEGORIES HUB -->
+            <!-- ========================================== -->
+            <div id="categoriesHubView">
+              
+              <!-- Portal Header Banner & Search -->
+              <div class="portal-header-banner mb-4">
+                <div class="row align-items-center g-3">
+                  <div class="col-lg-8">
+                    <span class="badge badge-purple mb-2"><i class="bi bi-stars me-1"></i>Comprehensive Placement & Skill Hub</span>
+                    <h3 class="fw-bold text-dark mb-2">Practice & Timed Mock Tests Portal</h3>
+                    <p class="text-muted small mb-3">
+                      Master computer science fundamentals, quantitative aptitude, reasoning, and top company recruitment patterns with self-paced learning and full-screen timed proctored examinations.
+                    </p>
+                    <div class="input-group">
+                      <span class="input-group-text bg-white border-end-0 text-muted"><i class="bi bi-search"></i></span>
+                      <input type="text" class="form-control form-control-custom border-start-0" id="globalPortalSearch" placeholder="Search any topic, technology, company, or concept (e.g. Percentages, Blood Relations, React, TCS, OOP, SQL)...">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="p-3 bg-white border rounded shadow-sm">
+                      <div class="d-flex align-items-center gap-3 mb-2">
+                        <div class="stat-icon-wrapper stat-icon-purple">
+                          <i class="bi bi-mortarboard"></i>
+                        </div>
+                        <div>
+                          <div class="fw-bold text-dark">Practice Mode</div>
+                          <div class="text-muted small">Instant feedback & explanations</div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="stat-icon-wrapper stat-icon-green">
+                          <i class="bi bi-clock-history"></i>
+                        </div>
+                        <div>
+                          <div class="fw-bold text-dark">Timed Exam Mode</div>
+                          <div class="text-muted small">Proctored examination lockdown</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div class="col-md-3">
-                <input type="text" class="form-control form-control-custom" id="jobLocationFilter" placeholder="Location (e.g. Bangalore, Remote)">
+              <!-- Top Stats Overview -->
+              <div class="row g-3 mb-4">
+                <div class="col-6 col-md-3">
+                  <div class="card-custom p-3 h-100 d-flex align-items-center gap-3">
+                    <div class="stat-icon-wrapper stat-icon-purple">
+                      <i class="bi bi-grid-3x3-gap-fill"></i>
+                    </div>
+                    <div>
+                      <div class="fs-4 fw-extrabold text-dark">14</div>
+                      <div class="text-muted small">Major Categories</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                  <div class="card-custom p-3 h-100 d-flex align-items-center gap-3">
+                    <div class="stat-icon-wrapper stat-icon-cyan">
+                      <i class="bi bi-journal-code"></i>
+                    </div>
+                    <div>
+                      <div class="fs-4 fw-extrabold text-dark" id="statTotalTopicsCount">95</div>
+                      <div class="text-muted small">Specialized Topics</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                  <div class="card-custom p-3 h-100 d-flex align-items-center gap-3">
+                    <div class="stat-icon-wrapper stat-icon-green">
+                      <i class="bi bi-patch-check-fill"></i>
+                    </div>
+                    <div>
+                      <div class="fs-4 fw-extrabold text-dark" id="statTotalQuestionsCount">125+</div>
+                      <div class="text-muted small">Verified Practice MCQs</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                  <div class="card-custom p-3 h-100 d-flex align-items-center gap-3">
+                    <div class="stat-icon-wrapper stat-icon-amber">
+                      <i class="bi bi-trophy-fill"></i>
+                    </div>
+                    <div>
+                      <div class="fs-4 fw-extrabold text-dark" id="statStudentAvgScore">--%</div>
+                      <div class="text-muted small" id="statStudentAttemptCount">0 Tests Taken</div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div class="col-md-3">
-                <select class="form-select form-control-custom" id="jobTypeFilter">
-                  <option value="">All Job Types</option>
-                  <option value="Full-Time">Full-Time</option>
-                  <option value="Internship">Internship</option>
-                  <option value="Contract">Contract</option>
-                </select>
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="fw-bold text-dark mb-0">Browse All 14 Test Categories</h5>
+                <span class="small text-muted">Click any category to view its dedicated topics</span>
               </div>
 
-              <div class="col-md-1">
-                <button type="button" class="btn btn-outline-custom w-100" onclick="CareerPage.resetFilters()" title="Reset Filters"><i class="bi bi-arrow-counterclockwise"></i></button>
+              <!-- 14 Major Categories Cards Grid -->
+              <div class="row g-3" id="categoriesGridContainer">
+                <!-- Injected via JavaScript -->
               </div>
             </div>
+
+            <!-- ========================================== -->
+            <!-- SUB-VIEW 2: DEDICATED CATEGORY TOPICS LISTING -->
+            <!-- ========================================== -->
+            <div id="categoryTopicsView" style="display: none;">
+              
+              <!-- Breadcrumb Navigation -->
+              <nav class="portal-breadcrumb">
+                <button type="button" class="btn btn-link p-0 text-decoration-none" onclick="CareerPage.showCategoriesHub()">
+                  <i class="bi bi-arrow-left me-1"></i> All Categories
+                </button>
+                <span>/</span>
+                <span class="text-dark fw-bold" id="catBreadcrumbCurrent">Category Name</span>
+              </nav>
+
+              <!-- Category Details Banner -->
+              <div class="card-custom p-4 mb-4">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="category-portal-icon" id="catBannerIcon" style="background-color: var(--primary-light); color: var(--primary);">
+                    <i class="bi bi-calculator"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h4 class="fw-bold text-dark mb-1" id="catBannerTitle">Category Name</h4>
+                      <span class="badge badge-purple" id="catBannerTopicCount">8 Topics</span>
+                    </div>
+                    <p class="text-muted small mb-0" id="catBannerDesc">Category description goes here.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Search and Filter Bar for Topics -->
+              <div class="card-custom p-3 mb-4">
+                <div class="row g-2 align-items-center">
+                  <div class="col-md-5">
+                    <div class="input-group">
+                      <span class="input-group-text bg-surface border-end-0 text-muted"><i class="bi bi-search"></i></span>
+                      <input type="text" class="form-control form-control-custom border-start-0" id="topicSearchInput" placeholder="Filter topics in this category...">
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <select class="form-select form-control-custom" id="topicDifficultyFilter">
+                      <option value="">All Difficulties</option>
+                      <option value="Easy">Easy</option>
+                      <option value="Medium">Medium</option>
+                      <option value="Hard">Hard</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-3">
+                    <select class="form-select form-control-custom" id="topicAvailabilityFilter">
+                      <option value="">All Topics</option>
+                      <option value="ready">Ready to Practice</option>
+                      <option value="coming_soon">Questions Coming Soon</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-1">
+                    <button type="button" class="btn btn-outline-custom w-100" onclick="CareerPage.resetTopicFilters()" title="Reset Filters"><i class="bi bi-arrow-counterclockwise"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="fw-bold text-dark mb-0" id="topicListResultsCount">Showing Topics</h5>
+                <button type="button" class="btn btn-outline-custom btn-sm" onclick="CareerPage.showCategoriesHub()">
+                  <i class="bi bi-grid me-1"></i> Switch Category
+                </button>
+              </div>
+
+              <!-- Topics Grid -->
+              <div class="row g-3" id="topicsGridContainer">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- SUB-VIEW 3: INTERACTIVE PRACTICE MODE RUNNER -->
+            <!-- ========================================== -->
+            <div id="practiceRunnerView" style="display: none;">
+              
+              <!-- Practice Header Breadcrumb & Controls -->
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <button type="button" class="btn btn-outline-custom btn-sm" onclick="PracticeEngine.exitPractice()">
+                  <i class="bi bi-arrow-left me-1"></i> Exit Practice Mode
+                </button>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="badge badge-purple" id="practiceTopicBadge">Topic Name</span>
+                  <span class="badge badge-secondary" id="practiceDifficultyBadge">Medium</span>
+                </div>
+              </div>
+
+              <!-- Main Practice Card -->
+              <div class="practice-runner-container">
+                <!-- Bar -->
+                <div class="practice-header-bar">
+                  <div>
+                    <h5 class="fw-bold text-dark mb-0" id="practiceRunnerTopicTitle">Topic Name</h5>
+                    <div class="text-muted small">Practice Mode • Instant Explanations & Self-Paced Learning</div>
+                  </div>
+                  <div class="text-end">
+                    <div class="fw-bold text-primary" id="practiceQuestionProgressText">Question 1 of 10</div>
+                    <div class="small text-muted" id="practiceScoreTrackerText">Score: 0 / 0</div>
+                  </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress mb-4" style="height: 6px;">
+                  <div class="progress-bar bg-primary" id="practiceProgressBar" style="width: 10%;"></div>
+                </div>
+
+                <!-- Question Prompt -->
+                <div class="practice-question-text" id="practiceQuestionText">
+                  Loading practice question...
+                </div>
+
+                <!-- Options List -->
+                <div id="practiceOptionsContainer" class="mb-4">
+                  <!-- Injected via JavaScript -->
+                </div>
+
+                <!-- Explanation Card (Shown after selection) -->
+                <div class="practice-explanation-card" id="practiceExplanationCard" style="display: none;">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-info-circle-fill text-primary"></i>
+                    <strong class="text-dark">Answer & Step-by-Step Explanation</strong>
+                  </div>
+                  <div class="small text-muted" id="practiceExplanationText">
+                    Explanation goes here.
+                  </div>
+                </div>
+
+                <!-- Footer Navigation Controls -->
+                <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
+                  <button type="button" class="btn btn-outline-custom" id="btnPracticePrev" onclick="PracticeEngine.prevQuestion()">
+                    <i class="bi bi-chevron-left me-1"></i> Previous
+                  </button>
+
+                  <button type="button" class="btn btn-outline-custom" onclick="PracticeEngine.finishPractice()">
+                    <i class="bi bi-check-circle me-1"></i> Finish Practice
+                  </button>
+
+                  <button type="button" class="btn btn-primary-custom" id="btnPracticeNext" onclick="PracticeEngine.nextQuestion()">
+                    Next Question <i class="bi bi-chevron-right ms-1"></i>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
           </div>
 
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <h5 class="fw-bold text-dark mb-0" id="jobCountText">3 Jobs Found</h5>
-            <span class="small text-muted">Showing active verified MCA placement opportunities</span>
-          </div>
+          <!-- ========================================== -->
+          <!-- VIEW 2: VERIFIED PLACEMENT JOBS BOARD -->
+          <!-- ========================================== -->
+          <div id="viewJobBoardSection" style="display: none;">
 
-          <!-- Job Cards Grid -->
-          <div class="row" id="jobsContainer">
-            <!-- Injected via JavaScript -->
+            <!-- Search and Filter Bar -->
+            <div class="card-custom p-3 mb-4">
+              <div class="row g-2 align-items-center">
+                <div class="col-md-5">
+                  <div class="input-group">
+                    <span class="input-group-text bg-surface border-end-0 text-muted"><i class="bi bi-search"></i></span>
+                    <input type="text" class="form-control form-control-custom border-start-0" id="jobSearchInput" placeholder="Search by job title, company or skill (e.g. Java, Python)...">
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <input type="text" class="form-control form-control-custom" id="jobLocationFilter" placeholder="Location (e.g. Bangalore, Remote)">
+                </div>
+
+                <div class="col-md-3">
+                  <select class="form-select form-control-custom" id="jobTypeFilter">
+                    <option value="">All Job Types</option>
+                    <option value="Full-Time">Full-Time</option>
+                    <option value="Internship">Internship</option>
+                    <option value="Contract">Contract</option>
+                  </select>
+                </div>
+
+                <div class="col-md-1">
+                  <button type="button" class="btn btn-outline-custom w-100" onclick="CareerPage.resetJobFilters()" title="Reset Filters"><i class="bi bi-arrow-counterclockwise"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="fw-bold text-dark mb-0" id="jobCountText">3 Jobs Found</h5>
+              <span class="small text-muted">Showing active verified placement opportunities</span>
+            </div>
+
+            <!-- Job Cards Grid -->
+            <div class="row" id="jobsContainer">
+              <!-- Injected via JavaScript -->
+            </div>
+
           </div>
 
         </div>
@@ -110,12 +399,241 @@
     </main>
   </div>
 
-  <!-- Job Details Modal -->
+  <!-- ========================================== -->
+  <!-- MODAL: TOPIC CONFIGURATION (PRACTICE VS TIMED) -->
+  <!-- ========================================== -->
+  <div class="modal fade" id="topicConfigModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-3">
+            <div class="subject-icon-box" id="modalTopicIcon">
+              <i class="bi bi-journal-code"></i>
+            </div>
+            <div>
+              <h5 class="modal-title fw-bold mb-0" id="modalTopicName">Topic Title</h5>
+              <span class="badge badge-purple" id="modalTopicCategory">Category</span>
+            </div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body py-4">
+          <!-- Company Notice Alert if Applicable -->
+          <div class="alert alert-warning d-flex align-items-start gap-2 mb-3" id="modalTopicCompanyNotice" style="display: none !important;">
+            <i class="bi bi-info-circle-fill fs-5 mt-1"></i>
+            <div>
+              <div class="fw-bold">Practice & PYQ-Style Placement Test</div>
+              <div class="small">Questions are modeled on standard corporate recruitment patterns for placement preparation. This test is an educational simulation.</div>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <p class="text-muted small mb-3" id="modalTopicDesc">Topic description goes here.</p>
+
+          <!-- Topics / Syllabus -->
+          <div class="mb-4">
+            <h6 class="fw-bold text-dark mb-2"><i class="bi bi-list-check me-1 text-primary"></i>Syllabus & Concepts Covered</h6>
+            <div class="topics-pill-list" id="modalTopicTopicsList">
+              <!-- Injected topic tags -->
+            </div>
+          </div>
+
+          <!-- Mode Selector (Practice vs Timed) -->
+          <div class="mb-4">
+            <label class="form-label fw-bold text-dark small mb-2"><i class="bi bi-sliders me-1 text-primary"></i>Choose Learning Mode</label>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="mode-select-card selected" id="modeCardPractice" onclick="CareerPage.selectMode('practice')">
+                  <div class="d-flex align-items-center gap-2 mb-1">
+                    <i class="bi bi-mortarboard-fill text-primary fs-5"></i>
+                    <span class="fw-bold">Practice Mode (Self-Paced)</span>
+                  </div>
+                  <div class="small text-muted">Immediate answer reveal, step-by-step explanations, non-proctored learning.</div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="mode-select-card" id="modeCardTimed" onclick="CareerPage.selectMode('timed')">
+                  <div class="d-flex align-items-center gap-2 mb-1">
+                    <i class="bi bi-clock-history text-success fs-5"></i>
+                    <span class="fw-bold">Timed Mock Test (Exam Mode)</span>
+                  </div>
+                  <div class="small text-muted">Countdown timer, review palette, full-screen examination lockdown & webcam face check.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Student Performance History -->
+          <div class="card bg-surface-subtle border p-3 rounded mb-4">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <div class="small text-muted fw-semibold">Your Previous Performance</div>
+                <div class="fw-bold text-dark" id="modalTopicHistoryText">No previous attempts recorded</div>
+              </div>
+              <div class="text-end" id="modalTopicHistoryBadge">
+                <span class="badge bg-secondary">Fresh Session</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Difficulty & Length Configuration -->
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label fw-bold text-dark small mb-2"><i class="bi bi-speedometer2 me-1 text-primary"></i>Difficulty Level</label>
+              <div class="d-flex flex-column gap-2" id="modalTopicDifficultyGroup">
+                <div class="config-option-card selected" data-diff="Mixed">
+                  <div class="fw-bold">Mixed (Recommended)</div>
+                  <div class="small text-muted">Balanced combination of all difficulty levels</div>
+                </div>
+                <div class="config-option-card" data-diff="Easy">
+                  <div class="fw-bold">Easy</div>
+                  <div class="small text-muted">Foundational concepts & syntax</div>
+                </div>
+                <div class="config-option-card" data-diff="Medium">
+                  <div class="fw-bold">Medium</div>
+                  <div class="small text-muted">Standard problem-solving & reasoning</div>
+                </div>
+                <div class="config-option-card" data-diff="Hard">
+                  <div class="fw-bold">Hard</div>
+                  <div class="small text-muted">Advanced edge cases & optimization</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label fw-bold text-dark small mb-2"><i class="bi bi-ui-checks-grid me-1 text-primary"></i>Question Count</label>
+              <div class="d-flex flex-column gap-2" id="modalTopicLengthGroup">
+                <div class="config-option-card selected" data-len="5">
+                  <div class="fw-bold">5 Questions</div>
+                  <div class="small text-muted">Quick drill (~8 mins)</div>
+                </div>
+                <div class="config-option-card" data-len="10">
+                  <div class="fw-bold">10 Questions</div>
+                  <div class="small text-muted">Standard session (~15 mins)</div>
+                </div>
+                <div class="config-option-card" data-len="20">
+                  <div class="fw-bold">20 Questions</div>
+                  <div class="small text-muted">In-depth assessment (~30 mins)</div>
+                </div>
+                <div class="config-option-card" data-len="50">
+                  <div class="fw-bold">50 Questions</div>
+                  <div class="small text-muted">Comprehensive examination (~60 mins)</div>
+                </div>
+                <div class="config-option-card" data-len="all">
+                  <div class="fw-bold" id="modalTopicLengthAllText">All Available Questions</div>
+                  <div class="small text-muted">Complete question bank for this topic</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary-custom" id="btnLaunchTopicSession">
+            Start Session <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MODAL: PRACTICE SESSION SUMMARY -->
+  <!-- ========================================== -->
+  <div class="modal fade" id="practiceSummaryModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Practice Session Completed</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center py-4">
+          <div class="stat-icon-wrapper stat-icon-green mx-auto mb-3" style="width: 64px; height: 64px; font-size: 2rem;">
+            <i class="bi bi-trophy-fill"></i>
+          </div>
+          <h4 class="fw-bold text-dark mb-1" id="summaryTopicTitle">Topic Name</h4>
+          <p class="text-muted small mb-3">Self-Paced Practice Completed</p>
+          
+          <div class="row g-2 mb-3">
+            <div class="col-4">
+              <div class="p-2 border rounded bg-surface-subtle">
+                <div class="fs-4 fw-bold text-primary" id="summaryScore">0/0</div>
+                <div class="small text-muted">Score</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-2 border rounded bg-surface-subtle">
+                <div class="fs-4 fw-bold text-success" id="summaryAccuracy">0%</div>
+                <div class="small text-muted">Accuracy</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-2 border rounded bg-surface-subtle">
+                <div class="fs-4 fw-bold text-dark" id="summaryTotalQ">0</div>
+                <div class="small text-muted">Questions</div>
+              </div>
+            </div>
+          </div>
+          
+          <p class="text-muted small mb-0 px-2">Great practice! You can review the concepts or challenge yourself with an official timed examination.</p>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary-custom" id="btnSwitchToTimedFromSummary">
+            Launch Timed Exam <i class="bi bi-clock-history ms-1"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MODAL: QUESTIONS COMING SOON -->
+  <!-- ========================================== -->
+  <div class="modal fade" id="comingSoonModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Questions Coming Soon</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center py-4">
+          <div class="stat-icon-wrapper stat-icon-amber mx-auto mb-3" style="width: 64px; height: 64px; font-size: 2rem;">
+            <i class="bi bi-hourglass-split"></i>
+          </div>
+          <h5 class="fw-bold text-dark" id="csSubjectName">Topic Name</h5>
+          <p class="text-muted small mb-3" id="csSubjectCategory">Category</p>
+          <p class="text-muted small px-3">
+            Questions and explanations are actively being validated for this topic. In the meantime, you can practice our active topics across the 14 major categories.
+          </p>
+          <div class="card bg-surface-subtle border p-3 rounded text-start mb-3">
+            <div class="small fw-bold text-dark mb-1">Scheduled Concepts:</div>
+            <div class="topics-pill-list" id="csTopicsList">
+              <!-- Injected topics -->
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary-custom" onclick="CareerPage.filterOnlyReady()">
+            Browse Ready Topics
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MODALS: JOB DETAILS & APPLY (PRESERVED) -->
+  <!-- ========================================== -->
   <div class="modal fade" id="jobDetailsModal" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title fw-bold" id="modalJobTitle">Graduate Software Engineer Trainee</h5>
+          <h5 class="modal-title fw-bold" id="modalJobTitle">Job Title</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body py-4">
@@ -126,14 +644,11 @@
             </div>
             <div class="fw-extrabold text-success fs-5" id="modalJobSalary">₹6.5 LPA - ₹8.0 LPA</div>
           </div>
-
           <hr>
-
           <div class="mb-3">
             <h6 class="fw-bold text-dark">Job Overview & Requirements</h6>
             <p class="text-muted small" id="modalJobDescription">Detailed job description...</p>
           </div>
-
           <div class="mb-3">
             <h6 class="fw-bold text-dark">Required Experience</h6>
             <span class="badge badge-secondary" id="modalJobExperience">0 - 1 Years</span>
@@ -147,7 +662,6 @@
     </div>
   </div>
 
-  <!-- Apply Modal -->
   <div class="modal fade" id="jobApplyModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -160,7 +674,7 @@
           <h5>Submit application for <span class="text-primary" id="applyModalJobTitle">Position</span>?</h5>
           <p class="text-muted small mb-0">At <strong id="applyModalCompany">Company</strong></p>
           <div class="p-3 bg-surface-subtle border rounded small text-muted my-3 text-start">
-            <i class="bi bi-check-circle-fill text-success me-1"></i> Your current profile details, MCA test scores, and uploaded resume analysis will be submitted.
+            <i class="bi bi-check-circle-fill text-success me-1"></i> Your current profile details, test scores, and uploaded resume analysis will be submitted.
           </div>
         </div>
         <div class="modal-footer">

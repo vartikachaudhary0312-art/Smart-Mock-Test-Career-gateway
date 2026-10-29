@@ -1,0 +1,279 @@
+[
+  {
+    "id": "cat_quant",
+    "slug": "quant",
+    "name": "Quantitative Aptitude",
+    "icon": "bi-calculator",
+    "color": "#4338CA",
+    "bgColor": "#EEF2FF",
+    "description": "Arithmetic ability, algebra, percentages, ratios, profit & loss, time and work, and number properties.",
+    "topic_count": 8,
+    "total_questions": 110,
+    "topic_ids": [
+      "sub_percentages",
+      "sub_profit_loss",
+      "sub_time_work",
+      "sub_time_dist",
+      "sub_number_sys",
+      "sub_perm_comb",
+      "sub_probability",
+      "sub_si_ci"
+    ]
+  },
+  {
+    "id": "cat_di",
+    "slug": "data_interpretation",
+    "name": "Data Interpretation",
+    "icon": "bi-bar-chart-line",
+    "color": "#0284C7",
+    "bgColor": "#E0F2FE",
+    "description": "Tabular data, bar charts, pie charts, line graphs, and data sufficiency analysis.",
+    "topic_count": 4,
+    "total_questions": 20,
+    "topic_ids": [
+      "sub_di_tables",
+      "sub_di_bar",
+      "sub_di_pie",
+      "sub_di_line"
+    ]
+  },
+  {
+    "id": "cat_verbal",
+    "slug": "verbal_ability",
+    "name": "Verbal Ability",
+    "icon": "bi-fonts",
+    "color": "#0D9488",
+    "bgColor": "#CCFBF1",
+    "description": "English grammar, spotting errors, sentence correction, synonyms, antonyms, and reading comprehension.",
+    "topic_count": 6,
+    "total_questions": 115,
+    "topic_ids": [
+      "sub_verbal_grammar",
+      "sub_verbal_correction",
+      "sub_verbal_vocab",
+      "sub_reading_comp",
+      "sub_idioms_phrases",
+      "sub_cloze_test"
+    ]
+  },
+  {
+    "id": "cat_logical",
+    "slug": "logical_reasoning",
+    "name": "Logical Reasoning",
+    "icon": "bi-puzzle",
+    "color": "#7C3AED",
+    "bgColor": "#F5F3FF",
+    "description": "Number & letter series, blood relations, syllogisms, seating arrangements, and direction sense.",
+    "topic_count": 6,
+    "total_questions": 105,
+    "topic_ids": [
+      "sub_series",
+      "sub_blood_relations",
+      "sub_syllogisms",
+      "sub_seating",
+      "sub_direction_sense",
+      "sub_coding_decoding"
+    ]
+  },
+  {
+    "id": "cat_verbal_reasoning",
+    "slug": "verbal_reasoning",
+    "name": "Verbal Reasoning",
+    "icon": "bi-chat-square-quote",
+    "color": "#C026D3",
+    "bgColor": "#FDF4FF",
+    "description": "Logical deduction, statement & assumptions, cause & effect, arguments, and assertion-reason.",
+    "topic_count": 5,
+    "total_questions": 25,
+    "topic_ids": [
+      "sub_logical_deduction",
+      "sub_statement_assumptions",
+      "sub_cause_effect",
+      "sub_statement_arguments",
+      "sub_assertion_reason"
+    ]
+  },
+  {
+    "id": "cat_non_verbal",
+    "slug": "non_verbal_reasoning",
+    "name": "Non-Verbal Reasoning",
+    "icon": "bi-diagram-3",
+    "color": "#DB2777",
+    "bgColor": "#FCE7F3",
+    "description": "Pattern completion, cube & dice logic, paper folding, embedded figures, and mirror images.",
+    "topic_count": 5,
+    "total_questions": 25,
+    "topic_ids": [
+      "sub_pattern_completion",
+      "sub_cube_dice",
+      "sub_mirror_water",
+      "sub_paper_folding",
+      "sub_embedded_figures"
+    ]
+  },
+  {
+    "id": "cat_programming",
+    "slug": "programming_tests",
+    "name": "Programming Tests",
+    "icon": "bi-code-square",
+    "color": "#2563EB",
+    "bgColor": "#EFF6FF",
+    "description": "Language-specific syntax, output prediction, debugging, C, C++, Java, Python, and JavaScript.",
+    "topic_count": 9,
+    "total_questions": 395,
+    "topic_ids": [
+      "sub_c",
+      "sub_cpp",
+      "sub_java",
+      "sub_python",
+      "sub_js",
+      "sub_ts",
+      "sub_output_prediction",
+      "sub_php",
+      "sub_csharp"
+    ]
+  },
+  {
+    "id": "cat_core_cs",
+    "slug": "core_cs",
+    "name": "Core Computer Science",
+    "icon": "bi-cpu",
+    "color": "#6D4AFF",
+    "bgColor": "#EEECFF",
+    "description": "Data structures, algorithms, operating systems, computer networks, OOP, and software engineering.",
+    "topic_count": 10,
+    "total_questions": 620,
+    "topic_ids": [
+      "sub_dsa",
+      "sub_dbms",
+      "sub_os",
+      "sub_cn",
+      "sub_oop",
+      "sub_se",
+      "sub_coa",
+      "sub_toc",
+      "sub_compiler",
+      "sub_digital_logic"
+    ]
+  },
+  {
+    "id": "cat_technical_mcqs",
+    "slug": "technical_mcqs",
+    "name": "Technical MCQs",
+    "icon": "bi-check2-square",
+    "color": "#4F46E5",
+    "bgColor": "#EEF2FF",
+    "description": "Subject-wise CS questions, cloud computing, cybersecurity, AI/ML, and Linux system commands.",
+    "topic_count": 8,
+    "total_questions": 40,
+    "topic_ids": [
+      "sub_algorithms",
+      "sub_cyber_sec",
+      "sub_cloud",
+      "sub_ai",
+      "sub_ml",
+      "sub_testing_qa",
+      "sub_linux_cmds",
+      "sub_it_fundamentals"
+    ]
+  },
+  {
+    "id": "cat_web_dev",
+    "slug": "web_development",
+    "name": "Web Development & Technologies",
+    "icon": "bi-globe",
+    "color": "#059669",
+    "bgColor": "#ECFDF5",
+    "description": "HTML5, CSS3, modern JavaScript, React.js, Node.js, Express, and RESTful web APIs.",
+    "topic_count": 7,
+    "total_questions": 35,
+    "topic_ids": [
+      "sub_html",
+      "sub_css",
+      "sub_react",
+      "sub_node",
+      "sub_express",
+      "sub_rest_api",
+      "sub_fullstack"
+    ]
+  },
+  {
+    "id": "cat_db_net",
+    "slug": "database_networking",
+    "name": "Database & Networking",
+    "icon": "bi-hdd-network",
+    "color": "#D97706",
+    "bgColor": "#FFFBEB",
+    "description": "SQL queries, MySQL, database normalization, ACID transactions, MongoDB, TCP/IP, and network security.",
+    "topic_count": 7,
+    "total_questions": 130,
+    "topic_ids": [
+      "sub_sql",
+      "sub_mysql",
+      "sub_normalization",
+      "sub_acid",
+      "sub_mongodb",
+      "sub_net_protocols",
+      "sub_net_security"
+    ]
+  },
+  {
+    "id": "cat_company",
+    "slug": "company_placement",
+    "name": "Company-Wise Placement Tests",
+    "icon": "bi-building-check",
+    "color": "#EA580C",
+    "bgColor": "#FFF7ED",
+    "description": "Company-specific recruitment patterns for TCS, Infosys, Accenture, Deloitte, Wipro, Cognizant, and more.",
+    "topic_count": 10,
+    "total_questions": 130,
+    "topic_ids": [
+      "sub_tcs",
+      "sub_infosys",
+      "sub_accenture",
+      "sub_deloitte",
+      "sub_wipro",
+      "sub_cognizant",
+      "sub_capgemini",
+      "sub_hcl",
+      "sub_techm",
+      "sub_micron"
+    ]
+  },
+  {
+    "id": "cat_tech_interview",
+    "slug": "tech_interview",
+    "name": "Technical Interview Preparation",
+    "icon": "bi-person-badge",
+    "color": "#475569",
+    "bgColor": "#F1F5F9",
+    "description": "System design concepts, Big-O complexity analysis, concurrency, threading, and algorithmic puzzles.",
+    "topic_count": 5,
+    "total_questions": 50,
+    "topic_ids": [
+      "sub_system_design",
+      "sub_complexity_bigo",
+      "sub_concurrency",
+      "sub_algo_puzzles",
+      "sub_dsa_interview_mcqs"
+    ]
+  },
+  {
+    "id": "cat_hr_interview",
+    "slug": "hr_interview",
+    "name": "HR Interview & Communication",
+    "icon": "bi-people",
+    "color": "#9333EA",
+    "bgColor": "#FAF5FF",
+    "description": "Common HR interview questions, STAR method responses, workplace communication, and self-introduction.",
+    "topic_count": 5,
+    "total_questions": 40,
+    "topic_ids": [
+      "sub_hr_common",
+      "sub_star_method",
+      "sub_workplace_comm",
+      "sub_resume_pitch",
+      "sub_teamwork_leadership"
+    ]
+  }
+]

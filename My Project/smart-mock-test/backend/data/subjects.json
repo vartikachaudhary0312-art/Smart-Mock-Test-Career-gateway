@@ -1,8 +1,1846 @@
 [
-  { "id": 1, "code": "Java", "name": "Java Programming", "description": "Java programming and OOP concepts", "icon": "bi-cup-hot", "category": "Programming", "question_count": 45 },
-  { "id": 2, "code": "Python", "name": "Python Core", "description": "Python fundamentals, data structures and modules", "icon": "bi-filetype-py", "category": "Programming", "question_count": 40 },
-  { "id": 3, "code": "DSA", "name": "Data Structures & Algorithms", "description": "Trees, Graphs, Sorting, Searching and Complexity Analysis", "icon": "bi-diagram-3", "category": "Computer Science", "question_count": 50 },
-  { "id": 4, "code": "DBMS", "name": "DBMS & SQL", "description": "Relational databases, Normalization, SQL queries and Indexing", "icon": "bi-database", "category": "Database", "question_count": 35 },
-  { "id": 5, "code": "OS", "name": "Operating Systems", "description": "Process scheduling, Memory management, Deadlocks and Virtualization", "icon": "bi-cpu", "category": "Core CS", "question_count": 30 },
-  { "id": 6, "code": "Web", "name": "Web Development", "description": "HTML5, CSS3, Vanilla JavaScript and Web Standards", "icon": "bi-code-slash", "category": "Web Tech", "question_count": 40 }
+  {
+    "id": "sub_percentages",
+    "category_id": "cat_quant",
+    "category": "Quantitative Aptitude",
+    "name": "Percentages & Ratios",
+    "code": "QA-PR",
+    "icon": "bi-percent",
+    "description": "Percentage calculations, population growth, ratio sharing, and proportion formulas.",
+    "topics": [
+      "Percentage Formulas",
+      "Successive Change",
+      "Ratio Sharing",
+      "Direct & Inverse Proportion"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Easy",
+    "question_count": 24,
+    "questionCount": 24
+  },
+  {
+    "id": "sub_profit_loss",
+    "category_id": "cat_quant",
+    "category": "Quantitative Aptitude",
+    "name": "Profit and Loss",
+    "code": "QA-PL",
+    "icon": "bi-cash-coin",
+    "description": "Cost price, selling price, marked price, trade discount, and overall profit percentage calculations.",
+    "topics": [
+      "Cost vs Selling Price",
+      "Discount & Marked Price",
+      "Dishonest Dealer",
+      "Successive Discounts"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 23,
+    "questionCount": 23
+  },
+  {
+    "id": "sub_time_work",
+    "category_id": "cat_quant",
+    "category": "Quantitative Aptitude",
+    "name": "Time and Work",
+    "code": "QA-TW",
+    "icon": "bi-stopwatch",
+    "description": "Work rates, individual vs group efficiencies, pipes & cisterns, and wage division.",
+    "topics": [
+      "Unitary Work Method",
+      "Efficiency Ratios",
+      "Pipes & Cisterns",
+      "Work & Wages"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 24,
+    "questionCount": 24
+  },
+  {
+    "id": "sub_time_dist",
+    "category_id": "cat_quant",
+    "category": "Quantitative Aptitude",
+    "name": "Time, Speed & Distance",
+    "code": "QA-TSD",
+    "icon": "bi-speedometer",
+    "description": "Relative speeds, average speed calculations, trains crossing poles/platforms, and boats & streams.",
+    "topics": [
+      "Relative Speed",
+      "Trains Problems",
+      "Boats & Streams",
+      "Average Speed"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Medium",
+    "question_count": 24,
+    "questionCount": 24
+  },
+  {
+    "id": "sub_number_sys",
+    "category_id": "cat_quant",
+    "category": "Quantitative Aptitude",
+    "name": "Number Systems",
+    "code": "QA-NS",
+    "icon": "bi-123",
+    "description": "Divisibility rules, prime factorization, HCF & LCM, remainder theorem, and unit digits.",
+    "topics": [
+      "Divisibility Rules",
+      "HCF & LCM",
+      "Remainder Theorems",
+      "Unit Digit Calculation"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Easy",
+    "question_count": 3,
+    "questionCount": 3
+  },
+  {
+    "id": "sub_perm_comb",
+    "category_id": "cat_quant",
+    "category": "Quantitative Aptitude",
+    "name": "Permutations & Combinations",
+    "code": "QA-PC",
+    "icon": "bi-shuffle",
+    "description": "Arrangements, selections, circular permutations, and combinatorial counting principles.",
+    "topics": [
+      "Fundamental Principle",
+      "nPr & nCr Properties",
+      "Circular Permutation",
+      "Word Arrangements"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Hard",
+    "question_count": 2,
+    "questionCount": 2
+  },
+  {
+    "id": "sub_probability",
+    "category_id": "cat_quant",
+    "category": "Quantitative Aptitude",
+    "name": "Probability & Statistics",
+    "code": "QA-PROB",
+    "icon": "bi-dice-5",
+    "description": "Sample spaces, coin tosses, dice rolls, card probability, Bayes theorem, and statistical mean.",
+    "topics": [
+      "Classical Probability",
+      "Card & Dice Problems",
+      "Conditional Probability",
+      "Mean, Median, Mode"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_si_ci",
+    "category_id": "cat_quant",
+    "category": "Quantitative Aptitude",
+    "name": "Simple & Compound Interest",
+    "code": "QA-SICI",
+    "icon": "bi-piggy-bank",
+    "description": "Simple interest formulas, annual and semi-annual compound interest, and interest differences.",
+    "topics": [
+      "Simple Interest Formulas",
+      "Compound Interest Accrual",
+      "Half-Yearly Compounding",
+      "Difference between CI & SI"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_di_tables",
+    "category_id": "cat_di",
+    "category": "Data Interpretation",
+    "name": "Tabular Data Interpretation",
+    "code": "DI-TAB",
+    "icon": "bi-table",
+    "description": "Analyzing numerical data tables, calculating growth percentages, ratios, and cross-tabulation sums.",
+    "topics": [
+      "Table Value Extraction",
+      "Percentage Change",
+      "Row & Column Aggregation",
+      "Ratio Calculations"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_di_bar",
+    "category_id": "cat_di",
+    "category": "Data Interpretation",
+    "name": "Bar Charts & Histograms",
+    "code": "DI-BAR",
+    "icon": "bi-bar-chart",
+    "description": "Interpreting single and composite bar charts, yearly trend comparisons, and production estimates.",
+    "topics": [
+      "Single Bar Comparison",
+      "Stacked Bar Charts",
+      "Year-on-Year Growth",
+      "Average Output"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_di_pie",
+    "category_id": "cat_di",
+    "category": "Data Interpretation",
+    "name": "Pie Charts Analysis",
+    "code": "DI-PIE",
+    "icon": "bi-pie-chart",
+    "description": "Degree to percentage conversion, expenditure breakdowns, market share analysis, and sector ratios.",
+    "topics": [
+      "Degree-to-Percentage",
+      "Sector Contribution",
+      "Expenditure Distribution",
+      "Multi-Pie Charts"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_di_line",
+    "category_id": "cat_di",
+    "category": "Data Interpretation",
+    "name": "Line Graphs & Trend Analysis",
+    "code": "DI-LINE",
+    "icon": "bi-graph-up",
+    "description": "Continuous trend lines, profit margins over time, intersection points, and slope projections.",
+    "topics": [
+      "Time Series Trends",
+      "Peak vs Trough",
+      "Profit vs Revenue Lines",
+      "Slope & Rate of Change"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Hard",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_verbal_grammar",
+    "category_id": "cat_verbal",
+    "category": "Verbal Ability",
+    "name": "Spotting Errors & Grammar",
+    "code": "VA-SP",
+    "icon": "bi-spellcheck",
+    "description": "Subject-verb agreement, tense consistency, preposition usage, and grammatical error identification.",
+    "topics": [
+      "Subject-Verb Agreement",
+      "Tenses & Modals",
+      "Prepositions & Articles",
+      "Pronoun Antecedents"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Easy",
+    "question_count": 33,
+    "questionCount": 33
+  },
+  {
+    "id": "sub_verbal_correction",
+    "category_id": "cat_verbal",
+    "category": "Verbal Ability",
+    "name": "Sentence Correction & Improvement",
+    "code": "VA-SC",
+    "icon": "bi-pencil-square",
+    "description": "Replacing underlined phrases with grammatically correct and concise English alternatives.",
+    "topics": [
+      "Parallelism",
+      "Modifier Placement",
+      "Redundancy Removal",
+      "Idiomatic Correctness"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_verbal_vocab",
+    "category_id": "cat_verbal",
+    "category": "Verbal Ability",
+    "name": "Synonyms & Antonyms",
+    "code": "VA-VOC",
+    "icon": "bi-book",
+    "description": "Contextual vocabulary, word meanings, antonym pairs, and common corporate aptitude words.",
+    "topics": [
+      "Contextual Synonyms",
+      "Exact Antonyms",
+      "Root Words & Prefixes",
+      "High-Frequency Placement Words"
+    ],
+    "defaultDuration": 15,
+    "difficulty": "Medium",
+    "question_count": 34,
+    "questionCount": 34
+  },
+  {
+    "id": "sub_reading_comp",
+    "category_id": "cat_verbal",
+    "category": "Verbal Ability",
+    "name": "Reading Comprehension",
+    "code": "VA-RC",
+    "icon": "bi-journal-richtext",
+    "description": "Passage analysis, main idea identification, author's tone, and inference-based comprehension questions.",
+    "topics": [
+      "Central Idea",
+      "Inference Questions",
+      "Tone & Attitude",
+      "Fact vs Assumption"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Hard",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_idioms_phrases",
+    "category_id": "cat_verbal",
+    "category": "Verbal Ability",
+    "name": "Idioms & Phrasal Verbs",
+    "code": "VA-IDM",
+    "icon": "bi-quote",
+    "description": "Meanings of common English idioms, phrasal verb prepositions, and appropriate usage in sentences.",
+    "topics": [
+      "Popular Corporate Idioms",
+      "Phrasal Verb Usage",
+      "Metaphors & Sayings",
+      "Contextual Meaning"
+    ],
+    "defaultDuration": 15,
+    "difficulty": "Easy",
+    "question_count": 33,
+    "questionCount": 33
+  },
+  {
+    "id": "sub_cloze_test",
+    "category_id": "cat_verbal",
+    "category": "Verbal Ability",
+    "name": "Sentence Completion & Cloze Test",
+    "code": "VA-CLZ",
+    "icon": "bi-textarea-t",
+    "description": "Fill in the blanks with the most appropriate word or phrase to complete cohesive paragraphs.",
+    "topics": [
+      "Single Blank Fillers",
+      "Double Blank Sentences",
+      "Paragraph Cloze Tests",
+      "Logical Connectors"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_series",
+    "category_id": "cat_logical",
+    "category": "Logical Reasoning",
+    "name": "Number & Letter Series",
+    "code": "LR-SER",
+    "icon": "bi-sort-numeric-down",
+    "description": "Arithmetic progression series, alternating differences, prime series, and alphabetical pattern logic.",
+    "topics": [
+      "Difference & Ratio Series",
+      "Square & Cube Patterns",
+      "Alphabetical Shifts",
+      "Continuous Pattern Series"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Easy",
+    "question_count": 33,
+    "questionCount": 33
+  },
+  {
+    "id": "sub_blood_relations",
+    "category_id": "cat_logical",
+    "category": "Logical Reasoning",
+    "name": "Blood Relations",
+    "code": "LR-BR",
+    "icon": "bi-diagram-2",
+    "description": "Family tree diagrams, coded blood relations, and generational relationship puzzles.",
+    "topics": [
+      "Direct Family Relations",
+      "Coded Relationships",
+      "Generational Trees",
+      "Pointing to a Photograph"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Medium",
+    "question_count": 33,
+    "questionCount": 33
+  },
+  {
+    "id": "sub_syllogisms",
+    "category_id": "cat_logical",
+    "category": "Logical Reasoning",
+    "name": "Syllogisms & Venn Logic",
+    "code": "LR-SYL",
+    "icon": "bi-circle-half",
+    "description": "Categorical propositions, Venn diagram verification, 'Some', 'All', 'No', and 'Only a few' logic.",
+    "topics": [
+      "Venn Diagrams",
+      "Standard Syllogisms",
+      "Possibility Cases",
+      "'Only A Few' Statements"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Hard",
+    "question_count": 2,
+    "questionCount": 2
+  },
+  {
+    "id": "sub_seating",
+    "category_id": "cat_logical",
+    "category": "Logical Reasoning",
+    "name": "Seating Arrangements",
+    "code": "LR-SEAT",
+    "icon": "bi-people-fill",
+    "description": "Linear seating facing North/South, circular tables facing inside/outside, and rectangular arrangements.",
+    "topics": [
+      "Linear Row Puzzles",
+      "Circular Table Seating",
+      "Inward vs Outward Facing",
+      "Two-Row Seating"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Hard",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_direction_sense",
+    "category_id": "cat_logical",
+    "category": "Logical Reasoning",
+    "name": "Direction Sense Test",
+    "code": "LR-DIR",
+    "icon": "bi-compass",
+    "description": "Cardinal and intercardinal compass directions, Pythagoras distance theorem, and shadow angles.",
+    "topics": [
+      "Compass Directions",
+      "Shortest Distance (Pythagoras)",
+      "Shadow & Sun Direction",
+      "Turn Angles (Left/Right)"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Easy",
+    "question_count": 1,
+    "questionCount": 1
+  },
+  {
+    "id": "sub_coding_decoding",
+    "category_id": "cat_logical",
+    "category": "Logical Reasoning",
+    "name": "Coding and Decoding",
+    "code": "LR-CD",
+    "icon": "bi-key",
+    "description": "Letter shift cyphers, numerical substitutes, symbol-based codes, and deciphering fictitious languages.",
+    "topics": [
+      "Letter Shifting",
+      "Reverse Alphabet Code",
+      "Number Subsitution",
+      "Message Cyphers"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Medium",
+    "question_count": 31,
+    "questionCount": 31
+  },
+  {
+    "id": "sub_logical_deduction",
+    "category_id": "cat_verbal_reasoning",
+    "category": "Verbal Reasoning",
+    "name": "Logical Deduction",
+    "code": "VR-LD",
+    "icon": "bi-signpost-split",
+    "description": "Evaluating given premises to derive logically valid deductions without assuming outside facts.",
+    "topics": [
+      "Valid Deductions",
+      "Invalid Generalizations",
+      "Premise-Conclusion Links",
+      "Conditional If-Then"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_statement_assumptions",
+    "category_id": "cat_verbal_reasoning",
+    "category": "Verbal Reasoning",
+    "name": "Statement and Assumptions",
+    "code": "VR-SA",
+    "icon": "bi-lightbulb",
+    "description": "Identifying unstated beliefs or assumptions taken for granted by the speaker in a given statement.",
+    "topics": [
+      "Implicit Assumptions",
+      "Explicit vs Implicit",
+      "Contextual Reality",
+      "Public Notices & Warnings"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_cause_effect",
+    "category_id": "cat_verbal_reasoning",
+    "category": "Verbal Reasoning",
+    "name": "Cause and Effect",
+    "code": "VR-CE",
+    "icon": "bi-arrow-left-right",
+    "description": "Determining whether two given events are cause and effect, or independent effects of a common cause.",
+    "topics": [
+      "Direct Cause",
+      "Common Cause",
+      "Independent Effects",
+      "Chronological Precedence"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Easy",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_statement_arguments",
+    "category_id": "cat_verbal_reasoning",
+    "category": "Verbal Reasoning",
+    "name": "Statement and Arguments",
+    "code": "VR-SARG",
+    "icon": "bi-megaphone",
+    "description": "Distinguishing between strong arguments (relevant, factual) and weak arguments (emotional, narrow).",
+    "topics": [
+      "Strong Arguments",
+      "Weak & Irrelevant Arguments",
+      "Policy Decisions",
+      "Social Dilemmas"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_assertion_reason",
+    "category_id": "cat_verbal_reasoning",
+    "category": "Verbal Reasoning",
+    "name": "Assertion and Reason",
+    "code": "VR-AR",
+    "icon": "bi-shield-check",
+    "description": "Evaluating whether assertion (A) and reason (R) are true, and whether R is the correct explanation of A.",
+    "topics": [
+      "Scientific Assertions",
+      "Logical Explanations",
+      "Contradictory Statements",
+      "Truth Value Testing"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Hard",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_pattern_completion",
+    "category_id": "cat_non_verbal",
+    "category": "Non-Verbal Reasoning",
+    "name": "Pattern Completion & Series",
+    "code": "NVR-PC",
+    "icon": "bi-grid-3x3",
+    "description": "Identifying the missing sector of a geometrical pattern by analyzing symmetry and rotations.",
+    "topics": [
+      "Rotational Symmetry",
+      "Quarter Pattern Fill",
+      "Line Density",
+      "Geometric Series"
+    ],
+    "defaultDuration": 15,
+    "difficulty": "Easy",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_cube_dice",
+    "category_id": "cat_non_verbal",
+    "category": "Non-Verbal Reasoning",
+    "name": "Cube and Dice Logic",
+    "code": "NVR-CD",
+    "icon": "bi-box",
+    "description": "Standard vs ordinary dice, folding unfolded cube nets, and determining opposite faces.",
+    "topics": [
+      "Standard Dice Rules",
+      "Opposite Face Determination",
+      "Cube Net Folding",
+      "Colored Cubes Cutting"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_mirror_water",
+    "category_id": "cat_non_verbal",
+    "category": "Non-Verbal Reasoning",
+    "name": "Mirror and Water Images",
+    "code": "NVR-MW",
+    "icon": "bi-symmetry-vertical",
+    "description": "Lateral inversion in mirror images and vertical inversion in water reflections of figures and text.",
+    "topics": [
+      "Horizontal Mirror Line",
+      "Vertical Water Line",
+      "Clock Time in Mirror",
+      "Letter Inversions"
+    ],
+    "defaultDuration": 15,
+    "difficulty": "Easy",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_paper_folding",
+    "category_id": "cat_non_verbal",
+    "category": "Non-Verbal Reasoning",
+    "name": "Paper Folding & Cutting",
+    "code": "NVR-PFC",
+    "icon": "bi-scissors",
+    "description": "Visualizing punch holes and shapes when a folded transparent or cut paper sheet is unfolded.",
+    "topics": [
+      "Single Fold Punch",
+      "Double Diagonal Fold",
+      "Symmetric Unfolding",
+      "Cut Out Shapes"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_embedded_figures",
+    "category_id": "cat_non_verbal",
+    "category": "Non-Verbal Reasoning",
+    "name": "Embedded Figures",
+    "code": "NVR-EF",
+    "icon": "bi-eye",
+    "description": "Locating a given geometric question figure hidden inside one of the four complex option images.",
+    "topics": [
+      "Hidden Shapes",
+      "Scale & Proportion",
+      "Rotation Tolerance",
+      "Overlay Matching"
+    ],
+    "defaultDuration": 15,
+    "difficulty": "Easy",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_c",
+    "category_id": "cat_programming",
+    "category": "Programming Tests",
+    "name": "C Programming",
+    "code": "PROG-C",
+    "icon": "bi-filetype-c",
+    "description": "Pointers, dynamic memory allocation, macros, structures, arrays, and standard I/O.",
+    "topics": [
+      "Pointers & Addresses",
+      "Malloc/Calloc/Free",
+      "Preprocessors & Macros",
+      "Structures & Unions"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Medium",
+    "question_count": 75,
+    "questionCount": 75
+  },
+  {
+    "id": "sub_cpp",
+    "category_id": "cat_programming",
+    "category": "Programming Tests",
+    "name": "C++ Programming",
+    "code": "PROG-CPP",
+    "icon": "bi-filetype-cpp",
+    "description": "OOP in C++, virtual functions, templates, STL containers, references, and memory management.",
+    "topics": [
+      "Constructors & Destructors",
+      "Virtual Functions & VTable",
+      "STL Vectors & Maps",
+      "Templates & Overloading"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Medium",
+    "question_count": 75,
+    "questionCount": 75
+  },
+  {
+    "id": "sub_java",
+    "category_id": "cat_programming",
+    "category": "Programming Tests",
+    "name": "Java Programming",
+    "code": "PROG-JAVA",
+    "icon": "bi-filetype-java",
+    "description": "JVM architecture, collections framework, multithreading, exception handling, and streams.",
+    "topics": [
+      "JVM Memory Areas",
+      "Collections & HashMaps",
+      "Threads & Synchronization",
+      "Interfaces & Abstract Classes"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Medium",
+    "question_count": 75,
+    "questionCount": 75
+  },
+  {
+    "id": "sub_python",
+    "category_id": "cat_programming",
+    "category": "Programming Tests",
+    "name": "Python Programming",
+    "code": "PROG-PY",
+    "icon": "bi-filetype-py",
+    "description": "Lists, dicts, generators, decorators, GIL, OOP, lambda functions, and file processing.",
+    "topics": [
+      "List Comprehensions",
+      "Generators & Yield",
+      "Decorators & Closures",
+      "Dict & Set Internals"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Medium",
+    "question_count": 75,
+    "questionCount": 75
+  },
+  {
+    "id": "sub_js",
+    "category_id": "cat_programming",
+    "category": "Programming Tests",
+    "name": "JavaScript & ES6+",
+    "code": "PROG-JS",
+    "icon": "bi-filetype-js",
+    "description": "Closures, event loop, promises, async/await, prototypes, and array methods.",
+    "topics": [
+      "Event Loop & Microtasks",
+      "Promises & Async/Await",
+      "Closures & Scope",
+      "Prototypes & Inheritance"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Medium",
+    "question_count": 75,
+    "questionCount": 75
+  },
+  {
+    "id": "sub_ts",
+    "category_id": "cat_programming",
+    "category": "Programming Tests",
+    "name": "TypeScript",
+    "code": "PROG-TS",
+    "icon": "bi-filetype-tsx",
+    "description": "Type annotations, interfaces, generics, union types, enums, and compile-time checking.",
+    "topics": [
+      "Interfaces vs Types",
+      "Generics",
+      "Union & Intersection",
+      "Utility Types (Partial/Pick)"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_output_prediction",
+    "category_id": "cat_programming",
+    "category": "Programming Tests",
+    "name": "Output Prediction & Debugging",
+    "code": "PROG-OUT",
+    "icon": "bi-terminal",
+    "description": "Tracing tricky code snippets in C, Java, and Python to predict output or identify syntax/runtime bugs.",
+    "topics": [
+      "Pre vs Post Increment",
+      "Operator Precedence",
+      "Scope & Variable Shadowing",
+      "Recursion Base Cases"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Hard",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_php",
+    "category_id": "cat_programming",
+    "category": "Programming Tests",
+    "name": "PHP Fundamentals",
+    "code": "PROG-PHP",
+    "icon": "bi-filetype-php",
+    "description": "Server-side scripting, superglobals, sessions, cookies, PDO, and OOP in PHP.",
+    "topics": [
+      "Superglobals ($_POST, $_SESSION)",
+      "PDO Database Connections",
+      "Array Functions",
+      "OOP in PHP"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Easy",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_csharp",
+    "category_id": "cat_programming",
+    "category": "Programming Tests",
+    "name": "C# Fundamentals",
+    "code": "PROG-CSHARP",
+    "icon": "bi-filetype-cs",
+    "description": ".NET runtime, LINQ, properties, async/await in C#, delegates, and garbage collection.",
+    "topics": [
+      ".NET CLR",
+      "LINQ Expressions",
+      "Delegates & Events",
+      "Nullable Value Types"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_dsa",
+    "category_id": "cat_core_cs",
+    "category": "Core Computer Science",
+    "name": "Data Structures & Algorithms",
+    "code": "CS-DSA",
+    "icon": "bi-diagram-3",
+    "description": "Arrays, linked lists, stacks, queues, binary trees, heaps, graphs, hashing, and sorting.",
+    "topics": [
+      "Trees & BST",
+      "Graph Traversals (BFS/DFS)",
+      "Stacks & Queues",
+      "Sorting & Hashing"
+    ],
+    "defaultDuration": 35,
+    "difficulty": "Hard",
+    "question_count": 100,
+    "questionCount": 100
+  },
+  {
+    "id": "sub_dbms",
+    "category_id": "cat_core_cs",
+    "category": "Core Computer Science",
+    "name": "Database Management Systems",
+    "code": "CS-DBMS",
+    "icon": "bi-database",
+    "description": "Relational algebra, ER diagrams, indexing, B-trees, normalization, and concurrency control.",
+    "topics": [
+      "ER Modeling",
+      "B/B+ Trees",
+      "Concurrency & Locks",
+      "Relational Calculus"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Medium",
+    "question_count": 100,
+    "questionCount": 100
+  },
+  {
+    "id": "sub_os",
+    "category_id": "cat_core_cs",
+    "category": "Core Computer Science",
+    "name": "Operating Systems",
+    "code": "CS-OS",
+    "icon": "bi-window-stack",
+    "description": "Process management, CPU scheduling, deadlocks, virtual memory, paging, and disk scheduling.",
+    "topics": [
+      "Process Scheduling",
+      "Deadlock Conditions",
+      "Paging & Virtual Memory",
+      "Semaphores & Mutex"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Medium",
+    "question_count": 100,
+    "questionCount": 100
+  },
+  {
+    "id": "sub_cn",
+    "category_id": "cat_core_cs",
+    "category": "Core Computer Science",
+    "name": "Computer Networks",
+    "code": "CS-CN",
+    "icon": "bi-wifi",
+    "description": "OSI 7-layer model, TCP/IP, IP addressing & subnetting, routing protocols, DNS, and HTTP.",
+    "topics": [
+      "OSI vs TCP/IP",
+      "Subnetting & CIDR",
+      "TCP Handshake & Congestion",
+      "DNS & HTTP/HTTPS"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Medium",
+    "question_count": 100,
+    "questionCount": 100
+  },
+  {
+    "id": "sub_oop",
+    "category_id": "cat_core_cs",
+    "category": "Core Computer Science",
+    "name": "Object-Oriented Programming",
+    "code": "CS-OOP",
+    "icon": "bi-boxes",
+    "description": "Encapsulation, inheritance, polymorphism, abstraction, SOLID design principles, and coupling.",
+    "topics": [
+      "4 Pillars of OOP",
+      "Dynamic Binding",
+      "SOLID Principles",
+      "Coupling & Cohesion"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Easy",
+    "question_count": 100,
+    "questionCount": 100
+  },
+  {
+    "id": "sub_se",
+    "category_id": "cat_core_cs",
+    "category": "Core Computer Science",
+    "name": "Software Engineering",
+    "code": "CS-SE",
+    "icon": "bi-kanban",
+    "description": "SDLC models, Agile/Scrum, requirement engineering, design patterns, and testing methodologies.",
+    "topics": [
+      "SDLC Models (Waterfall/Agile)",
+      "Scrum Sprints",
+      "UML Diagrams",
+      "White vs Black Box Testing"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Easy",
+    "question_count": 100,
+    "questionCount": 100
+  },
+  {
+    "id": "sub_coa",
+    "category_id": "cat_core_cs",
+    "category": "Core Computer Science",
+    "name": "Computer Organization & Architecture",
+    "code": "CS-COA",
+    "icon": "bi-motherboard",
+    "description": "Instruction pipelining, cache memory mapping, addressing modes, and CPU datapath.",
+    "topics": [
+      "Pipelining & Hazards",
+      "Cache Mapping (Direct/Set)",
+      "Addressing Modes",
+      "RISC vs CISC"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Hard",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_toc",
+    "category_id": "cat_core_cs",
+    "category": "Core Computer Science",
+    "name": "Theory of Computation",
+    "code": "CS-TOC",
+    "icon": "bi-gear-wide-connected",
+    "description": "DFA, NFA, regular expressions, context-free grammars, pushdown automata, and Turing machines.",
+    "topics": [
+      "DFA & NFA Equivalence",
+      "Pumping Lemma",
+      "CFG & PDA",
+      "Turing Decidability"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Hard",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_compiler",
+    "category_id": "cat_core_cs",
+    "category": "Core Computer Science",
+    "name": "Compiler Design",
+    "code": "CS-CD",
+    "icon": "bi-code",
+    "description": "Lexical analysis, LL/LR parsing tables, syntax-directed translation, and code optimization.",
+    "topics": [
+      "Lexical Tokens",
+      "LL(1) & LR Parsing",
+      "Intermediate Code (3AC)",
+      "Dead Code Elimination"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Hard",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_digital_logic",
+    "category_id": "cat_core_cs",
+    "category": "Core Computer Science",
+    "name": "Digital Logic Design",
+    "code": "CS-DLD",
+    "icon": "bi-toggle-on",
+    "description": "Boolean algebra, K-maps, multiplexers, flip-flops, counters, and registers.",
+    "topics": [
+      "Logic Gates & K-Maps",
+      "Multiplexers & Decoders",
+      "Flip-Flops (SR/JK/D/T)",
+      "Synchronous Counters"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_algorithms",
+    "category_id": "cat_technical_mcqs",
+    "category": "Technical MCQs",
+    "name": "Algorithms & Problem Solving",
+    "code": "TECH-ALG",
+    "icon": "bi-lightning-charge",
+    "description": "Divide and conquer, greedy methods, dynamic programming, backtracking, and complexity.",
+    "topics": [
+      "Divide & Conquer",
+      "Greedy Strategy",
+      "Dynamic Programming (DP)",
+      "Backtracking"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Hard",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_cyber_sec",
+    "category_id": "cat_technical_mcqs",
+    "category": "Technical MCQs",
+    "name": "Cyber Security & Cryptography",
+    "code": "TECH-SEC",
+    "icon": "bi-shield-lock",
+    "description": "Symmetric vs asymmetric encryption, RSA, hashing, firewalls, malware, and penetration testing.",
+    "topics": [
+      "RSA & Public Key",
+      "SHA/MD5 Hashing",
+      "SQL Injection & XSS",
+      "Firewalls & IDS"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_cloud",
+    "category_id": "cat_technical_mcqs",
+    "category": "Technical MCQs",
+    "name": "Cloud Computing Fundamentals",
+    "code": "TECH-CLOUD",
+    "icon": "bi-cloud",
+    "description": "IaaS, PaaS, SaaS, virtualization, serverless computing, AWS/GCP/Azure basics, and storage.",
+    "topics": [
+      "Cloud Service Models",
+      "Virtual Machines & Containers",
+      "Serverless Architecture",
+      "Object vs Block Storage"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Easy",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_ai",
+    "category_id": "cat_technical_mcqs",
+    "category": "Technical MCQs",
+    "name": "Artificial Intelligence",
+    "code": "TECH-AI",
+    "icon": "bi-robot",
+    "description": "Heuristic search, A* algorithm, min-max game trees, knowledge representation, and expert systems.",
+    "topics": [
+      "Informed vs Uninformed Search",
+      "A* & Heuristics",
+      "Min-Max & Alpha-Beta",
+      "Knowledge Representation"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_ml",
+    "category_id": "cat_technical_mcqs",
+    "category": "Technical MCQs",
+    "name": "Machine Learning Fundamentals",
+    "code": "TECH-ML",
+    "icon": "bi-cpu-fill",
+    "description": "Supervised vs unsupervised learning, regression, classification, clustering, bias-variance tradeoff.",
+    "topics": [
+      "Linear & Logistic Regression",
+      "Decision Trees & Random Forests",
+      "K-Means Clustering",
+      "Bias-Variance Tradeoff"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_testing_qa",
+    "category_id": "cat_technical_mcqs",
+    "category": "Technical MCQs",
+    "name": "Software Testing & QA",
+    "code": "TECH-QA",
+    "icon": "bi-bug",
+    "description": "Unit testing, integration testing, system testing, regression testing, bug lifecycle, and test cases.",
+    "topics": [
+      "Test Pyramid",
+      "Equivalence Partitioning",
+      "Boundary Value Analysis",
+      "Defect Life Cycle"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Easy",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_linux_cmds",
+    "category_id": "cat_technical_mcqs",
+    "category": "Technical MCQs",
+    "name": "Linux & OS Commands",
+    "code": "TECH-LINUX",
+    "icon": "bi-terminal-fill",
+    "description": "Shell commands, file permissions (chmod, chown), grep, pipes, processes (ps, kill), and bash scripts.",
+    "topics": [
+      "File Permissions (chmod/chown)",
+      "Grep, Sed & Awk",
+      "Pipes & Redirection",
+      "Process Monitoring (top/ps)"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_it_fundamentals",
+    "category_id": "cat_technical_mcqs",
+    "category": "Technical MCQs",
+    "name": "Information Technology Fundamentals",
+    "code": "TECH-ITF",
+    "icon": "bi-display",
+    "description": "Hardware, software, memory hierarchy, system utilities, binary/hex conversions, and file systems.",
+    "topics": [
+      "Binary/Hex Conversion",
+      "Memory Hierarchy",
+      "BIOS/UEFI Boot Sequence",
+      "File Formats & Compression"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Easy",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_html",
+    "category_id": "cat_web_dev",
+    "category": "Web Development & Technologies",
+    "name": "HTML & HTML5",
+    "code": "WEB-HTML",
+    "icon": "bi-filetype-html",
+    "description": "Semantic markup, forms, audio/video tags, canvas, local storage, and accessibility attributes.",
+    "topics": [
+      "Semantic Tags (header/section)",
+      "HTML5 Form Inputs",
+      "Canvas & SVG",
+      "LocalStorage vs SessionStorage"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Easy",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_css",
+    "category_id": "cat_web_dev",
+    "category": "Web Development & Technologies",
+    "name": "CSS & Modern Styling",
+    "code": "WEB-CSS",
+    "icon": "bi-filetype-css",
+    "description": "CSS Box model, Flexbox, Grid, media queries, animations, specificity, and CSS variables.",
+    "topics": [
+      "Flexbox Layouts",
+      "CSS Grid",
+      "Specificity Rules",
+      "Responsive Media Queries"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Easy",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_react",
+    "category_id": "cat_web_dev",
+    "category": "Web Development & Technologies",
+    "name": "React.js",
+    "code": "WEB-REACT",
+    "icon": "bi-react",
+    "description": "Virtual DOM, JSX, components, useState, useEffect, custom hooks, props, and state management.",
+    "topics": [
+      "Virtual DOM Reconciliation",
+      "React Hooks (useState/useEffect)",
+      "Component Lifecycle",
+      "Props Drilling & Context"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_node",
+    "category_id": "cat_web_dev",
+    "category": "Web Development & Technologies",
+    "name": "Node.js & Server JavaScript",
+    "code": "WEB-NODE",
+    "icon": "bi-filetype-json",
+    "description": "V8 engine, non-blocking I/O, event emitters, buffers, streams, and npm package management.",
+    "topics": [
+      "Non-Blocking Event Loop",
+      "Buffers & Streams",
+      "Module.exports vs ES Modules",
+      "EventEmitter"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_express",
+    "category_id": "cat_web_dev",
+    "category": "Web Development & Technologies",
+    "name": "Express.js Backend",
+    "code": "WEB-EXP",
+    "icon": "bi-server",
+    "description": "Middleware architecture, route parameters, request/response cycle, and error handling middleware.",
+    "topics": [
+      "Middleware Pipeline",
+      "Routing Parameters",
+      "CORS & Security",
+      "Error Handlers"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_rest_api",
+    "category_id": "cat_web_dev",
+    "category": "Web Development & Technologies",
+    "name": "RESTful APIs & Web Services",
+    "code": "WEB-REST",
+    "icon": "bi-arrow-repeat",
+    "description": "HTTP verbs (GET, POST, PUT, DELETE, PATCH), status codes, statelessness, headers, and JSON payloads.",
+    "topics": [
+      "HTTP Verbs & Idempotence",
+      "Status Codes (200/400/500)",
+      "Stateless Architecture",
+      "Authentication Headers"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Easy",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_fullstack",
+    "category_id": "cat_web_dev",
+    "category": "Web Development & Technologies",
+    "name": "Full Stack Architecture",
+    "code": "WEB-FS",
+    "icon": "bi-layers",
+    "description": "Client-server architecture, MVC pattern, authentication (JWT/OAuth), and deployment workflows.",
+    "topics": [
+      "Client-Server Separation",
+      "JWT Authentication",
+      "MVC Architecture",
+      "CORS Configuration"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_sql",
+    "category_id": "cat_db_net",
+    "category": "Database & Networking",
+    "name": "SQL & Queries",
+    "code": "DBN-SQL",
+    "icon": "bi-code-slash",
+    "description": "SELECT, JOINs (INNER, LEFT, RIGHT, FULL), GROUP BY, HAVING, subqueries, and window functions.",
+    "topics": [
+      "SQL Joins",
+      "Aggregate Functions & HAVING",
+      "Correlated Subqueries",
+      "Window Functions"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 100,
+    "questionCount": 100
+  },
+  {
+    "id": "sub_mysql",
+    "category_id": "cat_db_net",
+    "category": "Database & Networking",
+    "name": "MySQL Engine",
+    "code": "DBN-MYSQL",
+    "icon": "bi-database-fill",
+    "description": "InnoDB vs MyISAM engines, primary vs unique keys, foreign key constraints, and stored procedures.",
+    "topics": [
+      "InnoDB vs MyISAM",
+      "Indexes & Clustered Keys",
+      "Foreign Key Cascades",
+      "Stored Procedures & Triggers"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_normalization",
+    "category_id": "cat_db_net",
+    "category": "Database & Networking",
+    "name": "Database Normalization",
+    "code": "DBN-NORM",
+    "icon": "bi-diagram-2",
+    "description": "Functional dependencies, 1NF, 2NF, 3NF, BCNF, lossless join decomposition, and dependency preservation.",
+    "topics": [
+      "Functional Dependencies",
+      "1NF, 2NF & 3NF",
+      "Boyce-Codd Normal Form",
+      "Lossless Joins"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Hard",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_acid",
+    "category_id": "cat_db_net",
+    "category": "Database & Networking",
+    "name": "Transactions & ACID Properties",
+    "code": "DBN-ACID",
+    "icon": "bi-arrow-left-right",
+    "description": "Atomicity, Consistency, Isolation, Durability, transaction states, serializability, and 2-phase locking.",
+    "topics": [
+      "ACID Properties",
+      "Transaction Isolation Levels",
+      "Dirty Reads vs Phantom Reads",
+      "Two-Phase Locking (2PL)"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_mongodb",
+    "category_id": "cat_db_net",
+    "category": "Database & Networking",
+    "name": "MongoDB & NoSQL",
+    "code": "DBN-MONGO",
+    "icon": "bi-file-earmark-code",
+    "description": "BSON documents, collections, aggregation pipelines, replica sets, and sharding principles.",
+    "topics": [
+      "Document vs Relational",
+      "CRUD & Mongo Operators",
+      "Aggregation Pipeline",
+      "Sharding & Replication"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_net_protocols",
+    "category_id": "cat_db_net",
+    "category": "Database & Networking",
+    "name": "Network Protocols & Architecture",
+    "code": "DBN-PROTO",
+    "icon": "bi-router",
+    "description": "TCP 3-way handshake, UDP datagrams, HTTP/1.1 vs HTTP/2, DNS resolution, ARP, and DHCP.",
+    "topics": [
+      "TCP vs UDP",
+      "3-Way Handshake",
+      "DNS Resolution Steps",
+      "ARP & DHCP Protocol"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_net_security",
+    "category_id": "cat_db_net",
+    "category": "Database & Networking",
+    "name": "Network Security & Firewalls",
+    "code": "DBN-SEC",
+    "icon": "bi-shield",
+    "description": "Stateful packet inspection, NAT, VPN tunneling, SSL/TLS handshakes, and DDoS mitigation.",
+    "topics": [
+      "Stateful Firewalls",
+      "NAT & Port Forwarding",
+      "TLS/SSL Handshake",
+      "DDoS Mitigation"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_tcs",
+    "category_id": "cat_company",
+    "category": "Company-Wise Placement Tests",
+    "name": "TCS (Tata Consultancy Services)",
+    "code": "COMP-TCS",
+    "icon": "bi-building",
+    "description": "TCS NQT practice test featuring numerical aptitude, reasoning, verbal, and programming logic.",
+    "topics": [
+      "NQT Numerical Ability",
+      "Verbal Reasoning",
+      "Programming Logic MCQs",
+      "Pseudocode Analysis"
+    ],
+    "defaultDuration": 45,
+    "difficulty": "Medium",
+    "question_count": 25,
+    "questionCount": 25
+  },
+  {
+    "id": "sub_infosys",
+    "category_id": "cat_company",
+    "category": "Company-Wise Placement Tests",
+    "name": "Infosys Placement Pattern",
+    "code": "COMP-INFY",
+    "icon": "bi-building",
+    "description": "Infosys recruitment pattern covering mathematical ability, analytical reasoning, and pseudocode.",
+    "topics": [
+      "Mathematical Ability",
+      "Reasoning Ability",
+      "Pseudocode Analysis",
+      "Verbal English"
+    ],
+    "defaultDuration": 45,
+    "difficulty": "Medium",
+    "question_count": 25,
+    "questionCount": 25
+  },
+  {
+    "id": "sub_accenture",
+    "category_id": "cat_company",
+    "category": "Company-Wise Placement Tests",
+    "name": "Accenture Placement Pattern",
+    "code": "COMP-ACN",
+    "icon": "bi-building",
+    "description": "Accenture assessment pattern covering cognitive aptitude, critical reasoning, and technical MCQs.",
+    "topics": [
+      "Cognitive Assessment",
+      "Technical MCQs",
+      "Abstract Reasoning",
+      "Pseudocode Debugging"
+    ],
+    "defaultDuration": 45,
+    "difficulty": "Medium",
+    "question_count": 25,
+    "questionCount": 25
+  },
+  {
+    "id": "sub_deloitte",
+    "category_id": "cat_company",
+    "category": "Company-Wise Placement Tests",
+    "name": "Deloitte Technical & Aptitude",
+    "code": "COMP-DEL",
+    "icon": "bi-building",
+    "description": "Deloitte campus test covering quantitative reasoning, logical deduction, and verbal communication.",
+    "topics": [
+      "Quantitative Ability",
+      "Logical Deduction",
+      "Verbal Assessment",
+      "Business Puzzles"
+    ],
+    "defaultDuration": 45,
+    "difficulty": "Medium",
+    "question_count": 25,
+    "questionCount": 25
+  },
+  {
+    "id": "sub_wipro",
+    "category_id": "cat_company",
+    "category": "Company-Wise Placement Tests",
+    "name": "Wipro Placement Assessment",
+    "code": "COMP-WIPRO",
+    "icon": "bi-building",
+    "description": "Wipro Elite National Talent Hunt pattern covering logical, quantitative, and computer fundamentals.",
+    "topics": [
+      "Aptitude & Quants",
+      "Logical Reasoning",
+      "Basic Programming MCQs",
+      "Verbal Ability"
+    ],
+    "defaultDuration": 45,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_cognizant",
+    "category_id": "cat_company",
+    "category": "Company-Wise Placement Tests",
+    "name": "Cognizant (CTS) Placement",
+    "code": "COMP-CTS",
+    "icon": "bi-building",
+    "description": "Cognizant GenC and GenC Next test covering analytical, quantitative, code debugging, and algorithms.",
+    "topics": [
+      "Analytical Ability",
+      "Numerical Quants",
+      "Code Debugging",
+      "Algorithm Complexity"
+    ],
+    "defaultDuration": 45,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_capgemini",
+    "category_id": "cat_company",
+    "category": "Company-Wise Placement Tests",
+    "name": "Capgemini Placement Test",
+    "code": "COMP-CAPG",
+    "icon": "bi-building",
+    "description": "Capgemini assessment covering game-based aptitude, pseudocode, English communication, and coding.",
+    "topics": [
+      "Pseudocode Questions",
+      "English Communication",
+      "Game-Based Reasoning Logic",
+      "Technical Foundations"
+    ],
+    "defaultDuration": 45,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_hcl",
+    "category_id": "cat_company",
+    "category": "Company-Wise Placement Tests",
+    "name": "HCLTech Placement Pattern",
+    "code": "COMP-HCL",
+    "icon": "bi-building",
+    "description": "HCLTech recruitment mock test covering quantitative aptitude, logical reasoning, and computer concepts.",
+    "topics": [
+      "Numerical Ability",
+      "Logical Flow",
+      "Operating Systems & Networking",
+      "Data Structures MCQs"
+    ],
+    "defaultDuration": 45,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_techm",
+    "category_id": "cat_company",
+    "category": "Company-Wise Placement Tests",
+    "name": "Tech Mahindra Placement",
+    "code": "COMP-TECHM",
+    "icon": "bi-building",
+    "description": "Tech Mahindra aptitude, logical reasoning, verbal ability, and technical evaluation test.",
+    "topics": [
+      "Quants & Series",
+      "Verbal Grammar",
+      "Logical Reasoning",
+      "Computer Science MCQs"
+    ],
+    "defaultDuration": 45,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_micron",
+    "category_id": "cat_company",
+    "category": "Company-Wise Placement Tests",
+    "name": "Micron Technology Recruitment",
+    "code": "COMP-MICRON",
+    "icon": "bi-building",
+    "description": "Micron campus assessment with focus on digital systems, memory architecture, C/C++, and aptitude.",
+    "topics": [
+      "Digital Electronics & Memory",
+      "C/C++ Pointer Mechanics",
+      "Analytical Problem Solving",
+      "Hardware Architecture"
+    ],
+    "defaultDuration": 45,
+    "difficulty": "Hard",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_system_design",
+    "category_id": "cat_tech_interview",
+    "category": "Technical Interview Preparation",
+    "name": "System Design Fundamentals",
+    "code": "INT-SD",
+    "icon": "bi-diagram-3-fill",
+    "description": "Load balancers, caching strategies (Redis), horizontal scaling, database sharding, and CDN.",
+    "topics": [
+      "Load Balancing Algorithms",
+      "Caching Strategies (LRU)",
+      "CAP Theorem",
+      "Database Sharding"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Hard",
+    "question_count": 30,
+    "questionCount": 30
+  },
+  {
+    "id": "sub_complexity_bigo",
+    "category_id": "cat_tech_interview",
+    "category": "Technical Interview Preparation",
+    "name": "Time & Space Complexity (Big-O)",
+    "code": "INT-BIGO",
+    "icon": "bi-clock-history",
+    "description": "Calculating asymptotic bounds (Big-O, Omega, Theta), Master theorem, and recursive complexity.",
+    "topics": [
+      "Asymptotic Notations",
+      "Loop Complexity Analysis",
+      "Recursive Master Theorem",
+      "Auxiliary Space vs Space"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_concurrency",
+    "category_id": "cat_tech_interview",
+    "category": "Technical Interview Preparation",
+    "name": "Concurrency & Multithreading",
+    "code": "INT-CONC",
+    "icon": "bi-cpu",
+    "description": "Race conditions, deadlocks, semaphores, mutexes, thread pools, and producer-consumer problems.",
+    "topics": [
+      "Race Conditions & Mutex",
+      "Deadlock 4 Coffman Conditions",
+      "Thread Pools & Executors",
+      "Volatile vs Atomic"
+    ],
+    "defaultDuration": 25,
+    "difficulty": "Hard",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_algo_puzzles",
+    "category_id": "cat_tech_interview",
+    "category": "Technical Interview Preparation",
+    "name": "Algorithmic Puzzles & Brainteasers",
+    "code": "INT-PUZ",
+    "icon": "bi-lightbulb-fill",
+    "description": "Standard corporate interview puzzles (weighing scale, water jugs, river crossing, and burning ropes).",
+    "topics": [
+      "Balance Scale Puzzles",
+      "Water Jug Measuring",
+      "Hourglass & Candle Timing",
+      "Pigeonhole Principle"
+    ],
+    "defaultDuration": 20,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_dsa_interview_mcqs",
+    "category_id": "cat_tech_interview",
+    "category": "Technical Interview Preparation",
+    "name": "DSA Interview Coding Concepts",
+    "code": "INT-DSA",
+    "icon": "bi-code-slash",
+    "description": "Two-pointer techniques, sliding window, fast/slow pointers, trie structures, and disjoint sets.",
+    "topics": [
+      "Two Pointers & Sliding Window",
+      "Floyd Cycle Detection",
+      "Trie Prefix Trees",
+      "Union-Find (DSU)"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Hard",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_hr_common",
+    "category_id": "cat_hr_interview",
+    "category": "HR Interview & Communication",
+    "name": "Common HR Questions & Situations",
+    "code": "HR-COM",
+    "icon": "bi-person-lines-fill",
+    "description": "Standard interview questions: strengths/weaknesses, career goals, 5-year vision, and handling stress.",
+    "topics": [
+      "Strengths vs Weaknesses",
+      "5-Year Career Vision",
+      "Why Should We Hire You?",
+      "Handling Pressure"
+    ],
+    "defaultDuration": 15,
+    "difficulty": "Easy",
+    "question_count": 20,
+    "questionCount": 20
+  },
+  {
+    "id": "sub_star_method",
+    "category_id": "cat_hr_interview",
+    "category": "HR Interview & Communication",
+    "name": "Behavioral Questions (STAR Method)",
+    "code": "HR-STAR",
+    "icon": "bi-star-fill",
+    "description": "Situation, Task, Action, Result framework for answering behavioral and situational questions.",
+    "topics": [
+      "Situation Definition",
+      "Task Ownership",
+      "Action Demonstration",
+      "Measurable Result"
+    ],
+    "defaultDuration": 15,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_workplace_comm",
+    "category_id": "cat_hr_interview",
+    "category": "HR Interview & Communication",
+    "name": "Workplace Communication & Etiquette",
+    "code": "HR-COMM",
+    "icon": "bi-chat-dots",
+    "description": "Professional email etiquette, active listening, non-verbal cues, and constructive feedback.",
+    "topics": [
+      "Professional Email Writing",
+      "Active Listening",
+      "Constructive Feedback",
+      "Virtual Meeting Etiquette"
+    ],
+    "defaultDuration": 15,
+    "difficulty": "Easy",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_resume_pitch",
+    "category_id": "cat_hr_interview",
+    "category": "HR Interview & Communication",
+    "name": "Resume Pitch & Self-Introduction",
+    "code": "HR-PITCH",
+    "icon": "bi-file-earmark-person",
+    "description": "Elevator pitch, structuring self-introduction (past, present, future), and highlighting projects.",
+    "topics": [
+      "Elevator Pitch (60 seconds)",
+      "Structuring Self-Introduction",
+      "Highlighting Technical Projects",
+      "Handling Gaps"
+    ],
+    "defaultDuration": 15,
+    "difficulty": "Easy",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_teamwork_leadership",
+    "category_id": "cat_hr_interview",
+    "category": "HR Interview & Communication",
+    "name": "Teamwork & Conflict Resolution",
+    "code": "HR-TEAM",
+    "icon": "bi-people",
+    "description": "Resolving workplace conflict, collaboration in diverse teams, taking initiative, and accountability.",
+    "topics": [
+      "Resolving Disagreements",
+      "Cross-Functional Collaboration",
+      "Taking Accountability",
+      "Constructive Compromise"
+    ],
+    "defaultDuration": 15,
+    "difficulty": "Medium",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_prog_fund",
+    "category_id": "cat_programming",
+    "category": "Programming Tests",
+    "name": "Programming Fundamentals",
+    "code": "PROG-FUND",
+    "icon": "bi-code-slash",
+    "description": "Variables, data types, control flow, loops, functions, and memory basics.",
+    "topics": [
+      "Data Types & Operators",
+      "Conditional Logic",
+      "Loops & Iterations",
+      "Functions & Recursion",
+      "Pointers & Memory"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Easy",
+    "question_count": 5,
+    "questionCount": 5
+  },
+  {
+    "id": "sub_distributed",
+    "category_id": "cat_core_cs",
+    "category": "Core Computer Science",
+    "name": "Distributed Systems",
+    "code": "CS-DIST",
+    "icon": "bi-hdd-network",
+    "description": "Distributed consensus, replication, RPC, CAP theorem, and fault tolerance.",
+    "topics": [
+      "Consensus (Paxos/Raft)",
+      "RPC & Message Queues",
+      "Replication Strategies",
+      "Vector Clocks"
+    ],
+    "defaultDuration": 30,
+    "difficulty": "Hard",
+    "question_count": 0,
+    "questionCount": 0
+  }
 ]

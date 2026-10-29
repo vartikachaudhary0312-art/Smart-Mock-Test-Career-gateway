@@ -21,8 +21,11 @@
     <!-- Sidebar -->
     <aside class="app-sidebar">
       <div class="sidebar-header">
-        <div class="brand-logo"><i class="bi bi-mortarboard-fill"></i></div>
-        <div class="brand-text">SMART MOCK TEST<span>CAREER GATEWAY</span></div>
+        <div class="d-flex align-items-center gap-2">
+          <div class="brand-logo"><i class="bi bi-mortarboard-fill"></i></div>
+          <div class="brand-text">SMART MOCK TEST<span>CAREER GATEWAY</span></div>
+        </div>
+        <button class="sidebar-close-btn" type="button" aria-label="Close Navigation Menu"><i class="bi bi-x-lg"></i></button>
       </div>
 
       <nav class="sidebar-nav">
@@ -53,7 +56,7 @@
       <header class="app-header">
         <!-- LEFT: Mobile Nav Toggle & Project Logo -->
         <div class="header-left">
-          <button class="mobile-nav-toggle" type="button"><i class="bi bi-list"></i></button>
+          <button class="mobile-nav-toggle" id="btnSidebarToggle" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false" title="Menu"><i class="bi bi-list"></i></button>
           <div class="header-logo-badge" title="Smart Mock Test & Career Gateway">
             <i class="bi bi-mortarboard-fill"></i>
           </div>
@@ -95,9 +98,9 @@
           <!-- User Profile Dropdown -->
           <div class="dropdown">
             <div class="d-flex align-items-center gap-2 cursor-pointer" data-bs-toggle="dropdown">
-              <div class="user-avatar" id="headerUserAvatar">RS</div>
+              <div class="user-avatar" id="headerUserAvatar">--</div>
               <div class="d-none d-sm-block">
-                <div class="fw-semibold small leading-none" id="headerUserName">Rahul Sharma</div>
+                <div class="fw-semibold small leading-none" id="headerUserName">Student Account</div>
                 <span class="badge badge-purple px-1 py-0 small opacity-75" id="headerUserRole">STUDENT</span>
               </div>
             </div>
@@ -118,7 +121,7 @@
           <!-- Welcome Banner -->
           <div class="welcome-banner">
             <i class="bi bi-mortarboard welcome-banner-decor"></i>
-            <h2 id="dashboardWelcomeText">Welcome back, Rahul Sharma 👋</h2>
+            <h2 id="dashboardWelcomeText">Welcome back 👋</h2>
             <p>Continue your learning, proctored mock assessment, and career gateway journey.</p>
           </div>
 
@@ -127,7 +130,7 @@
             <div class="card-custom stat-card">
               <div class="stat-icon-wrapper stat-icon-purple"><i class="bi bi-journal-check"></i></div>
               <div>
-                <div class="stat-value" id="statTestsTaken">2</div>
+                <div class="stat-value" id="statTestsTaken">0</div>
                 <div class="stat-label">Tests Attempted</div>
               </div>
             </div>
@@ -135,7 +138,7 @@
             <div class="card-custom stat-card">
               <div class="stat-icon-wrapper stat-icon-green"><i class="bi bi-award"></i></div>
               <div>
-                <div class="stat-value" id="statAvgScore">75%</div>
+                <div class="stat-value" id="statAvgScore">0%</div>
                 <div class="stat-label">Average Score</div>
               </div>
             </div>
@@ -143,7 +146,7 @@
             <div class="card-custom stat-card">
               <div class="stat-icon-wrapper stat-icon-amber"><i class="bi bi-trophy"></i></div>
               <div>
-                <div class="stat-value" id="statBestScore">80%</div>
+                <div class="stat-value" id="statBestScore">0%</div>
                 <div class="stat-label">Best Score</div>
               </div>
             </div>
@@ -151,7 +154,7 @@
             <div class="card-custom stat-card">
               <div class="stat-icon-wrapper stat-icon-blue"><i class="bi bi-briefcase"></i></div>
               <div>
-                <div class="stat-value" id="statApplications">1</div>
+                <div class="stat-value" id="statApplications">0</div>
                 <div class="stat-label">Job Applications</div>
               </div>
             </div>

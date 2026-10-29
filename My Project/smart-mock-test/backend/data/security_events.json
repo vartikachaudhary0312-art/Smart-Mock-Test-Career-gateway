@@ -1,0 +1,1658 @@
+[
+  {
+    "attempt_id": "att_1793264902_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 1
+  },
+  {
+    "attempt_id": "att_1793264902_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 2
+  },
+  {
+    "attempt_id": "att_1793264902_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 3
+  },
+  {
+    "attempt_id": "att_1793264904_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:38:24",
+    "details": {},
+    "id": 4
+  },
+  {
+    "attempt_id": "att_1793264920_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 5
+  },
+  {
+    "attempt_id": "att_1793264920_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 6
+  },
+  {
+    "attempt_id": "att_1793264920_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 7
+  },
+  {
+    "attempt_id": "att_1793264921_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:38:41",
+    "details": {},
+    "id": 8
+  },
+  {
+    "attempt_id": "att_1793265346_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 9
+  },
+  {
+    "attempt_id": "att_1793265346_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 10
+  },
+  {
+    "attempt_id": "att_1793265346_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 11
+  },
+  {
+    "attempt_id": "att_1793265347_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:45:47",
+    "details": {},
+    "id": 12
+  },
+  {
+    "attempt_id": "att_1793265425_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 13
+  },
+  {
+    "attempt_id": "att_1793265425_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 14
+  },
+  {
+    "attempt_id": "att_1793265425_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 15
+  },
+  {
+    "attempt_id": "att_1793265426_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:47:06",
+    "details": {},
+    "id": 16
+  },
+  {
+    "attempt_id": "att_1793266498_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 17
+  },
+  {
+    "attempt_id": "att_1793266498_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 18
+  },
+  {
+    "attempt_id": "att_1793266498_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 19
+  },
+  {
+    "attempt_id": "att_1793266499_1_1",
+    "user_id": 1,
+    "test_id": 1,
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 15:04:59",
+    "details": {},
+    "id": 20
+  },
+  {
+    "attempt_id": "att_1793266793_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 21
+  },
+  {
+    "attempt_id": "att_1793266793_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 22
+  },
+  {
+    "attempt_id": "att_1793266793_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 23
+  },
+  {
+    "attempt_id": "att_1793266794_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 15:09:54",
+    "details": {},
+    "id": 24
+  },
+  {
+    "attempt_id": "att_1793267161_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 25
+  },
+  {
+    "attempt_id": "att_1793267161_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 26
+  },
+  {
+    "attempt_id": "att_1793267161_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 27
+  },
+  {
+    "attempt_id": "att_1793267162_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 15:16:02",
+    "details": {},
+    "id": 28
+  },
+  {
+    "attempt_id": "att_1793267197_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 29
+  },
+  {
+    "attempt_id": "att_1793267197_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 30
+  },
+  {
+    "attempt_id": "att_1793267197_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 31
+  },
+  {
+    "attempt_id": "att_1793267198_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 15:16:38",
+    "details": {},
+    "id": 32
+  },
+  {
+    "attempt_id": "att_1793267234_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 33
+  },
+  {
+    "attempt_id": "att_1793267234_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 34
+  },
+  {
+    "attempt_id": "att_1793267234_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 35
+  },
+  {
+    "attempt_id": "att_1793267235_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 15:17:15",
+    "details": {},
+    "id": 36
+  },
+  {
+    "attempt_id": "att_1793268994_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 37
+  },
+  {
+    "attempt_id": "att_1793268994_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 38
+  },
+  {
+    "attempt_id": "att_1793268994_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 39
+  },
+  {
+    "attempt_id": "att_1793269000_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 15:46:40",
+    "details": {},
+    "id": 40
+  },
+  {
+    "attempt_id": "att_1793269139_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 41
+  },
+  {
+    "attempt_id": "att_1793269139_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 42
+  },
+  {
+    "attempt_id": "att_1793269139_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 43
+  },
+  {
+    "attempt_id": "att_1793269147_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 15:49:07",
+    "details": {},
+    "id": 44
+  },
+  {
+    "attempt_id": "att_1793269873_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 45
+  },
+  {
+    "attempt_id": "att_1793269873_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 46
+  },
+  {
+    "attempt_id": "att_1793269873_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 47
+  },
+  {
+    "attempt_id": "att_1793269875_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 16:01:15",
+    "details": {},
+    "id": 48
+  },
+  {
+    "attempt_id": "att_1793270719_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 49
+  },
+  {
+    "attempt_id": "att_1793270719_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 50
+  },
+  {
+    "attempt_id": "att_1793270719_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 51
+  },
+  {
+    "attempt_id": "att_1793270721_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 16:15:21",
+    "details": {},
+    "id": 52
+  },
+  {
+    "attempt_id": "att_1793270762_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 53
+  },
+  {
+    "attempt_id": "att_1793270762_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 54
+  },
+  {
+    "attempt_id": "att_1793270762_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 55
+  },
+  {
+    "attempt_id": "att_1793270764_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 16:16:04",
+    "details": {},
+    "id": 56
+  },
+  {
+    "attempt_id": "att_1793271237_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 57
+  },
+  {
+    "attempt_id": "att_1793271237_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 58
+  },
+  {
+    "attempt_id": "att_1793271237_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 59
+  },
+  {
+    "attempt_id": "att_1793271239_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 16:23:59",
+    "details": {},
+    "id": 60
+  },
+  {
+    "attempt_id": "att_1793272371_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 61
+  },
+  {
+    "attempt_id": "att_1793272371_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 62
+  },
+  {
+    "attempt_id": "att_1793272371_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 63
+  },
+  {
+    "attempt_id": "att_1793272372_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 16:42:52",
+    "details": {},
+    "id": 64
+  },
+  {
+    "attempt_id": "att_1793272702_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 65
+  },
+  {
+    "attempt_id": "att_1793272702_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 66
+  },
+  {
+    "attempt_id": "att_1793272702_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 67
+  },
+  {
+    "attempt_id": "att_1793272703_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 16:48:23",
+    "details": {},
+    "id": 68
+  },
+  {
+    "attempt_id": "att_1793272829_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 69
+  },
+  {
+    "attempt_id": "att_1793272829_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 70
+  },
+  {
+    "attempt_id": "att_1793272829_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 71
+  },
+  {
+    "attempt_id": "att_1793272829_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 16:50:30",
+    "details": {},
+    "id": 72
+  },
+  {
+    "attempt_id": "att_1793273740_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 73
+  },
+  {
+    "attempt_id": "att_1793273740_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 74
+  },
+  {
+    "attempt_id": "att_1793273740_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 75
+  },
+  {
+    "attempt_id": "att_1793273742_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 17:05:42",
+    "details": {},
+    "id": 76
+  },
+  {
+    "attempt_id": "att_1793274387_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 77
+  },
+  {
+    "attempt_id": "att_1793274387_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 78
+  },
+  {
+    "attempt_id": "att_1793274387_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 79
+  },
+  {
+    "attempt_id": "att_1793274389_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 17:16:29",
+    "details": {},
+    "id": 80
+  },
+  {
+    "attempt_id": "att_1793274463_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 81
+  },
+  {
+    "attempt_id": "att_1793274463_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 82
+  },
+  {
+    "attempt_id": "att_1793274463_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 83
+  },
+  {
+    "attempt_id": "att_1793274464_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 17:17:44",
+    "details": {},
+    "id": 84
+  },
+  {
+    "attempt_id": "att_1793275874_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 85
+  },
+  {
+    "attempt_id": "att_1793275874_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 86
+  },
+  {
+    "attempt_id": "att_1793275874_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 87
+  },
+  {
+    "attempt_id": "att_1793275876_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 17:41:16",
+    "details": {},
+    "id": 88
+  },
+  {
+    "attempt_id": "att_1793275900_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 89
+  },
+  {
+    "attempt_id": "att_1793275900_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 90
+  },
+  {
+    "attempt_id": "att_1793275900_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 91
+  },
+  {
+    "attempt_id": "att_1793275902_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 17:41:42",
+    "details": {},
+    "id": 92
+  },
+  {
+    "attempt_id": "att_1793277386_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 93
+  },
+  {
+    "attempt_id": "att_1793277386_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 94
+  },
+  {
+    "attempt_id": "att_1793277386_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 95
+  },
+  {
+    "attempt_id": "att_1793277388_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 18:06:28",
+    "details": {},
+    "id": 96
+  },
+  {
+    "attempt_id": "att_1793278349_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 97
+  },
+  {
+    "attempt_id": "att_1793278349_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 98
+  },
+  {
+    "attempt_id": "att_1793278349_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 99
+  },
+  {
+    "attempt_id": "att_1793278351_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 18:22:31",
+    "details": {},
+    "id": 100
+  },
+  {
+    "attempt_id": "att_1793278462_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 101
+  },
+  {
+    "attempt_id": "att_1793278462_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 102
+  },
+  {
+    "attempt_id": "att_1793278462_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 103
+  },
+  {
+    "attempt_id": "att_1793278465_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 18:24:25",
+    "details": {},
+    "id": 104
+  },
+  {
+    "attempt_id": "att_1793288803_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 105
+  },
+  {
+    "attempt_id": "att_1793288803_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 106
+  },
+  {
+    "attempt_id": "att_1793288803_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 107
+  },
+  {
+    "attempt_id": "att_1793288806_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 21:16:46",
+    "details": {},
+    "id": 108
+  },
+  {
+    "attempt_id": "att_1793289000_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 109
+  },
+  {
+    "attempt_id": "att_1793289000_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 110
+  },
+  {
+    "attempt_id": "att_1793289000_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 111
+  },
+  {
+    "attempt_id": "att_1793289002_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 21:20:02",
+    "details": {},
+    "id": 112
+  },
+  {
+    "attempt_id": "att_1793291108_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 113
+  },
+  {
+    "attempt_id": "att_1793291108_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 114
+  },
+  {
+    "attempt_id": "att_1793291108_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 115
+  },
+  {
+    "attempt_id": "att_1793291109_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 21:55:09",
+    "details": {},
+    "id": 116
+  },
+  {
+    "attempt_id": "att_1793292178_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 117
+  },
+  {
+    "attempt_id": "att_1793292178_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 118
+  },
+  {
+    "attempt_id": "att_1793292178_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 119
+  },
+  {
+    "attempt_id": "att_1793292183_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 22:13:03",
+    "details": {},
+    "id": 120
+  },
+  {
+    "attempt_id": "att_1793293189_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 121
+  },
+  {
+    "attempt_id": "att_1793293189_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 122
+  },
+  {
+    "attempt_id": "att_1793293189_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 123
+  },
+  {
+    "attempt_id": "att_1793293191_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 22:29:51",
+    "details": {},
+    "id": 124
+  },
+  {
+    "attempt_id": "att_1793295579_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 125
+  },
+  {
+    "attempt_id": "att_1793295579_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 126
+  },
+  {
+    "attempt_id": "att_1793295579_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 127
+  },
+  {
+    "attempt_id": "att_1793295581_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 23:09:41",
+    "details": {},
+    "id": 128
+  },
+  {
+    "attempt_id": "att_1793296971_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 129
+  },
+  {
+    "attempt_id": "att_1793296971_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 130
+  },
+  {
+    "attempt_id": "att_1793296971_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 131
+  },
+  {
+    "attempt_id": "att_1793296973_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 23:32:53",
+    "details": {},
+    "id": 132
+  },
+  {
+    "attempt_id": "att_1793298405_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 133
+  },
+  {
+    "attempt_id": "att_1793298405_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 134
+  },
+  {
+    "attempt_id": "att_1793298405_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 135
+  },
+  {
+    "attempt_id": "att_1793298407_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-29 23:56:47",
+    "details": {},
+    "id": 136
+  },
+  {
+    "attempt_id": "att_1793299578_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 137
+  },
+  {
+    "attempt_id": "att_1793299578_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 138
+  },
+  {
+    "attempt_id": "att_1793299578_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 139
+  },
+  {
+    "attempt_id": "att_1793299585_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-30 00:16:25",
+    "details": {},
+    "id": 140
+  },
+  {
+    "attempt_id": "att_1793300431_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 141
+  },
+  {
+    "attempt_id": "att_1793300431_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 142
+  },
+  {
+    "attempt_id": "att_1793300431_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "tab_switch",
+    "severity": "warning",
+    "timestamp": "2026-10-29 14:00:00",
+    "details": {
+      "reason": "Page visibility hidden"
+    },
+    "id": 143
+  },
+  {
+    "attempt_id": "att_1793300438_1_1",
+    "user_id": 1,
+    "test_id": "1",
+    "event_type": "face_missing",
+    "severity": "warning",
+    "timestamp": "2026-10-30 00:30:38",
+    "details": {},
+    "id": 144
+  }
+]
