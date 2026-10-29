@@ -3,6 +3,7 @@ from pathlib import Path
 
 TESTS_FILE = Path(__file__).resolve().parent.parent / "data" / "tests.json"
 SUBJECTS_FILE = Path(__file__).resolve().parent.parent / "data" / "subjects.json"
+CATEGORIES_FILE = Path(__file__).resolve().parent.parent / "data" / "categories.json"
 
 class TestRepository:
     __test__ = False
@@ -22,6 +23,13 @@ class TestRepository:
             return json.load(f)
 
     @staticmethod
+    def _load_categories() -> list[dict]:
+        if not CATEGORIES_FILE.exists():
+            return []
+        with open(CATEGORIES_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+
+    @staticmethod
     def _save_subjects(subjects: list[dict]):
         SUBJECTS_FILE.parent.mkdir(parents=True, exist_ok=True)
         with open(SUBJECTS_FILE, "w", encoding="utf-8") as f:
@@ -33,9 +41,17 @@ class TestRepository:
     def find_all_subjects(self) -> list[dict]:
         return self._load_subjects()
 
-    def find_by_id(self, test_id: int) -> dict | None:
+    def find_all_categories(self) -> list[dict]:
+        return self._load_categories()
+
+    def find_category_by_id(self, cat_id) -> dict | None:
+        categories = self._load_categories()
+        c_id_lower = str(cat_id).strip().lower()
+        return next((c for c in categories if str(c.get("id", "")).lower() == c_id_lower or str(c.get("slug", "")).lower() == c_id_lower or str(c.get("name", "")).lower() == c_id_lower), None)
+
+    def find_by_id(self, test_id) -> dict | None:
         tests = self._load_tests()
-        return next((t for t in tests if t["id"] == test_id), None)
+        return next((t for t in tests if str(t["id"]).lower() == str(test_id).lower()), None)
 
     def filter(self, subject: str = None, difficulty: str = None) -> list[dict]:
         tests = self._load_tests()
@@ -45,7 +61,7 @@ class TestRepository:
             if subject:
                 match_sub = t.get("subject", "").lower() == subject.strip().lower()
             match_diff = True
-            if difficulty:
+            if difficulty and difficulty.lower() != "mixed":
                 match_diff = t.get("difficulty", "").lower() == difficulty.strip().lower()
             if match_sub and match_diff:
                 res.append(t)
@@ -53,8 +69,9 @@ class TestRepository:
 
     def create_subject(self, sub_data: dict) -> dict:
         subjects = self._load_subjects()
-        new_id = max([s["id"] for s in subjects], default=0) + 1
-        sub_data["id"] = new_id
+        numeric_ids = [s["id"] for s in subjects if isinstance(s.get("id"), int)]
+        new_id = max(numeric_ids, default=0) + 1
+        sub_data.setdefault("id", new_id)
         subjects.append(sub_data)
         self._save_subjects(subjects)
         return sub_data

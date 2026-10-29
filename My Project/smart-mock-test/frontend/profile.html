@@ -20,8 +20,11 @@
     <!-- Sidebar -->
     <aside class="app-sidebar">
       <div class="sidebar-header">
-        <div class="brand-logo"><i class="bi bi-mortarboard-fill"></i></div>
-        <div class="brand-text">SMART MOCK TEST<span>CAREER GATEWAY</span></div>
+        <div class="d-flex align-items-center gap-2">
+          <div class="brand-logo"><i class="bi bi-mortarboard-fill"></i></div>
+          <div class="brand-text">SMART MOCK TEST<span>CAREER GATEWAY</span></div>
+        </div>
+        <button class="sidebar-close-btn" type="button" aria-label="Close Navigation Menu"><i class="bi bi-x-lg"></i></button>
       </div>
 
       <nav class="sidebar-nav">
@@ -51,13 +54,13 @@
       <!-- Top Header Navbar -->
       <header class="app-header">
         <div class="header-left">
-          <button class="mobile-nav-toggle" type="button"><i class="bi bi-list"></i></button>
+          <button class="mobile-nav-toggle" id="btnSidebarToggle" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false" title="Menu"><i class="bi bi-list"></i></button>
           <h1 class="page-title">Student Profile</h1>
         </div>
 
         <div class="header-right">
           <button type="button" class="theme-toggle-btn" title="Toggle Theme"><i class="bi bi-moon-stars-fill"></i></button>
-          <div class="user-avatar" id="headerUserAvatar">RS</div>
+          <div class="user-avatar" id="headerUserAvatar">--</div>
         </div>
       </header>
 
@@ -68,10 +71,10 @@
           <div class="row g-4">
             <div class="col-lg-4">
               <div class="card-custom p-4 text-center">
-                <div class="user-avatar mx-auto mb-3" id="profileBigAvatar" style="width: 80px; height: 80px; font-size: 2rem;">RS</div>
-                <h5 class="fw-bold text-dark mb-1">Rahul Sharma</h5>
-                <span class="badge badge-purple mb-3">MCA Candidate</span>
-                <p class="text-muted small mb-0"><i class="bi bi-geo-alt me-1"></i>Bangalore, India</p>
+                <div class="user-avatar mx-auto mb-3" id="profileBigAvatar" style="width: 80px; height: 80px; font-size: 2rem;">--</div>
+                <h5 class="fw-bold text-dark mb-1" id="profileCardName">Student</h5>
+                <span class="badge badge-purple mb-3" id="profileCardRole">Student Candidate</span>
+                <p class="text-muted small mb-0" id="profileCardLocation"><i class="bi bi-geo-alt me-1"></i>India</p>
               </div>
             </div>
 
@@ -82,28 +85,28 @@
                   <div class="row g-3 mb-3">
                     <div class="col-md-6">
                       <label class="form-label-custom">Full Name</label>
-                      <input type="text" class="form-control form-control-custom" id="profileNameInput" value="Rahul Sharma">
+                      <input type="text" class="form-control form-control-custom" id="profileNameInput" value="" placeholder="Enter your full name">
                     </div>
                     <div class="col-md-6">
                       <label class="form-label-custom">Email Address</label>
-                      <input type="email" class="form-control form-control-custom" id="profileEmailInput" value="student@example.com" readonly>
+                      <input type="email" class="form-control form-control-custom" id="profileEmailInput" value="" placeholder="name@college.edu" readonly>
                     </div>
                   </div>
 
                   <div class="row g-3 mb-3">
                     <div class="col-md-6">
                       <label class="form-label-custom">Mobile Phone</label>
-                      <input type="text" class="form-control form-control-custom" id="profilePhoneInput" value="+91 9876543210">
+                      <input type="text" class="form-control form-control-custom" id="profilePhoneInput" value="" placeholder="+91 9876543210">
                     </div>
                     <div class="col-md-6">
                       <label class="form-label-custom">Location</label>
-                      <input type="text" class="form-control form-control-custom" id="profileLocationInput" value="Bangalore, India">
+                      <input type="text" class="form-control form-control-custom" id="profileLocationInput" value="" placeholder="City, Country">
                     </div>
                   </div>
 
                   <div class="mb-4">
                     <label class="form-label-custom">Education & College Details</label>
-                    <input type="text" class="form-control form-control-custom" id="profileEducationInput" value="MCA 4th Sem, ABC Institute of Technology">
+                    <input type="text" class="form-control form-control-custom" id="profileEducationInput" value="" placeholder="Degree, Institution">
                   </div>
 
                   <div class="d-flex justify-content-end">

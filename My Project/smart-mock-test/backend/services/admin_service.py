@@ -20,7 +20,8 @@ class AdminService:
 
         total_students = len(students)
         tests_attempted = len(results)
-        avg_score = round(sum(r.get("percentage", 0) for r in results) / tests_attempted, 1) if tests_attempted > 0 else 0.0
+        valid_pcts = [float(r.get("percentage") or 0.0) for r in results if r.get("percentage") is not None]
+        avg_score = round(sum(valid_pcts) / len(valid_pcts), 1) if valid_pcts else 0.0
         active_jobs = len([j for j in jobs if j.get("status") == "Active"])
         total_applications = len(apps)
 

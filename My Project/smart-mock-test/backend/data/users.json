@@ -16,13 +16,88 @@
       "Data Structures"
     ],
     "status": "Active",
-    "created_at": "2026-01-15 10:00:00"
+    "created_at": "2026-01-15 10:00:00",
+    "resume_analysis": {
+      "fileName": "Test_Student_Resume.pdf",
+      "file_name": "Test_Student_Resume.pdf",
+      "fileSize": "0 KB",
+      "file_size": "0 KB",
+      "matchScore": 88,
+      "match_score": 88,
+      "education": "MCA (Master of Computer Applications) - 8.4 CGPA",
+      "education_details": [
+        {
+          "degree": "Master of Computer Applications (MCA)",
+          "performance": "8.4 CGPA",
+          "status": "Final Year"
+        }
+      ],
+      "experienceLevel": "Fresher / Entry-Level Software Engineer",
+      "experience": [
+        {
+          "role": "Software Project Intern",
+          "highlights": [
+            "Built Smart Mock Test & Career Gateway application",
+            "Implemented Flask REST APIs & responsive UI"
+          ]
+        }
+      ],
+      "parsedSkills": [
+        "Python",
+        "Java",
+        "Data Structures & Algorithms",
+        "SQL",
+        "Flask",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "REST APIs",
+        "Git",
+        "Problem Solving"
+      ],
+      "skills": [
+        "Python",
+        "Java",
+        "Data Structures & Algorithms",
+        "SQL",
+        "Flask",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "REST APIs",
+        "Git",
+        "Problem Solving"
+      ],
+      "projects": [
+        "Smart Mock Test & Career Gateway Platform",
+        "Student Placement Tracker & Proctoring Engine"
+      ],
+      "recommendations": [
+        "Highlight database normalization and complex SQL join query performance.",
+        "Include live deployed URL links or GitHub repository URLs for MCA capstone projects.",
+        "Mention unit testing frameworks like PyTest or JUnit to boost ATS compatibility score above 90%."
+      ],
+      "suggestedRoles": [
+        "Graduate Software Engineer Trainee (TCS, Infosys, Wipro)",
+        "Junior Full-Stack Python / Web Developer",
+        "Associate Backend Engineer (FastAPI / Flask)"
+      ],
+      "suggested_roles": [
+        "Graduate Software Engineer Trainee (TCS, Infosys, Wipro)",
+        "Junior Full-Stack Python / Web Developer",
+        "Associate Backend Engineer (FastAPI / Flask)"
+      ],
+      "analyzedAt": "2026-10-30 00:30:50",
+      "analyzed_at": "2026-10-30 00:30:50"
+    },
+    "resume_file": "Test_Student_Resume.pdf",
+    "resume_updated_at": "2026-10-30 00:30:50"
   },
   {
     "id": 2,
     "name": "System Administrator",
     "email": "vartikachaudhary0312@gmail.com",
-    "password_hash": "scrypt:32768:8:1$x0RnF2pcEi50fDPf$590b040b6dd1e80a4a83e337f587ab276d5afcd15f57f4f756152c727c8f0fb967b9a080fb18aea8e83fd877c4ec736975449ede43f46abe4444c14f4714fc7e",
+    "password_hash": "scrypt:32768:8:1$XyHiTJooAMHGXczU$be7018f875690281d7538ce4ee5a2e5dd26e9a2ae8103e25ec3465be4ef727162e8a774e8e870a2ad246aad9af695eb2a6a4ac0f2df38885f8227712d2eda46a",
     "role": "admin",
     "mobile": "+91 9876543211",
     "location": "New Delhi, India",
@@ -239,5 +314,1219 @@
     "status": "Active",
     "created_at": "2026-10-06 13:54:32",
     "id": 14
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793264387755@test.com",
+    "password_hash": "scrypt:32768:8:1$8lwRdzoUfZ9T3kPx$26636716c044a9766598940db43bcd21d2e4d209b806814dec8231fecbb091e8e0a65323b205bf4f673468b006e2774f19b44cd1d6877c9ccd4a417c7477e909",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 14:29:47",
+    "id": 15
+  },
+  {
+    "id": 16,
+    "name": "Former Demo User",
+    "email": "admin@example.com",
+    "password_hash": "scrypt:32768:8:1$1BHae1bKoeyAP3gN$33ea34f6ac07e6dbc0c10aa2540dcca46b380c25e69107cc7682004712329d7e980e21daa35733fdfc06b415b65960f5b6325c771381aaf0051b36b3e15d48b0",
+    "role": "student",
+    "mobile": "+91 9876543211",
+    "location": "New Delhi, India",
+    "education": "System Administration Specialist",
+    "skills": [
+      "Administration",
+      "Security",
+      "Flask"
+    ],
+    "status": "Active",
+    "created_at": "2025-11-01 09:00:00"
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793264778431@test.com",
+    "password_hash": "scrypt:32768:8:1$nNlR2Ph9aTI5VDrX$a45a391583c40a93ad2d2d12b98fedbebc9cf622ecfedfceace8ee27cb08900ff9a4e197e5120b1d390aa89442a037e9d737e21ced360cdf19faf6979c73b4c1",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 14:36:18",
+    "id": 17
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793264919814@test.com",
+    "password_hash": "scrypt:32768:8:1$cAzK3JovW7bwg6CG$7b571faf7cac69a7583eb692b0e953328211590270b52de3d012f018e26b2aa357dc3bfb0f48e1c5b703c052778792966049866474e91eae60e03d2028ac1f0f",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 14:38:39",
+    "id": 18
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793265346438@test.com",
+    "password_hash": "scrypt:32768:8:1$FEKeJxkHX0crPf39$dd27fe453f969d101649dc7ab2839067666f78a458565c4ac7057854224f2352660c476b43278ca27fd19dd5a3f2b8502c50b376c264e67d8316a442b0b9ce06",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 14:45:46",
+    "id": 19
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793265425014@test.com",
+    "password_hash": "scrypt:32768:8:1$WzMLyO9mhiS16tuK$159a6cd530c590694d69358957df802261b60287a5d2c490336f7c85cbce689d63cc6943214b36563d35a7fa7d8cac4398c35b924ff3b715a15a406e2ca6a3b3",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 14:47:05",
+    "id": 20
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793266497300@test.com",
+    "password_hash": "scrypt:32768:8:1$0UadzzlDTDcTrmHZ$4d4f82b9d2be306707444e667c68c70e3ee3c62dda3c007a27e3697ba64accd3424846609e0ce1984fe5fcdff21beadf5adc02f4b7945c96f9fd781d174dec48",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 15:04:57",
+    "id": 21
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793266792515@test.com",
+    "password_hash": "scrypt:32768:8:1$QFO3mWXRlcSeS5cZ$3bbe486d12cfd1df251f24d088c780e35833fc34aab20a48f5dc35f6062f08cf31819b9963bfb9129558039ac977df41d01946c72b731463bd4a520bb13de27e",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 15:09:52",
+    "id": 22
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793267160198@test.com",
+    "password_hash": "scrypt:32768:8:1$s8dIFhCYCEDWD7ZD$177b0ca4bfed4acb479634ddb4745cd2359d7168a4171306a8a486515d9b842405cb85e220f3f89a06f20784bbcee22e2b304a50d26d7592b7cb1d7d629283d1",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 15:16:00",
+    "id": 23
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793267195182@test.com",
+    "password_hash": "scrypt:32768:8:1$yE31O8NcClCqC4QP$c6477d696ab525814c52c740a832058e62c9132deca144ca7d2b99b20c5084a3c310c577634f8b858fa4646c5250563451efe04ae682ea060b44445d45ee77cc",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 15:16:35",
+    "id": 24
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793267232448@test.com",
+    "password_hash": "scrypt:32768:8:1$2UJNoHUNgH35oJEA$f20f838bf0f379e4002adb6e353e68511eb90180d3180998efb56fac739493caa650c45b523271bb7ed771ca55f7b2019cb5e8cd051ce32ce00525d76bc075e9",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 15:17:12",
+    "id": 25
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793268982282@test.com",
+    "password_hash": "scrypt:32768:8:1$mC4FAvbfOdwfp7fc$a300eef36f3e23f0e3e80bc29b10dd639a90408a77c082820353be557e68230b527e12a8219b557b4132370466b02e3e37d7d471950adc517269b0bbbb79fd3f",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 15:46:22",
+    "id": 26
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793269128027@test.com",
+    "password_hash": "scrypt:32768:8:1$8T75s7ArZMcqVJyg$3cb4959e8bd85d076ce53a13377bf1e0babc8da3c4e29e6a3844b9a28b0a545cedd77a159111e0c26ae80823950e5dcd7f41f0ccee8ed83afa99f66aa025d41f",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 15:48:48",
+    "id": 27
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793269869754@test.com",
+    "password_hash": "scrypt:32768:8:1$QiBo267cH2DX49hQ$1c8f0a4cf2791789d5f6dadd1babba7c17a0774723246421f0a6d6dd702ef7ea0b19b8b824cbf4eda855191bfded2c187bacf9fb92d9936ac54598730575a333",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 16:01:09",
+    "id": 28
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793270717079@test.com",
+    "password_hash": "scrypt:32768:8:1$4EUtXyuH37Fjv0ns$61420759a46b95611ae148c4be6edaaf0d1b297db412b491dc89efd6916c258b5b58e0395dd3069e51b63bc070f37d77dd4ca047d0be23bc4053ead28eb3e1d2",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 16:15:17",
+    "id": 29
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793270760696@test.com",
+    "password_hash": "scrypt:32768:8:1$F8kRsv2tl2lKWQtX$2be5f9af6ede596815aed37dc8890b2a437a395aced00ca3890a94b91c77adb2db3609312adf33a3d9c06b5f92ba0ad6ab26b6709f2b1f18512f54b625e7f809",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 16:16:00",
+    "id": 30
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793271233842@test.com",
+    "password_hash": "scrypt:32768:8:1$sGtueh7nKUXTaKEx$e051c242b018bde12653ba6749466a9d26dac9efd3434b73962b8605ad54b05ca6683915c5540a3aa2968669082a9e986e2bddbb5e4895e5d4537d7f01e9873b",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 16:23:54",
+    "id": 31
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793272368896@test.com",
+    "password_hash": "scrypt:32768:8:1$wzZTPdAvTufMQD09$5a02a6581e651ddc3183b1f653b386f4ac3e9a88b1e1d5e40a9766bc5a2bede8a7a07567a1c039a24bca55526ceaf9d3d5758c00c787ea36dc9c91e612ef7dbc",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 16:42:49",
+    "id": 32
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793272700735@test.com",
+    "password_hash": "scrypt:32768:8:1$ukY2HQPGEYbIdOLE$1d5dec673e43e735954473ec27517f6a56fc0eeac208615b8c15756419bc0cd8924cd6f5345973054647983931f7f3fc346628a004e46007d448a2dd7765c158",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 16:48:20",
+    "id": 33
+  },
+  {
+    "name": "Ritesh Raushan",
+    "email": "ritesh.raushan.test@example.com",
+    "password_hash": "scrypt:32768:8:1$fYK1NyYGssqkGCEe$d945a60a88d591b67ac6d30113ff83d2ac0c9198dbb4b682f6cb6d09796feac1ff244aea1b890bf58e7a3b98e8cc5a5023bcdf915777bfa22d153f4489c4390a",
+    "role": "student",
+    "mobile": "+91 9876543219",
+    "location": "Patna, India",
+    "education": "B.Tech Computer Science, NIT",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 16:48:45",
+    "id": 34
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793272827706@test.com",
+    "password_hash": "scrypt:32768:8:1$7YVNwx5QC4hjbjJr$7bd859d42dd5ca9298616ae5d3f804484ce851261fb91fba10982a09e6e691a73258189642840e64a3dbbddb7619003f5d3e142abad2b50ee3bd13d9e9fe9660",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 16:50:27",
+    "id": 35
+  },
+  {
+    "name": "Ritesh Raushan",
+    "email": "ritesh.raushan.sim@example.com",
+    "password_hash": "scrypt:32768:8:1$xhMR0GjrrIp9MvwB$a7b3f3de4985b3475084528770dcab0e0fbefa60197e2ad7f3fc89cfd3cdf3416c2364069c659bc3de8e863375fa8afbe3d9073aade4d6936c049b2fcf9d56d4",
+    "role": "student",
+    "mobile": "+91 9123456789",
+    "location": "Patna, India",
+    "education": "B.Tech CSE",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 16:51:24",
+    "id": 36
+  },
+  {
+    "name": "Priya Patel",
+    "email": "priya.patel.sim@example.com",
+    "password_hash": "scrypt:32768:8:1$0UxEvcjhnjKotZZQ$1bad906ff796ef9c04006d1c39da2eed1a27c7cacfbbb0761299a72aad772081354aceed4aa5b14645c5aaa0aeb476492e00d2541463f142e89baa5c80884f58",
+    "role": "student",
+    "mobile": "+91 9988776655",
+    "location": "Ahmedabad, India",
+    "education": "M.Tech CSE",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 16:51:24",
+    "id": 37
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793273738241@test.com",
+    "password_hash": "scrypt:32768:8:1$tUSwJXVGpnAtvpr9$c4e81bb70feb7f961146c6c237e0e37c5220d55ac355b53093ede95c2758b1d1fe5ae381735c4583efe7136db07e378ffa6c0cd44394df25057f95451bc02bf5",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 17:05:38",
+    "id": 38
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793274385039@test.com",
+    "password_hash": "scrypt:32768:8:1$CCoxUhYOSz39tRVV$3e499d1be9d6c57c6a58e2b7ad87ad4d011b3b4f6ea7557fd1a3385952ae79d12ee77f2cf1eca8ac2e16a1a4409e5e9212b49a03a3dd7963f54a5e082384206e",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 17:16:25",
+    "id": 39
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793274460267@test.com",
+    "password_hash": "scrypt:32768:8:1$zDdjsTrKPtYctjMU$176941126bba4a94630888e8a33df870ee200c68db4584257737155844eabc08988da2f989fa4a02a20e3a55744f82daad6e16a38f178b2b82588fb77695d6b8",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 17:17:40",
+    "id": 40
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793275872280@test.com",
+    "password_hash": "scrypt:32768:8:1$6Tw087iakA9fVket$0ab43f6f1f52f266537c19b18022dfb308b49fe18d34491380dbb23be63bd0e61b6bf2b39f7fd389935e719378b22c104ed10dd8201298e1905119a063c72b8c",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 17:41:12",
+    "id": 41
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793275898047@test.com",
+    "password_hash": "scrypt:32768:8:1$GTpLMS5WcvbqSZmf$e5b4e6fc7b2c96dc37439be2ca08770aaf7fbe68152fb09f2c775ccd1f1f36874f2a17845f93385f108df1349939cfdf9a5aa947fdd945eb699969553a408e82",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 17:41:38",
+    "id": 42
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793277384013@test.com",
+    "password_hash": "scrypt:32768:8:1$bXUIL5rjUYAuHmEf$97b1aa089430d3b3afc44b5fe4eebbc3bfc568ed814d9b5f1d7e9c1e86fcb7f720eb68517d88bdf4078781e358a6ba2946cf8b4b6d3b1b9e94c129df92e5b9a1",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 18:06:24",
+    "id": 43
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793277438446@test.com",
+    "password_hash": "scrypt:32768:8:1$fMkm1i1AE8J50itu$e27ff15c5d1a96b25c362abbba45b681ea5fe509160e1de9e440c9ee719fdce504e5141614a5ddce1073556062ec8e03581a8b8c448c998abcca715026accf15",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 18:07:18",
+    "id": 44
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793278277247@test.com",
+    "password_hash": "scrypt:32768:8:1$D2iL3fzVIMGBDmpH$c11ade6526594f1106678bcef4a7bffa434281adfb3abc7187888d23370a3d885d8533a9a94706c7c03b0618dd1cbab0f07e70941c247cd0e0d02b9e4f96012b",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 18:21:17",
+    "id": 45
+  },
+  {
+    "name": "Role Escalation Attempt",
+    "email": "escalation_test_1793278277912@test.com",
+    "password_hash": "scrypt:32768:8:1$bQ8EWqxn8qVeFZAu$4ca8cbcb85ae1f70443f9749b4b6fe712003b12e241a764f6a74d5edea4a39aeef3b581458ee88d7505bfefa97863633963049f53e19bcb23e1f864c8f65355b",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 18:21:18",
+    "id": 46
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793278327426@test.com",
+    "password_hash": "scrypt:32768:8:1$umPX6QDMFEY5GoK4$e9a011d4f473c894f0ddcaaa3e1ebf41486bd19f198cbe86220c0fff6aa8283a7a693231b6a5db5e243ddfc192deafe5bcd024f99e05c66ebe5c4079643f5b31",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 18:22:07",
+    "id": 47
+  },
+  {
+    "name": "Role Escalation Attempt",
+    "email": "escalation_test_1793278328239@test.com",
+    "password_hash": "scrypt:32768:8:1$mWqeVQUtaxJegRg8$75bfd5487dbc2a493e19e2cef8cb97d9ceccc669dd99ba64901231ee00bc01c8045c8f3ee46f3ba96903ae714862db2f23e3949831585b62b7d35f61a2d29117",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 18:22:08",
+    "id": 48
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793278340489@test.com",
+    "password_hash": "scrypt:32768:8:1$BvjNTm41X41O9PU1$6ab8bc58c86755762701fc0e864b19b0c2d31422ecedb20dcb25b11210d7ceae1a3db291dce6371995ba3cda46a393e788ff8ad4061eead9af8d29809dd97f7b",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 18:22:20",
+    "id": 49
+  },
+  {
+    "name": "Role Escalation Attempt",
+    "email": "escalation_test_1793278341246@test.com",
+    "password_hash": "scrypt:32768:8:1$KP5JDbI4nR4wlEN7$4fcc32f24b74df46d59559e3442d493d1b3f2f837d6b37b525250f4aba576f1301928aadf7bc6c33fff5b8e23d6f47c6c50674c7a00f54d10ef76511f67bd5b7",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 18:22:21",
+    "id": 50
+  },
+  {
+    "name": "Student Role Check",
+    "email": "student_check_1793278405315@college.edu",
+    "password_hash": "scrypt:32768:8:1$pFkjlbkmRDMDK9xZ$edadbdd751f2abf96a0e3527e897a7e2bfef9422d3c86bc6bf8864c63c70513dfe1f469773afb03bf768ed8e35e1059c72d0ca55a19d20f7209a0e15523227db",
+    "role": "student",
+    "mobile": "",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 18:23:25",
+    "id": 51
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793278453872@test.com",
+    "password_hash": "scrypt:32768:8:1$kk8us3hKki1LQUIz$80a76f6c0a215ccd449b6b45a26f4cabc4309eca00685826af8d3ae3af4f30a66e0c47be89305f8cc275c77d8a73abb19ce9c58e5aafd01366f148050d011c7b",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 18:24:14",
+    "id": 52
+  },
+  {
+    "name": "Role Escalation Attempt",
+    "email": "escalation_test_1793278454670@test.com",
+    "password_hash": "scrypt:32768:8:1$jzJe3pFv8uiINzDH$1f79d369a3b7afb51f045552652038b5a0c0fda15dc18057056000620d97bba5381569ffff8bf2b98c32caa2868c482b52e530068683ca647c96e40b4cb44548",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 18:24:14",
+    "id": 53
+  },
+  {
+    "name": "Student Role Check",
+    "email": "student_check_1793288778889@college.edu",
+    "password_hash": "scrypt:32768:8:1$DMzJ49vqkc7ttMLh$b7cc6092b0bc7a5e3e0fe5d559977f36dc87be7a7da0a5cb10280f1658e3c593a0bfc575fcf4c3a2e0f99fe19ef15a00e4525d9a1fe40b01543a62febf0e8c08",
+    "role": "student",
+    "mobile": "",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 21:16:19",
+    "id": 54
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793288791292@test.com",
+    "password_hash": "scrypt:32768:8:1$YxmxDsX1ZSMVpBjl$9969ecfba9f475b87f5c69d543b7489bab2624ee31ea5dea3f7966379a7ac0f6dbe3d167ecebeaa51965545e8888e83fa88eb11026f5f215d762c6a9f176bfac",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 21:16:31",
+    "id": 55
+  },
+  {
+    "name": "Role Escalation Attempt",
+    "email": "escalation_test_1793288792305@test.com",
+    "password_hash": "scrypt:32768:8:1$Z1xRMrp1inHLQhT7$99cede42d64e11ba2ec48d2a346e2fc5b78cae58c5edf9acdc70e786b11ba0d7a6bfd1edcfcdd9221623f0ae2af3bb258fc5e986f0e1476170aadbd576a3b193",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 21:16:32",
+    "id": 56
+  },
+  {
+    "name": "RITESH",
+    "email": "riteshraushan71@gmail.com",
+    "password_hash": "scrypt:32768:8:1$0w7eHKLrs8X9ORj1$541194e3f78e04008eb4f3d68238d0b0bb2fe0305de9f901e6889f130aed473eca32e77751a301c45f3c4c95c4cc8d165879e4d441aa3a771c088a7cd6c30e51",
+    "role": "student",
+    "mobile": "+917762913371",
+    "location": "Ghaziabad, UP",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 21:18:06",
+    "id": 57,
+    "resume_analysis": {
+      "fileName": "My_Resume_1.pdf",
+      "file_name": "My_Resume_1.pdf",
+      "fileSize": "45 KB",
+      "file_size": "45 KB",
+      "matchScore": 88,
+      "match_score": 88,
+      "education": "MCA (Master of Computer Applications) - 8.4 CGPA",
+      "education_details": [
+        {
+          "degree": "Master of Computer Applications (MCA)",
+          "performance": "8.4 CGPA",
+          "status": "Final Year"
+        }
+      ],
+      "experienceLevel": "Fresher / Entry-Level Software Engineer",
+      "experience": [
+        {
+          "role": "Software Project Intern",
+          "highlights": [
+            "Built Smart Mock Test & Career Gateway application",
+            "Implemented Flask REST APIs & responsive UI"
+          ]
+        }
+      ],
+      "parsedSkills": [
+        "Python",
+        "Java",
+        "Data Structures & Algorithms",
+        "SQL",
+        "Flask",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "REST APIs",
+        "Git",
+        "Problem Solving"
+      ],
+      "skills": [
+        "Python",
+        "Java",
+        "Data Structures & Algorithms",
+        "SQL",
+        "Flask",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "REST APIs",
+        "Git",
+        "Problem Solving"
+      ],
+      "projects": [
+        "Smart Mock Test & Career Gateway Platform",
+        "Student Placement Tracker & Proctoring Engine"
+      ],
+      "recommendations": [
+        "Highlight database normalization and complex SQL join query performance.",
+        "Include live deployed URL links or GitHub repository URLs for MCA capstone projects.",
+        "Mention unit testing frameworks like PyTest or JUnit to boost ATS compatibility score above 90%."
+      ],
+      "suggestedRoles": [
+        "Graduate Software Engineer Trainee (TCS, Infosys, Wipro)",
+        "Junior Full-Stack Python / Web Developer",
+        "Associate Backend Engineer (FastAPI / Flask)"
+      ],
+      "suggested_roles": [
+        "Graduate Software Engineer Trainee (TCS, Infosys, Wipro)",
+        "Junior Full-Stack Python / Web Developer",
+        "Associate Backend Engineer (FastAPI / Flask)"
+      ],
+      "analyzedAt": "2026-10-30 00:55:57",
+      "analyzed_at": "2026-10-30 00:55:57"
+    },
+    "resume_file": "My_Resume_1.pdf",
+    "resume_updated_at": "2026-10-30 00:55:57"
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793288965357@test.com",
+    "password_hash": "scrypt:32768:8:1$NrfdmIlh17oyUtd3$783bd5cdd03e9ca8a70091dad2076d73bfe07a77cfe8c1f9d96b9ff94fe20dbc90c44be87bdb5452f12738831e2295cd531153d7c1f4d355d0bf43924afe1a03",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 21:19:25",
+    "id": 58
+  },
+  {
+    "name": "Role Escalation Attempt",
+    "email": "escalation_test_1793288966268@test.com",
+    "password_hash": "scrypt:32768:8:1$IoERBprR3Ldfzq0e$7f8624f57091d339a1d27551d0af66c5637e8e078b9eff7ce2f2593513ce99d8c2d4dcfbb1d2aa23e6a19c034a3c9060dea9e2ea072827e7a79cf625b9a560c5",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 21:19:26",
+    "id": 59
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793288991238@test.com",
+    "password_hash": "scrypt:32768:8:1$YattGZADQkdYcxW7$96c77f1338ce53c2e653576a3c2215beaee8cdace749e894ea63c323dde890e2f52074d225b694716deff5f317a5fc99454fd24e2a1abc57b901e97b426e5861",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 21:19:51",
+    "id": 60
+  },
+  {
+    "name": "Role Escalation Attempt",
+    "email": "escalation_test_1793288992119@test.com",
+    "password_hash": "scrypt:32768:8:1$5HHn9V2SFNrWPwaL$10448d14ab6258248bbbd69772fc2842f41515e81f39507acd62142634ca0266ab0f873d9a0242349bf6d2d68865b04a2855571a640e1e7c15e75f88e57300a3",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 21:19:52",
+    "id": 61
+  },
+  {
+    "name": "Ritesh Raushan",
+    "email": "live_student_1793289040@example.com",
+    "password_hash": "scrypt:32768:8:1$TPZm7wMuEEZkhbAY$08f56289d3d05d80bfd6da3f6dbc4c0be099538a4c6fc4394ef4b6062f8b5a088908516761c407c0ea2cb50e229cf677762d9237223cc68bb380d8ae42f8c156",
+    "role": "student",
+    "mobile": "+91 9876543210",
+    "location": "Patna, Bihar",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 21:20:40",
+    "id": 62
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793291103821@test.com",
+    "password_hash": "scrypt:32768:8:1$2YDLdOwEuhSA9oDH$3e7e644b172cdf6e23178f792509974ec826ef8e25567ae8e72a2223dc376d5456145144600e2ea827ee049c6e7f2828bd3277ded0242a5dc881aea6a9503c36",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 21:55:03",
+    "id": 63
+  },
+  {
+    "name": "Role Escalation Attempt",
+    "email": "escalation_test_1793291104208@test.com",
+    "password_hash": "scrypt:32768:8:1$GgEZalJmx0h4jy7b$9992213c56dbb90aa1eeb116abe8becc57b3604c31c3bf57914ecc4d47082b013c40cc52f2495dcb8eaa52afc7c23b872c42b8d753ae08ca27f5200d350735cb",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 21:55:04",
+    "id": 64
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793292167912@test.com",
+    "password_hash": "scrypt:32768:8:1$2gQgjEEFesxbm7aZ$7cec4fdbaf756c602b53bb00a8f9466bcf269cf0eb42e36a46878148e6b38266c354960800ee0e61e5b18f3b543bd3dc17124c1a0a5a4854f82dbabd4c08810d",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 22:12:48",
+    "id": 65
+  },
+  {
+    "name": "Role Escalation Attempt",
+    "email": "escalation_test_1793292168693@test.com",
+    "password_hash": "scrypt:32768:8:1$B1IZqp0dX1WrO5qK$39976d33aef764ec235b5761d20f68ed57276ab24aa792145f33af20ad11efb8b13bfb2403d9336b837dea924bec2156d820073188cd7117ecb90e483fcd61f9",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 22:12:48",
+    "id": 66
+  },
+  {
+    "name": "Student Role Check",
+    "email": "student_check_1793292205529@college.edu",
+    "password_hash": "scrypt:32768:8:1$CMBrIy4YzV049xQj$1f83cf86ce85cdb8407578f54747a42f95ca00b60c6aa46d00a817b9562327f992bb9e5c0a87aad9b4bb951f974c6812ec3f656e200e3cf1aee5dfb54c7a7aee",
+    "role": "student",
+    "mobile": "",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 22:13:25",
+    "id": 67
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793293182791@test.com",
+    "password_hash": "scrypt:32768:8:1$pV77KjoDaYndDreY$4a7b0ab29472b1d3281ee4b33a44643dbcd8bb7bc0117a58b71219fabcfb43f16fbb0c6e956572cf822a9785213031295fa374b0209ed5ca6ae27e773aee74b8",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 22:29:42",
+    "id": 68
+  },
+  {
+    "name": "Role Escalation Attempt",
+    "email": "escalation_test_1793293183262@test.com",
+    "password_hash": "scrypt:32768:8:1$aqiLp9vS9iGqpj2O$1dff317a04827d23267f4ba5f0842535f2dee88d4532665a74c6ab00737bd8f7764af7930d3203e7a77d279a714ca1ae5e9da8516adb97264d25a3538a69bf20",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 22:29:43",
+    "id": 69
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793295574302@test.com",
+    "password_hash": "scrypt:32768:8:1$18k2ACp6JqSMZ6az$86f99db80efc7bb47e8a4b98cb4b2504d5e661aad3580b271dc7804c626db25325a8028b1f30057dafce028b32b5953dbaefd3b1bde33b249d010bd7394e4c76",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 23:09:34",
+    "id": 70
+  },
+  {
+    "name": "Role Escalation Attempt",
+    "email": "escalation_test_1793295574761@test.com",
+    "password_hash": "scrypt:32768:8:1$PrVcfRWkjQLntf9K$8a32ba7d24f9a9f2543988df1142d1c33da7287d737838876c35a75fa1794e144323464cb897f7ec910b892640f40f4626f0a32b117fa49bacfcb15f4c35bcb8",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 23:09:34",
+    "id": 71
+  },
+  {
+    "name": "Student Role Check",
+    "email": "student_check_1793295609493@college.edu",
+    "password_hash": "scrypt:32768:8:1$7kKJxhDtIHpvQqhj$052f589ff4c982e2f1136d63db5686f0e200d6c93724a67a86ace6c7c09b88d289c319d443daf62c1725d318f6c75c2bf91404457c19b01582d3db234061cde0",
+    "role": "student",
+    "mobile": "",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 23:10:09",
+    "id": 72
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793296965365@test.com",
+    "password_hash": "scrypt:32768:8:1$jBDRTfmD01ZJjb2i$6dc3ebd46ee25c912c0a590983463089ba1c1c3112ab552274716a18980650dbec61d6fa88bce93dbe38890a33c43589fe8e35f8dd3f16d5981031bee473bc46",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 23:32:45",
+    "id": 73
+  },
+  {
+    "name": "Role Escalation Attempt",
+    "email": "escalation_test_1793296965794@test.com",
+    "password_hash": "scrypt:32768:8:1$2U6Qs2n88JM32AQA$a1567cfda3ea53672fb45735d4b1c736a25fd5761692b42775991d63beb11280d0cd0b93436f0b6dca69eed0060fd60c4388f28327ddfd048ab24345ea8cc963",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 23:32:45",
+    "id": 74
+  },
+  {
+    "name": "Student Role Check",
+    "email": "student_check_1793297053983@college.edu",
+    "password_hash": "scrypt:32768:8:1$IIhSZc3P0pJFEQxv$ab195d6edb77d5c05fe91afe4592596ec77122f1dc345888ed2d29b089601f639331cb3d1ec952c4204be92aa483a083c2ac4081f63247698fd60eec47879864",
+    "role": "student",
+    "mobile": "",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 23:34:14",
+    "id": 75
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793298397769@test.com",
+    "password_hash": "scrypt:32768:8:1$P8jNtrQ4XUZsovaV$a53f0ff681dfded48fd39559e874cfa34d46c6a552349ed075dac02bbee5262255161fdc65d2351ea5e66091283b7a969ab223e32b92b8b37118eb68c86cb868",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 23:56:37",
+    "id": 76
+  },
+  {
+    "name": "Role Escalation Attempt",
+    "email": "escalation_test_1793298398340@test.com",
+    "password_hash": "scrypt:32768:8:1$SYMcHNN3bOX9gDVx$190563f4482aecc5b15aaae74260d3ba03ef60beac81c70efe95bdf6ee2ed91f79bf1e7069f56388e33a4934b930e96ec955d4916f007c4b6f967d7aeaecf344",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-29 23:56:38",
+    "id": 77
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793299558138@test.com",
+    "password_hash": "scrypt:32768:8:1$lc0Gx1ufsuz5JPGl$a4502f6b4f649bc5a22240b0aec21286135d721abe6ab27c696199487f196f9d5918232fd554879f28a838e4f21c4287c7962a0430775dd7303b6f25b63991f1",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-30 00:15:58",
+    "id": 78
+  },
+  {
+    "name": "Role Escalation Attempt",
+    "email": "escalation_test_1793299559591@test.com",
+    "password_hash": "scrypt:32768:8:1$DbSMq8ZHfr2cLj1G$5ab0691947bc2b976c30a4ab1cb875bf6abfdc6e82751da4677682fecd80b019425b3a9d7abdcac7dde1fa54578aad7a42f12622a57405190dd6271e56efb055",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-30 00:16:00",
+    "id": 79
+  },
+  {
+    "name": "New Test Student",
+    "email": "newstudent_1793300402832@test.com",
+    "password_hash": "scrypt:32768:8:1$samZUKGI1lNWXcip$e195648198fa94ff6ad495f7f8211a55316cb0f8ce44e069abea3250ee70e273996806c0a90f6410f3c2417824b3f3fd88e40a6f30f319fcd9a3dbdb48711ec3",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "Agra, India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-30 00:30:03",
+    "id": 80
+  },
+  {
+    "name": "Role Escalation Attempt",
+    "email": "escalation_test_1793300404840@test.com",
+    "password_hash": "scrypt:32768:8:1$uaM93LuLgntUvMKR$6aef179c3f2c21e88ff4bd6ae972cd6d232db4cdde974675693676460a3f4840d5221718700e2da976918c2fd84453c2ba3fef55d8150627d0b612ba0bfe9f72",
+    "role": "student",
+    "mobile": "+91 9998887770",
+    "location": "India",
+    "education": "MCA Student",
+    "skills": [
+      "Java",
+      "Python",
+      "SQL"
+    ],
+    "status": "Active",
+    "created_at": "2026-10-30 00:30:05",
+    "id": 81
   }
 ]

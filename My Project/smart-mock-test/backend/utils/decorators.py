@@ -51,6 +51,17 @@ def role_required(*allowed_roles):
                     error={"code": "FORBIDDEN", "user_role": user_role},
                     status_code=403
                 )
+            
+            # Enforce single fixed Admin identity for all admin operations
+            if "admin" in allowed_roles and user_role == "admin":
+                admin_email = current_app.config.get("ADMIN_EMAIL", "vartikachaudhary0312@gmail.com").strip().lower()
+                user_email = (g.current_user.get("email") or "").strip().lower()
+                if user_email != admin_email:
+                    return error_response(
+                        message="Access denied. Only the authorized administrator account has access.",
+                        error={"code": "FORBIDDEN"},
+                        status_code=403
+                    )
             return f(*args, **kwargs)
         return decorated
     return decorator

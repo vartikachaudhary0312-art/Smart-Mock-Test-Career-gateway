@@ -4,3 +4,10 @@ Thumbs.db
 node_modules/
 *.log
 .env
+backend/.env
+**/.env
+
+__pycache__/
+*.pyc
+.pytest_cache/
+uploads/

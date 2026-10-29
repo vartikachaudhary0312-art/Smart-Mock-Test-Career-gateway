@@ -27,11 +27,11 @@
   --info-bg: #DBEAFE;
 
   /* Elevation Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
-  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.1), 0 4px 6px -4px rgba(15, 23, 42, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
-  --shadow-purple: 0 8px 20px -4px rgba(109, 74, 255, 0.3);
+  --shadow-sm: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.03);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.05), 0 2px 4px -2px rgba(15, 23, 42, 0.03);
+  --shadow-lg: 0 8px 16px -2px rgba(15, 23, 42, 0.06), 0 3px 6px -3px rgba(15, 23, 42, 0.03);
+  --shadow-xl: 0 16px 24px -4px rgba(15, 23, 42, 0.06), 0 6px 12px -4px rgba(15, 23, 42, 0.03);
+  --shadow-purple: 0 4px 14px -2px rgba(109, 74, 255, 0.14);
 
   /* Layout Dimensions */
   --sidebar-width: 260px;
@@ -42,13 +42,17 @@
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --radius-sm: 6px;
   --radius-md: 10px;
-  --radius-lg: 16px;
+  --radius-lg: 12px;
   --radius-full: 9999px;
 
   /* Transition speeds */
   --transition-fast: 0.15s ease;
   --transition-normal: 0.25s ease;
   --transition-slow: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Convenience Aliases */
+  --bg: var(--background);
+  --card-bg: var(--surface);
 }
 
 /* Dark Theme Overrides */
@@ -66,13 +70,24 @@
   --border: #334155;
   --border-subtle: #1E293B;
 
-  --success-bg: rgba(22, 163, 74, 0.2);
-  --warning-bg: rgba(245, 158, 11, 0.2);
-  --danger-bg: rgba(220, 38, 38, 0.2);
-  --info-bg: rgba(37, 99, 235, 0.2);
+  --accent: #38BDF8;
 
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
-  --shadow-purple: 0 8px 20px -4px rgba(139, 110, 255, 0.25);
+  /* Accessible Vibrant Feedback Tokens for Dark Surfaces */
+  --success: #22C55E;
+  --warning: #FBBF24;
+  --danger: #F87171;
+  --info: #38BDF8;
+
+  --success-bg: rgba(34, 197, 94, 0.2);
+  --warning-bg: rgba(251, 191, 36, 0.2);
+  --danger-bg: rgba(248, 113, 113, 0.2);
+  --info-bg: rgba(56, 189, 248, 0.2);
+
+  --bg: var(--background);
+  --card-bg: var(--surface);
+
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 8px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 16px -2px rgba(0, 0, 0, 0.35);
+  --shadow-purple: 0 4px 14px -2px rgba(139, 110, 255, 0.18);
 }
